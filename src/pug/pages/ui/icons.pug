@@ -1,0 +1,95 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Иконки
+
+				.container-dashboard__content
+					ul
+						li 
+							.ic-login
+							pre.
+								.ic-login
+							hr
+						li
+							.ic-arRight
+							pre.
+								.ic-arRight
+							hr
+						li
+							.ic-arLeft
+							pre.
+								.ic-arLeft
+							hr 
+						li
+							.ic-arDown
+							pre.
+								.ic-arDown
+							hr 						
+						li
+							svg.vk-svg(width="23" height="15")
+								use(href="../img/svg-sprite.svg#vk-svg")
+							pre.
+								svg.vk-svg(width="23" height="15")
+									use(href="./img/svg-sprite.svg#vk-svg")
+						li
+							svg.rutube-svg(width="19" height="19")
+								use(href="../img/svg-sprite.svg#rutube-svg")
+							pre.
+								svg.rutube-svg(width="19" height="19")
+									use(href="./img/svg-sprite.svg#rutube-svg")
+						li
+							svg.tg-svg(width="19" height="17")
+								use(href="../img/svg-sprite.svg#tg-svg")
+							pre.
+								svg.tg-svg(width="19" height="17")
+									use(href="./img/svg-sprite.svg#tg-svg")
+						li
+							.social-block
+								a(href="#!")
+									svg.vk-svg(width="23" height="15")
+										use(href="../img/svg-sprite.svg#vk-svg")
+								a(href="#!")
+									svg.rutube-svg(width="23" height="15")
+										use(href="../img/svg-sprite.svg#rutube-svg")
+								a(href="#!")
+									svg.tg-svg(width="23" height="15")
+										use(href="../img/svg-sprite.svg#tg-svg")
+							pre.
+								.social-block
+									a(href="#!")
+										svg.login-svg(width="23" height="15")
+											use(href="../img/svg-sprite.svg#vk-svg")
+									a(href="#!")
+										svg.login-svg(width="23" height="15")
+											use(href="../img/svg-sprite.svg#vk-svg")
+									a(href="#!")
+										svg.login-svg(width="23" height="15")
+											use(href="../img/svg-sprite.svg#vk-svg")
+						
+						li
+							.ic-back
+							pre.
+								.ic-back
+						li(style="padding-top:15px;  background: white; color: #000;")
+							.ic-dwload
+							pre.
+								.ic-dwload 
+						li

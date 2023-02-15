@@ -1,0 +1,38 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../fonts/fonts.css")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Типографика
+
+				//- .container-dashboard__content(style="background: #191D23; ")
+				//- 	video( width="716" height="406"  loop="loop" muted="" autoplay="autoplay" poster="../video/video.jpg")
+				//- 		source(src="../video/video.mp4" type="video/mp4")
+				//- 		source(src="../video/video.webm" type="video/webm")
+				//- 	pre.
+				//- 		video( width="716" height="406"  loop="loop" muted="" autoplay="autoplay" poster="../video/video.jpg")
+				//- 			source(src="../video/video.mp4" type="video/mp4")
+				//- 			source(src="../video/video.webm" type="video/webm")
+				//- 	hr
+				//- 	.video-bg
+				//- 		img(src="../img/earth.gif", width="716" height="406" alt="alt")
+				//- 	pre.
+				//- 		.video-bg
+				//- 			img(src="../img/earth.gif", width="716" height="406" alt="alt")

@@ -1,0 +1,141 @@
+// @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;700&display=swap');
+*, *:after, *:before {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	color: white;
+	font-family: $m;
+	font-size: 16px;
+	background-color: $pr;
+	-webkit-font-smoothing: antialiased;
+}
+
+.lock {
+	overflow: hidden;
+	touch-action: none;
+	-ms-touch-action: none;
+	height: 100vh;
+
+	@media(min-width:1200px) {
+		padding-right: 18px;
+	}
+}
+
+#overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(30, 65, 89, .2);
+	// backdrop-filter: blur(5px);
+	z-index: 5;
+}
+
+#overlay.active {
+	display: block;
+
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+input,
+button,
+button:focus,
+input:focus {
+	outline: none;
+	border: none;
+}
+
+button {
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	font-family: inherit;
+}
+
+input[type="submit"] {
+	padding: 0;
+	cursor: pointer;
+}
+
+input[type="radio"],
+input[type='checkbox'],
+input[type="submit"] {
+	appearance: none;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+}
+
+.container{
+	width: 1560px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	@media(max-width:1919px){
+		width: 1360px;
+	}
+	@media(max-width:1439px){
+		width: 1180px;
+	}
+	@media(max-width:1199px){
+		width: 990px;
+	}
+	@media(max-width:991px){
+		width: 768px;
+	}
+	@media(max-width:767px){
+		width: 570px;
+	}
+	@media(max-width:574px){
+		width: 100%;
+	}
+}
+.t-upper{
+	text-transform: uppercase;
+}
+.d-flex{
+	display: flex;
+	align-items: center;
+}

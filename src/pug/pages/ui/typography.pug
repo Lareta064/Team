@@ -1,0 +1,58 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../fonts/fonts.css")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Типографика
+
+				.container-dashboard__content(style="background: #191D23; ")
+					ul
+						li 
+							.h1 Заголовок
+							pre.
+								.h1 Заголовок
+							hr
+						li 
+							.h2 Title-2
+							pre.
+								.h2 Title-2
+							hr
+						li 
+							.h3 Title-3
+							pre.
+								.h3 Title-3
+							hr
+						li 
+							.h4 Title-4
+							pre.
+								.h3 Title-4
+							hr
+						li
+							a(href="#!").link политика конфиденциальности
+							pre.
+								a(href="#!").link политика конфиденциальности
+							hr
+						li
+							a(href="#!").link-white политика конфиденциальности
+							pre.
+								a(href="#!").link-white политика конфиденциальности
+							hr
+
+					

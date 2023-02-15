@@ -1,0 +1,8 @@
+.social-block{
+	display: flex;
+	align-items: center;
+	a{
+		line-height: 1;
+	}
+	a+a{margin-left: 40px;}
+}

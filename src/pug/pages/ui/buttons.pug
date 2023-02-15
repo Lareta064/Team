@@ -1,0 +1,41 @@
+include ../../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard
+
+		include ../../ui/ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2 Кнопки
+
+				.container-dashboard__content
+					ul
+						li 
+							.btn Кнопка
+							pre.
+								.btn Кнопка
+						li 
+							.btn-outline Кнопка
+							pre.
+								.btn-outline Кнопка
+						li 
+							.btn.disable Кнопка не активная
+							pre.
+								.btn.disable  Кнопка не активная
+						li 
+							.btn-outline.disable Кнопка не активная
+							pre.
+								.btn-outline.disable  Кнопка не активная

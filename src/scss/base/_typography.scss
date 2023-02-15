@@ -1,0 +1,64 @@
+.h1, .h2, .h3, .h4{
+	font-family: $u;
+	font-family: "Unbounded-Bold";
+	letter-spacing: 0.03em;
+	line-height: 1.4;
+	text-transform: uppercase;
+	@media (max-width: 1199px) {
+		letter-spacing: 0;
+	}
+}
+.h1{
+	font-size: 120px;
+	line-height: 1.1;
+	font-weight: 700;
+	font-family: "Unbounded-Bold";
+}
+.h2{
+	font-weight: 500;
+	font-size: 70px;
+	line-height: 1.2;
+}
+.h3{
+	font-size: 64px;
+	line-height: 1.4;
+	font-weight: 700;
+	letter-spacing: 0;
+}
+.h4{
+	font-size: 54px;
+	line-height: 1.2;
+	font-weight: 500;
+}
+.link,.link-white{
+	color: $ac1;
+	line-height: 1.4;
+	display: inline;
+	position: relative;
+	transition:.3s;
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		height: 1px;
+		background-color: $ac1;
+		width: 100%;
+	}	
+}
+.link:hover{
+	color: $sec1;
+	&:after{
+		background-color:  $sec1;
+	}
+}
+.link-white{
+	color: $sec1;
+	&:after{background-color: $sec1;}
+}
+.link-white:hover{
+	color: $ac1;
+	&:after{
+		background-color:  $ac1;
+	}
+}

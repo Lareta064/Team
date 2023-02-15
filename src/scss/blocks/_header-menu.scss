@@ -1,0 +1,179 @@
+.main-menu{
+	@media (max-width: 991px) {
+		position: fixed;
+		top: 74px;
+		width: 100%;
+		right: 0;
+		bottom: 0;
+		z-index: 3;
+		background: $pr;
+		overflow: hidden;
+		padding: 40px 20px;
+		transform:translateX(120%);
+		transition: .3s;
+		&:after{
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+			width: 360px;
+			height: 560px;
+			background-image: url("../img/mobile-menu-bg.svg");
+			background-repeat: no-repeat;
+			background-size: contain;
+		
+		}
+		&.active{
+			transform:translateX(0);
+		}
+	}
+}
+.main-menu nav{
+	display: flex;
+	align-items: center;
+	a{
+		padding-left: 28px;
+		padding-right: 28px;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 100px;
+		background-color: transparent;
+		transition: .3s;
+		position: relative;
+		white-space: nowrap;
+		font-weight: 500;
+		font-size: 14px;
+		letter-spacing: 0.03em;
+		@media (max-width: 1439px) {
+			padding-left: 24px;
+			padding-right: 24px;
+			
+		}
+		@media (max-width: 1199px) {
+			font-size: 12px;
+			padding-left: 20px;
+			padding-right: 20px;
+			&:before{
+				left: 6px;
+			}
+		}
+		@media (max-width: 991px) {
+			font-size: 14px;
+			padding-left: 30px;	
+			padding-right: 30px;
+			&:before{
+				left: 12px;
+			}
+			&+a{
+				margin-top: 28px;
+			}	
+		}
+		
+		&:before{
+			content:'';
+			width: 6px;
+			height: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+		}	
+		&:hover{
+			background-color: $ac1;
+		}
+		&:hover:before{display: none;}
+	}
+	@media (max-width: 991px){
+		flex-direction: column;
+		align-items: flex-start;
+		position: relative;
+		z-index:  2;
+	}
+}
+/*========GAMBURGER======*/
+.menu-toggle {
+	display: none;
+	z-index: 5;
+	cursor: pointer;
+	
+	justify-content: center;
+	align-items: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 8px;
+	background-color: $ac1;
+	position: relative;
+	&:hover{
+		span:after, span:before, span{
+			background-color: $sec2;
+		}
+	}
+}
+
+@media (max-width: 991px) {
+	.menu-toggle {
+		display: flex;
+		
+	}
+}
+
+.menu-toggle span {
+	position: relative;
+	height: 2px;
+	width: 21px;
+	border-radius: 5px;
+	background-color: white;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.menu-toggle span:after,
+.menu-toggle span:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	height: 2px;
+	background-color: white;
+	border-radius: 5px;
+	right: 0;
+	-webkit-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+}
+
+.menu-toggle span:after {
+	top: -5px;
+}
+
+.menu-toggle span:before {
+	bottom: -5px;
+}
+.active.menu-toggle span {
+	background-color: transparent!important;
+}
+.active.menu-toggle:hover{
+	
+	span:after, span:before{
+		background-color: $sec2;
+	}
+	
+}
+.active.menu-toggle span:after {
+	top: 0px;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	background-color: #fff;
+}
+
+.active.menu-toggle span:before {
+	bottom: 0px;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	background-color: #fff;
+}

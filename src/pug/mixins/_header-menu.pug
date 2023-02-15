@@ -1,0 +1,7 @@
+mixin header-menu(arg)
+	nav
+		each item in arg
+			if item.addClass
+				a(href="").active-item #{item.title}
+			else
+				a(href="").t-upper #{item.title}

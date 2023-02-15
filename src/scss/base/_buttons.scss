@@ -1,0 +1,38 @@
+.btn, .btn-outline{
+	display: inline-block;
+	cursor:pointer;
+	height: 63px;
+	line-height: 63px;
+	border-radius: 100px;
+	padding-left: 39px;
+	padding-right: 39px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	font-family: $m;
+	background-color: $ac1;
+	transition: .5s;
+	@media (max-width: 1199px) {
+		height: 46px;
+		line-height: 46px;
+		font-size: 14px;
+	}
+}
+.btn:hover{
+	background-color: $ac2;
+	
+}
+
+.btn-outline{
+	color:$pr ;
+	background-color: #fff;
+	&:hover{
+		color: $ac1;
+	}
+	
+}
+.btn.disable, .btn-outline.disable{
+	cursor:default;
+	pointer-events: none;
+	opacity: .4;
+}
