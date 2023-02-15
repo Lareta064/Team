@@ -16,8 +16,20 @@ body {
 	font-size: 16px;
 	background-color: $pr;
 	-webkit-font-smoothing: antialiased;
+	position: relative;
+	
 }
-
+body:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/el1.svg);
+	width: 970px;
+	height: 1300px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
 .lock {
 	overflow: hidden;
 	touch-action: none;

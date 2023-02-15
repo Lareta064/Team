@@ -1,0 +1,30 @@
+header.header
+	.header-top
+		.container
+			.header-content
+				a(href="index.html").logo
+					img(src="./img/logo.png", width="94" height="99" alt="logo")
+				.main-menu#header-menu
+					+header-menu([
+						{title: 'Новости'},
+						{title: 'Визитная карточка'},
+						{title: 'Проекты'},
+						{title: 'Навигатор'},
+						{title: 'Библиотека'},
+						{title: 'Медиацентр'}
+					])
+				.header-column.d-flex
+					.login-button
+						.ic-login
+					.menu-toggle#menu-toggle
+						span
+
+	.header-banner
+		.container
+			.header-banner__content
+				.header-title
+					.medi-up Социальный проект
+					.h1 Команда
+					.body4 Авторский проект Дмитрия Бархатова
+				.header-bg
+				.header-btn
