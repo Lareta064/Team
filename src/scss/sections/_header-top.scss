@@ -5,7 +5,7 @@
 	right: 0;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	&-column{
+	.header-column{
 		column-gap: 20px;
 	}
 	@media (max-width: 1199px) {

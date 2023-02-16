@@ -22,6 +22,10 @@
 	@media(max-width:1199px){
 		font-size: 80px;
 	}
+	@media (max-width: 991px) {
+		font-size: 44px;
+		line-height: 1.4;
+	}
 }
 .h2{
 	font-weight: 500;
@@ -77,6 +81,14 @@
 	line-height: 1.4;
 	letter-spacing: 0.84em;
 	text-transform: uppercase;
+	@media (max-width: 991px) {
+		font-size: 16px;
+		letter-spacing: 0.48em;
+	}
+	@media (max-width: 767px) {
+		font-size: 14px;
+		
+	}
 }
 .text-18{
 	font-size: 18px;
@@ -85,4 +97,7 @@
 .text-16{
 	font-size: 16px;
 	line-height: 1.4;
+	@media (max-width: 767px) {
+		font-size: 12px;
+	}
 }
