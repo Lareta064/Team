@@ -19,6 +19,10 @@
 		line-height: 46px;
 		font-size: 14px;
 	}
+	@media (max-width: 767px) {
+		
+		width: 320px;
+	}
 }
 .btn:hover{
 	background-color: $ac2;

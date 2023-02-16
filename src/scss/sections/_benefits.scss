@@ -10,6 +10,16 @@
 		left: 0;
 		right: 0;
 		background-color: #fff;
+		@media(max-width:1199px){
+			display: none;
+			
+		}
+	}
+	@media (max-width: 1199px) {
+		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
+		padding-top: 90px;
+		
+		margin-top: 90px;
 	}
 }
 .benefits-content{
@@ -18,11 +28,35 @@
 	background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
 	position: relative;
 	z-index: 2;
+	@media(max-width:1919px){
+		padding: 100px;
+	}
+	@media(max-width:1535px){
+		padding: 80px;
+	}
+	@media(max-width:1364px){
+		padding: 50px;
+	}
+	@media (max-width: 1199px) {
+		border-radius: 0;
+		padding: 0;
+		background: transparent;
+		padding-bottom: 166px;
+	}
 
 }
 .benefits-header{
 	align-items: flex-start;
-	.benefits-btn{padding-top: 23px;}
+	.benefits-btn{
+		padding-top: 23px;
+		@media (max-width: 1199px) {
+		position: absolute;
+		bottom: 90px;
+		left: 50%;
+		transform: translateX(-50%);
+		
+		}
+	}
 	margin-bottom: 80px;
 }
 .benefits-cards{
@@ -30,6 +64,11 @@
 	grid-template-columns: repeat(auto-fit, 350px);
 	column-gap: 55px;
 	row-gap:55px;
+	@media(max-width:1364px){
+		grid-template-columns: repeat(auto-fit, 320px);
+		column-gap: 15px;
+		row-gap:40px;
+	}
 }
 .benefits-card__icon{
 	width: 51px;
@@ -57,4 +96,10 @@
 		z-index: 2;
 	}
 
+}
+@media(min-width:1200px){
+	.benefits .container{
+		width: 95%;
+		max-width: 1560px;
+	}
 }
