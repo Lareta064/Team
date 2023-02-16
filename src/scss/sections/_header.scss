@@ -4,6 +4,9 @@
 	max-height: 1050px;
 	overflow: hidden;
 	position: relative;
+	@media (max-width: 1199px) {
+		padding-top: 140px;
+	}
 	
 }
 .header:before{
@@ -30,7 +33,13 @@
 	
 }
 .header-banner{
-	padding-top: 100px;	
+	padding-top: 100px;
+	@media(max-width:1539px){
+		padding-top: 75px;
+	}
+	@media(max-width:1439px){
+		padding-top: 45px;
+	}
 	
 	.container{
 		position: relative;
@@ -44,15 +53,51 @@
 		height: 710px;
 		border-radius: 50%;
 		overflow: hidden;
+		border: 2px solid red;
 		
 		video{
-			width: 1476px;
-			height: 833px;
+			width: 211%;
+			height: 117%;
 			position: relative;
-			left: -53%;
+			left: -55%;
 			top: -59px;
+			@media(max-width:1535px){
+				top: -52px;
+			}
+			@media(max-width:1199px){
+				top: -42px;
+				
+			}
+			// @media(max-width:1439px){top: -49px;}
 		}
-	
+		@media(max-width:1919px){
+			
+			right: -55px;
+			width: 680px;
+			height: 690px;
+		}
+		@media(max-width:1535px){
+			top: -60px;
+			right: -10px;
+			width: 620px;
+			height: 629px;
+		}
+		@media(max-width:1439px){
+			
+			right: -50px;
+			
+		}
+		@media(max-width:1364px){
+			top: -30px;
+			right: 10px;
+			width: 555px;
+			height: 555px;
+		}
+		@media (max-width: 1199px) {
+			width: 500px;
+			height: 500px;
+			right: 0;
+		}
 	}
 }
 .header-title{
@@ -68,6 +113,13 @@
 	z-index:  2;
 	margin-top: 175px;
 	max-width: 584px;
+	@media(max-width:1539px){
+		margin-top: 145px;
+	}
+	@media(max-width:1439px){
+		margin-top: 110px;
+		max-width: 550px;
+	}
 }
 .header-btn{
 	margin-top: 53px;

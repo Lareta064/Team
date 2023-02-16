@@ -13,6 +13,15 @@
 	line-height: 1.1;
 	font-weight: 700;
 	font-family: "Unbounded-Bold";
+	@media(max-width:1535px){
+		font-size: 110px;
+	}
+	@media(max-width:1439px){
+		font-size: 90px;
+	}
+	@media(max-width:1199px){
+		font-size: 80px;
+	}
 }
 .h2{
 	font-weight: 500;
