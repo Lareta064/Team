@@ -31,12 +31,28 @@
 }
 .header-banner{
 	padding-top: 100px;	
-	position: relative;
+	
+	.container{
+		position: relative;
+	}
 	
 	.header-bg{
 		position: absolute;
-		top: -40px;
-		right: 0;
+		top: -95px;
+		right:-70px;
+		width: 700px;
+		height: 710px;
+		border-radius: 50%;
+		overflow: hidden;
+		
+		video{
+			width: 1476px;
+			height: 833px;
+			position: relative;
+			left: -53%;
+			top: -59px;
+		}
+	
 	}
 }
 .header-title{
