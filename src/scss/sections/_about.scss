@@ -1,49 +1,71 @@
-section{
-	padding-top: 120px;
-	@media (max-width: 767px) {
-		padding-top: 60px;
-	}
-}
-.section-header{
-	max-width:72% ;
-	.h2{
-		margin-bottom: 40px;
-	}	
-}
-.decor-img{
-	position: relative;
-	border-radius: 60px;
-	display: inline-flex;
-	img{
+
+.about{
+	.container{
 		position: relative;
-		z-index:  2;
-		border-radius: 60px;
 	}
-	&::before{
+	.section-header{
+		position: relative;
+		z-index: 2;
+	}
+	.container:before{
 		content:'';
-		width: 94%;
-		height: 46%;
-		border-radius: 60px;
-		background-color: $ac1;
-		right: -40px;
-		bottom: -40px;
 		position: absolute;
+		top: -120px;
+		right: 0;
+		width: calc(100% + 50vw);
+		height: 735px;
+		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
+		border-radius: 60px;
+		z-index: 1;
 
 	}
 }
 .about-content{
 	display: flex;
 	padding-top: 120px;
+	position: relative;
+	z-index: 2;
+	&:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: url(../img/el3.svg);
+		width: 1031px;
+		height: 727px;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
 
 }
 .about-img{
-	width: 830px;
-	height: 596px;
-	margin-right: 210px;
+	width: 870px;
+	height: 634px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	margin-right: 170px;
+	position: relative;
+	border-radius: 60px;
+	display: inline-flex;
 	img{
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+		position: relative;
+		z-index:  2;
+		border-radius: 60px;
+	}
+
+	&::before{
+		content:'';
+		width: 94%;
+		height: 46%;
+		border-radius: 60px;
+		background-color: $ac1;
+		right: 0;
+		bottom: 0;
+		position: absolute;
+
 	}
 }
 .number-item{

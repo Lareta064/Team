@@ -141,3 +141,15 @@ input[type="submit"] {
 	display: flex;
 	align-items: center;
 }
+section{
+	padding-top: 120px;
+	@media (max-width: 767px) {
+		padding-top: 60px;
+	}
+}
+.section-header{
+	max-width:72% ;
+	.h2{
+		margin-bottom: 40px;
+	}	
+}
