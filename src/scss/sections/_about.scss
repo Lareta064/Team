@@ -12,7 +12,7 @@
 		content:'';
 		position: absolute;
 		top: -120px;
-		right: 0;
+		right: 15px;
 		width: calc(100% + 50vw);
 		height: 735px;
 		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
@@ -54,14 +54,23 @@
 	&:after{
 		content: '';
 		position: absolute;
-		top: 0;
-		right: -150px;
+		top: 120px;
+		right: 40px;
 		background: url(../img/el3.svg);
 		width: 1031px;
 		height: 727px;
 		background-size: contain;
 		background-repeat: no-repeat;
 		z-index: 2;
+		@media (max-width: 767px) {
+		  width: 497px;
+		  height: 621px;
+		  right:auto;
+		  left: 0;
+		  top:auto;
+		  bottom:0;
+		  transform:translate(-44%, 34%)
+		}
 	}
 	@media(max-width:1439px){
 		padding-top: 90px;
@@ -84,17 +93,21 @@
 	img{
 		width: 100%;
 		height: auto;
-		max-height: 634px;
+		max-height: 596px;
+		
 		object-fit: cover;
 		position: relative;
 		z-index:  3;
 		border-radius: 60px;
+		@media(min-width:1920px){
+			height: 596px;
+		}
 	}
 
 	&::before{
 		content:'';
-		width: 94%;
-		height: 46%;
+		width: 90%;
+		height: 44%;
 		border-radius: 60px;
 		background-color: $ac1;
 		right: 0;
@@ -109,7 +122,7 @@
 		@media(max-width:1199px){
 			
 			border-radius: 30px;
-			width: 90%;
+			
 			
 		}
 		@media (max-width: 767px) {
@@ -119,6 +132,9 @@
 		}
 
 	}
+	@media(min-width:1920px){
+			height: 636px;
+		}
 	@media(max-width:1919px){
 		margin-right: 100px;
 	}
@@ -191,5 +207,19 @@
 	}
 	@media (max-width: 767px) {
 	.number-item{max-width: 260px;}
+	}
+}
+.about-text{
+	margin-top: 120px;
+	max-width: 1251px;
+	width: 90%;
+	position: relative;
+	z-index:  2;
+	@media (max-width: 1199px) {
+	width: 100%;
+	margin-top: 90px;
+	}	
+	@media (max-width: 767px) {
+	  margin-top: 60px;
 	}
 }

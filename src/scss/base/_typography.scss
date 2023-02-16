@@ -69,6 +69,27 @@
 	font-weight: 500;
 	font-family: 'Unbounded-Medium';
 }
+.h5{
+	font-size: 34px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	font-family: 'Unbounded-Regular';
+	@media(max-width:1535px){
+		font-size: 32px;
+	}
+	@media(max-width:1439px){
+		font-size: 30px;
+	}
+	@media(max-width:1364px){
+		font-size: 28px;
+	}
+	@media(max-width:1199px){
+		font-size: 24px;
+	}
+	@media (max-width: 767px) {
+	font-size: 20px;
+	}
+}
 .link,.link-white{
 	color: $ac1;
 	line-height: 1.4;
