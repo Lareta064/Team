@@ -155,5 +155,12 @@ section{
 	max-width:1035px ;
 	.h2{
 		margin-bottom: 40px;
+		@media (max-width: 1199px) {
+		margin-bottom: 35px;
+		}
+	}
+	@media (max-width: 767px) {
+	width: 100%;
+	max-width:320px ;
 	}	
 }

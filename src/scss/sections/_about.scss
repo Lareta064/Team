@@ -29,6 +29,20 @@
 		@media(max-width:1364px){
 			right: 50px;
 		}
+		@media (max-width: 1199px) {
+		   height: 440px;
+		}
+		@media(max-width:991px){
+			height: 1014px;
+			right: 10px;
+			border-radius: 30px;
+		}
+		@media(max-width:767px){
+			right: -20px;
+			// width: calc(100% + 40px);
+			height: 855px;
+			border-radius: 0;
+		}
 
 	}
 }
@@ -54,6 +68,7 @@
 	}
 	@media(max-width:1199px){
 		display: block;
+		padding-top: 60px;
 	}
 }
 .about-img{
@@ -63,7 +78,7 @@
 	padding-bottom: 40px;
 	margin-right: 170px;
 	position: relative;
-	border-radius: 60px;
+	// border-radius: 60px;
 	display: inline-flex;
 	z-index: 3;
 	img{
@@ -85,6 +100,23 @@
 		right: 0;
 		bottom: 0;
 		position: absolute;
+		@media(max-width:1439px){
+	
+		border-radius: 40px;
+	
+		}
+		
+		@media(max-width:1199px){
+			
+			border-radius: 30px;
+			width: 90%;
+			
+		}
+		@media (max-width: 767px) {
+			
+			border-radius: 10px;
+			
+		}
 
 	}
 	@media(max-width:1919px){
@@ -97,6 +129,8 @@
 		width: 700px;
 		padding-bottom: 30px;
 		padding-right: 30px;
+		border-radius: 40px;
+		img{border-radius: 40px}
 	}
 	@media(max-width:1439px){
 		margin-right: 75px;
@@ -107,6 +141,19 @@
 		max-width: 700px;
 		margin-left: auto;
 		margin-right: auto;
+		border-radius: 30px;
+		img{border-radius: 30px}
+	}
+	@media (max-width: 767px) {
+		max-width: 320px;
+		padding-bottom: 15px;
+		padding-right: 15px;
+		border-radius: 10px;
+		img{
+			border-radius: 10px;
+			height: 219px;		
+
+		}
 	}
 	
 }
@@ -117,6 +164,12 @@
 	 max-width: 450px;
 	 width: 100%;
 	}
+	@media (max-width: 991px) {
+	   max-width: 350px;
+	}
+	@media (max-width: 767px) {
+	  &>*+*{margin-top: 0;}
+	}
 }
 .about-statistic{
 	position: relative;
@@ -126,7 +179,7 @@
 		.number-item +.number-item{margin-top: 60px;}
 	}
 	@media (max-width: 1199px) {
-		padding-top: 60px;
+		padding-top: 40px;
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		column-gap: 20px;
@@ -134,6 +187,9 @@
 	}
 	@media (max-width: 991px) {
 		display: block;
-	 .number-item +.number-item{margin-top: 40px;}
+	 .number-item +.number-item{margin-top: 30px;}
+	}
+	@media (max-width: 767px) {
+	.number-item{max-width: 260px;}
 	}
 }

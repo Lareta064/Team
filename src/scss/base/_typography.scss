@@ -29,6 +29,7 @@
 }
 .h2{
 	font-weight: 500;
+	font-family: 'Unbounded-Medium';
 	font-size: 70px;
 	line-height: 1.2;
 	@media (max-width: 1439px) {
@@ -55,11 +56,18 @@
 	@media (max-width: 1439px) {
    		font-size: 50px;
    }
+    @media (max-width: 1199px) {
+     font-size: 46px;
+   }
+   @media (max-width: 767px) {
+     font-size: 44px;
+   }
 }
 .h4{
 	font-size: 54px;
 	line-height: 1.2;
 	font-weight: 500;
+	font-family: 'Unbounded-Medium';
 }
 .link,.link-white{
 	color: $ac1;
@@ -116,6 +124,11 @@
 	}
 	@media(max-width:1199px){
 		font-size: 14px;
+		letter-spacing: 0.03em;
+	}
+	@media(max-width:991px){
+	
+		letter-spacing: 0.03em;
 	}
 }
 .text-24{
