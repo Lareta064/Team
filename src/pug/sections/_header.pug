@@ -1,20 +1,39 @@
-//===================== HEADER ======================
 header.header
-	.container
-		.header-content
-			a(href="index.html").logo
-				img(src="./img/logo.png", width="94" height="99" alt="logo")
-			.main-menu#header-menu
-				+header-menu([
-					{title: 'Новости'},
-					{title: 'Визитная карточка'},
-					{title: 'Проекты'},
-					{title: 'Навигатор'},
-					{title: 'Библиотека'},
-					{title: 'Медиацентр'}
-				])
-			.header-column.d-flex
-				.login-button
-					.ic-login
-				.menu-toggle#menu-toggle
-					span
+	//===================HEADER-MENU=======================
+	.header-top
+		.container
+			.header-content
+				a(href="index.html").logo
+					img(src="./img/logo.png", width="94" height="99" alt="logo")
+				.main-menu#header-menu
+					+header-menu([
+						{title: 'Новости'},
+						{title: 'Визитная карточка'},
+						{title: 'Проекты'},
+						{title: 'Навигатор'},
+						{title: 'Библиотека'},
+						{title: 'Медиацентр'}
+					])
+				.header-column.d-flex
+					.login-button
+						.ic-login
+					.menu-toggle#menu-toggle
+						span
+	
+	//=================== HEADER FIRST SCREEN =======================
+	.header-banner
+		.container
+			.header-banner__content
+				.header-title
+					.medi-up Социальный проект
+					.h1 Команда
+					.text-16 Авторский проект Дмитрия Бархатова
+				.header-bg
+					video( muted="muted" autoplay="autoplay" loop)
+						source(src="video/video.mp4" type="video/mp4")
+					//- img(src="./img/poster.png", width="1205" alt="poster")
+				.header-text
+					p.text-18 Данный проект направлен на формирование всесторонне гармонично развитой личности и реализуемый на&nbsp;территории России с 2015 года
+					.header-btn.d-flex
+						a(href="#!").btn Регистрация
+						a(href="#!").btn-outline Вход
