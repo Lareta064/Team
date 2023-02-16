@@ -143,12 +143,16 @@ input[type="submit"] {
 }
 section{
 	padding-top: 120px;
+	@media (max-width: 1439px) {
+		padding-top: 90px;
+	}
 	@media (max-width: 767px) {
 		padding-top: 60px;
 	}
 }
 .section-header{
-	max-width:72% ;
+	width: 80%;
+	max-width:1035px ;
 	.h2{
 		margin-bottom: 40px;
 	}	

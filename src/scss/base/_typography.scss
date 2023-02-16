@@ -31,6 +31,12 @@
 	font-weight: 500;
 	font-size: 70px;
 	line-height: 1.2;
+	@media (max-width: 1439px) {
+   		font-size: 60px;
+   }
+   	@media (max-width: 1199px) {
+   		font-size: 42px;
+   }
 	@media (max-width: 767px) {
 	 font-size: 26px;
 	}
@@ -40,6 +46,15 @@
 	line-height: 1.4;
 	font-weight: 700;
 	letter-spacing: 0;
+	@media(max-width:1919px){
+		font-size: 60px;
+	}
+	@media(max-width:1535px){
+		font-size: 54px;
+	}
+	@media (max-width: 1439px) {
+   		font-size: 50px;
+   }
 }
 .h4{
 	font-size: 54px;
@@ -96,10 +111,19 @@
 .medi-18{
 	font-size: 18px;
 	letter-spacing: 0.03em;
+	@media(max-width:1439px){
+		font-size: 16px;
+	}
+	@media(max-width:1199px){
+		font-size: 14px;
+	}
 }
 .text-24{
    font-size: 24px;
    line-height: 1.4;
+    @media (max-width: 1439px) {
+   		font-size: 20px;
+   }
    @media (max-width: 991px) {
    		font-size: 16px;
    }
