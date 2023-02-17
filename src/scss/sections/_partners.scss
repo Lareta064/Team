@@ -1,11 +1,14 @@
 .partners{
 	background-color: #fff;
 	padding-top: 180px;
+	padding-bottom: 180px;
 	@media (max-width:1199px) {
 		padding-top: 135px;
+		padding-bottom: 135px;
 	}
 	@media (max-width: 991px) {
 		padding-top: 90px;
+		padding-bottom: 90px;
 	}
 	@media (max-width: 767px) {
 		.container{
@@ -74,5 +77,76 @@
 		padding-top: 20px;
 		padding-bottom: 20px;
 		max-width: 320px;
+	}
+}
+.partners-swiper-block	{
+	margin-top: 180px;
+	position: relative;
+	width: 1290px;
+	margin-left: auto;
+	margin-right: auto;
+	.partners-swiper-next,
+    .partners-swiper-prev{
+		position: absolute;
+		top: 50%;
+		transform:translate(-120%, -50%);
+		left: 0;
+		@media (max-width: 1364px) {
+			transform:translate(-100%, -50%);
+		}
+
+	}
+	.partners-swiper-prev{
+		left: auto;
+		right: 0;
+		transform:translate(120%, -50%);
+		@media (max-width: 1364px) {
+			transform:translate(-100%, -50%);
+		}
+	}
+	@media (max-width: 1919px) {
+		width:calc(100% - 280px);
+	}
+	@media (max-width: 1364px) {
+		width:calc(100% - 180px);
+	}
+	@media (max-width: 1199px) {
+		margin-top: 135px;
+	}
+	@media (max-width: 991px) {
+		margin-top: 90px;
+		
+	}
+	@media (max-width:767px) {
+		width: 460px;
+		margin-top: 60px;
+	}
+	@media (max-width:574px) {
+		width: 220px;
+		margin-top: 30px;
+	}
+}
+
+.partners-swiper .swiper-slide{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img{
+		width: 254px;
+	}
+	@media (max-width: 1919px) {
+		img{
+			width: 220px;
+		}
+	}
+	@media (max-width: 1199px) {
+		img{
+			width: 200px;
+		}
+	}
+	@media (max-width: 574px) {
+	 img{
+		width: 211px;
+	 }
 	}
 }
