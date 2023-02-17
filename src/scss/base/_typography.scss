@@ -102,6 +102,7 @@
 	display: inline;
 	position: relative;
 	transition:.3s;
+	cursor:pointer;
 	&:after{
 		content: '';
 		position: absolute;
