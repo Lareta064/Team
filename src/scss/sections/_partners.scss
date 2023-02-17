@@ -80,7 +80,7 @@
 	}
 }
 .partners-swiper-block	{
-	margin-top: 180px;
+	margin-top: 120px;
 	position: relative;
 	width: 1290px;
 	margin-left: auto;
@@ -89,19 +89,19 @@
     .partners-swiper-prev{
 		position: absolute;
 		top: 50%;
-		transform:translate(-120%, -50%);
+		transform:translate(-124%, -50%);
 		left: 0;
 		@media (max-width: 1364px) {
-			transform:translate(-100%, -50%);
+			transform:translate(-110%, -50%);
 		}
 
 	}
 	.partners-swiper-prev{
 		left: auto;
 		right: 0;
-		transform:translate(120%, -50%);
+		transform:translate(124%, -50%);
 		@media (max-width: 1364px) {
-			transform:translate(-100%, -50%);
+			transform:translate(110%, -50%);
 		}
 	}
 	@media (max-width: 1919px) {
@@ -110,9 +110,7 @@
 	@media (max-width: 1364px) {
 		width:calc(100% - 180px);
 	}
-	@media (max-width: 1199px) {
-		margin-top: 135px;
-	}
+	
 	@media (max-width: 991px) {
 		margin-top: 90px;
 		

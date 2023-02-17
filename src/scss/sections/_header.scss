@@ -76,7 +76,8 @@
 		height: 710px;
 		border-radius: 50%;
 		overflow: hidden;
-		
+		-webkit-transform: translateZ(0);
+       -webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 		
 		video{
 			width: 211%;
