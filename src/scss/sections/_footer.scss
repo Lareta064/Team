@@ -1,0 +1,29 @@
+footer.footer{
+	
+	background: linear-gradient(277.51deg, #000E1B 31.12%, #032D53 88.35%);
+}
+.footer-top{
+	padding-top: 80px;
+	padding-bottom: 86px;
+	position: relative;
+	justify-content: space-between;
+	.footer-logo{
+		position: absolute;
+		top: 50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+	}
+	border-bottom: 1px solid #757575;
+}
+.footer-contacts{
+	display: inline-flex;
+	flex-direction: column;
+	&>*+*{margin-top: 20px;}
+}
+.footer-copyright{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.footer-copyright{
+	justify-content: space-between;
+}

@@ -173,7 +173,10 @@
 	font-size: 18px;
 	line-height: 1.4;
 }
-.text-16,.medi-16{
+.text-medium{
+font-weight: 600;
+}
+.text-16,.medi-16,.text-14{
 	font-size: 16px;
 	line-height: 1.4;
 	@media (max-width: 767px) {
@@ -185,8 +188,14 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
+.text-14{
+	font-size: 14px;
+}
 .text-accent{
 	color: $ac1;
+}
+.text-gray{
+	color: $sec1;
 }
 .text-pr{
 	color: $pr;
