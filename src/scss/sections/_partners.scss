@@ -1,22 +1,59 @@
 .partners{
 	background-color: #fff;
 	padding-top: 180px;
+	@media (max-width:1199px) {
+		padding-top: 135px;
+	}
+	@media (max-width: 991px) {
+		padding-top: 90px;
+	}
+	@media (max-width: 767px) {
+		.container{
+			width: 100%;
+		}
+	}
 	
 }
 .partner-info{
 	
+	width: 220px;
+	@media(max-width:1199px){
+		width: 180px;
+	}
+	@media(max-width:767px){
+		width: 161px;
+	}
+
 }
 .partner-info .partner-logo{margin-top: 20px;}
+	@media(max-width:767px){
+		.partner-info .partner-logo{margin-top: 10px;}
+	}
 .partners-header{
 	display: grid;
 	grid-template-columns: 74% 1fr;
 	column-gap: 170px;
 	align-items: center;
+	@media(max-width:1919px){
+		column-gap: 100px;
+		grid-template-columns: 1fr 220px; 
+	}
+	@media(max-width:1439px){
+		column-gap: 60px;
+		
+	}
+	
+	@media(max-width:574px){
+	  grid-template-columns: 1fr;
+	  row-gap:30px;
+		
+	}
 }
 .title-bg{
+	font-size: 70px;
 	position: relative;
-	padding-top: 70px;
-	padding-bottom: 70px;
+	padding-top: 1em;
+	padding-bottom: 1em;
 	.h2{position: relative;
 	z-index: 2;}
 	&:after{
@@ -28,7 +65,14 @@
 		right: 0;
 		bottom: 0;
 		width:calc(100% + 50vw) ;
+		@media(max-width:767px){
+			border-radius: 0 20px 20px 0;
+		}
 	}
 	
-	
+	@media(max-width:574px){
+		padding-top: 20px;
+		padding-bottom: 20px;
+		max-width: 320px;
+	}
 }
