@@ -4,8 +4,10 @@
 	max-height: 1050px;
 	overflow: hidden;
 	position: relative;
+	padding-bottom: 40px;
 	@media (max-width: 1199px) {
 		padding-top: 140px;
+		padding-bottom: 0;
 	}
 	@media (max-width: 991px) {
 		padding-top: 102px;

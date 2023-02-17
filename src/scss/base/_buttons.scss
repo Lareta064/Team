@@ -13,10 +13,15 @@
 	background-color: $ac1;
 	transition: .5s;
 	text-align: center;
+	min-width: 272px;
 	@media (max-width: 1199px) {
 		height: 46px;
 		line-height: 46px;
 		font-size: 14px;
+	}
+	@media (max-width: 767px) {
+		
+		width: 320px;
 	}
 }
 .btn:hover{

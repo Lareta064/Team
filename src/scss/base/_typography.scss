@@ -29,19 +29,72 @@
 }
 .h2{
 	font-weight: 500;
+	font-family: 'Unbounded-Medium';
 	font-size: 70px;
 	line-height: 1.2;
+	@media (max-width: 1919px) {
+   		font-size: 64px;
+   }
+	@media (max-width: 1439px) {
+   		font-size: 60px;
+   }
+   	@media (max-width: 1364px) {
+   		font-size: 50px;
+   }
+   	@media (max-width: 1199px) {
+   		font-size: 42px;
+   }
+	@media (max-width: 767px) {
+	 font-size: 26px;
+	}
 }
 .h3{
 	font-size: 64px;
 	line-height: 1.4;
 	font-weight: 700;
 	letter-spacing: 0;
+	@media(max-width:1919px){
+		font-size: 60px;
+	}
+	@media(max-width:1535px){
+		font-size: 54px;
+	}
+	@media (max-width: 1439px) {
+   		font-size: 50px;
+   }
+    @media (max-width: 1199px) {
+     font-size: 46px;
+   }
+   @media (max-width: 767px) {
+     font-size: 44px;
+   }
 }
 .h4{
 	font-size: 54px;
 	line-height: 1.2;
 	font-weight: 500;
+	font-family: 'Unbounded-Medium';
+}
+.h5{
+	font-size: 34px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	font-family: 'Unbounded-Regular';
+	@media(max-width:1535px){
+		font-size: 32px;
+	}
+	@media(max-width:1439px){
+		font-size: 30px;
+	}
+	@media(max-width:1364px){
+		font-size: 28px;
+	}
+	@media(max-width:1199px){
+		font-size: 24px;
+	}
+	@media (max-width: 767px) {
+	font-size: 20px;
+	}
 }
 .link,.link-white{
 	color: $ac1;
@@ -75,7 +128,7 @@
 		background-color:  $ac1;
 	}
 }
-.medi-up{
+.medi-up,.medi-18{
 	font-weight: 500;
 	font-size: 20px;
 	line-height: 1.4;
@@ -90,6 +143,31 @@
 		
 	}
 }
+.medi-18{
+	font-size: 18px;
+	letter-spacing: 0.03em;
+	@media(max-width:1439px){
+		font-size: 16px;
+	}
+	@media(max-width:1199px){
+		font-size: 14px;
+		letter-spacing: 0.03em;
+	}
+	@media(max-width:991px){
+	
+		letter-spacing: 0.03em;
+	}
+}
+.text-24{
+   font-size: 24px;
+   line-height: 1.4;
+    @media (max-width: 1439px) {
+   		font-size: 20px;
+   }
+   @media (max-width: 991px) {
+   		font-size: 16px;
+   }
+}
 .text-18{
 	font-size: 18px;
 	line-height: 1.4;
@@ -101,3 +179,7 @@
 		font-size: 12px;
 	}
 }
+.text-accent{
+	color: $ac1;
+}
+.text-white{color: #fff;}

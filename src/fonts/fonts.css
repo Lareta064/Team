@@ -51,8 +51,8 @@
 
 
 @font-face { 
-    font-family: "Unbounded-Regulare";
-    src:url(Unbounded-Regulare.ttf) format("truetype"); /* все современные браузеры */
+    font-family: "Unbounded-Regular";
+    src:url(Unbounded-Regular.ttf) format("truetype"); /* все современные браузеры */
 }
 @font-face { 
     font-family: "Unbounded-Medium";

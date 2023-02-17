@@ -141,3 +141,26 @@ input[type="submit"] {
 	display: flex;
 	align-items: center;
 }
+section{
+	padding-top: 120px;
+	@media (max-width: 1439px) {
+		padding-top: 90px;
+	}
+	@media (max-width: 767px) {
+		padding-top: 60px;
+	}
+}
+.section-header{
+	width: 80%;
+	max-width:1075px ;
+	.h2{
+		margin-bottom: 40px;
+		@media (max-width: 1199px) {
+		margin-bottom: 35px;
+		}
+	}
+	@media (max-width: 767px) {
+	width: 100%;
+	max-width:320px ;
+	}	
+}
