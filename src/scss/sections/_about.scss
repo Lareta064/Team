@@ -1,6 +1,22 @@
-
+.about:before{
+	@media (max-width: 1199px) {
+	content:'';
+	width: 465px;
+	height: 467px;
+	position: absolute;
+	bottom:0;
+	right: 0;
+	transform: translate(30%, 30%);
+	background: url(../img/el4.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	
+	}	
+}		
 .about{
 	overflow: hidden;
+	position: relative;
+	
 	.container{
 		position: relative;
 	}
@@ -39,11 +55,16 @@
 		}
 		@media(max-width:767px){
 			right: -20px;
-			// width: calc(100% + 40px);
+			
 			height: 855px;
 			border-radius: 0;
 		}
 
+	}
+	@media(max-width:1199px){
+			
+		padding-bottom: 90px;
+		
 	}
 }
 .about-content{
