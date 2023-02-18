@@ -1,4 +1,25 @@
 .news-content{
 	position: relative;
+	&:after{
+		content:'';
+		position: absolute;
+		width: 2084px;
+		height: 1570px;
+		background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='2084' height='1570' viewBox='0 0 2084 1570' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg opacity='0.44' filter='url(%23filter0_f_158_1669)'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M872.745 326.646C958.628 270.037 1026.43 410.247 1124.9 413.823C1222.64 417.372 1325.77 335.416 1420.82 346.549C1528.59 359.173 1620.34 409.111 1677.16 478.51C1740.17 555.468 1799.48 654.152 1755.53 755.35C1711.19 857.455 1546.5 898.845 1457.01 985.499C1369.21 1070.52 1361.64 1252.28 1237.82 1256.64C1079.31 1262.23 1093.34 1041.41 952.342 1003.3C863.139 979.191 750.352 1122.09 659.707 1100.39C578.063 1080.85 618.587 967.263 572.113 912.298C504.769 832.651 247.67 805.087 328.785 709.012C432.415 586.27 687.704 708.119 827.413 609.914C925.677 540.84 771.96 393.079 872.745 326.646Z' fill='%231578E0'/%3e%3c/g%3e%3cdefs%3e%3cfilter id='filter0_f_158_1669' x='0.125488' y='0.199219' width='2083.58' height='1569.55' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-opacity='0' result='BackgroundImageFix'/%3e%3cfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3e%3cfeGaussianBlur stdDeviation='156.5' result='effect1_foregroundBlur_158_1669'/%3e%3c/filter%3e%3c/defs%3e%3c/svg%3e");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position:center;
+		bottom: 0;
+		right: 0;
+		transform: rotate(-21.43deg) translate(20%, 80%);
+		@media (max-width: 1535px) {
+			width: 1400px;
+			height: 1000px;
+		}
+		@media (max-width: 767px) {
+			width: 700px;
+			height: 500px;
+		}	
+	}
 	
 }
