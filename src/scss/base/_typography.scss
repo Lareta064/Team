@@ -27,7 +27,7 @@
 		line-height: 1.4;
 	}
 }
-.h2{
+.h2, .title-bg{
 	font-weight: 500;
 	font-family: 'Unbounded-Medium';
 	font-size: 70px;
@@ -36,7 +36,7 @@
    		font-size: 64px;
    }
 	@media (max-width: 1439px) {
-   		font-size: 60px;
+   		font-size: 56px;
    }
    	@media (max-width: 1364px) {
    		font-size: 50px;
@@ -96,12 +96,24 @@
 	font-size: 20px;
 	}
 }
+.link-text{
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 600;
+	transition:.3s;
+	cursor:pointer;
+	color:  #fff;
+	&:hover{
+		color:$sec1;
+	}
+}
 .link,.link-white{
 	color: $ac1;
 	line-height: 1.4;
 	display: inline;
 	position: relative;
 	transition:.3s;
+	cursor:pointer;
 	&:after{
 		content: '';
 		position: absolute;
@@ -158,6 +170,7 @@
 		letter-spacing: 0.03em;
 	}
 }
+
 .text-24{
    font-size: 24px;
    line-height: 1.4;
@@ -172,14 +185,31 @@
 	font-size: 18px;
 	line-height: 1.4;
 }
-.text-16{
+.text-medium{
+font-weight: 600;
+}
+.text-16,.medi-16,.text-14{
 	font-size: 16px;
 	line-height: 1.4;
 	@media (max-width: 767px) {
 		font-size: 12px;
 	}
 }
+.medi-16{
+	font-weight: 500;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+}
+.text-14{
+	font-size: 14px;
+}
 .text-accent{
 	color: $ac1;
+}
+.text-gray{
+	color: $sec1;
+}
+.text-pr{
+	color: $pr;
 }
 .text-white{color: #fff;}
