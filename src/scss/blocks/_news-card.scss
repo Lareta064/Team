@@ -14,7 +14,11 @@
 	font-size: 18px;
 	height: 62px;
 	
-	.title-44{color: #fff; margin-right: 15px; }
+	.title-44{color: #fff; margin-right: 15px;
+		@media (max-width: 767px) {
+			margin-right: 10px;
+		}
+	 }
 	.medi-18{margin-left: 10px; }
 	
 }
@@ -33,13 +37,9 @@
 		border-radius: 20px;
 	}
 	.news-text{
-		.title-4{
-			margin-bottom: 12px;
-			
-			
-		}	
+		
 		p{margin-top: 12px;}
-		.text-16{
+		.text-16 p{
 			  display: -webkit-box;
 				-webkit-box-orient: vertical;
 				-webkit-line-clamp: 4;
@@ -55,7 +55,7 @@
 .news-card{
 	@media(max-width:1199px){
 		grid-template-columns: 1fr;
-		row-gap:20px;
+		row-gap:12px;
 		.date-item{height: auto; .title-44{line-height: 1;}}
 	}
 	@media(max-width:767px){
@@ -72,7 +72,9 @@
 			}
 			.news-text p{
 				margin-top: 6px;
+				
 			}
+			.text-16{font-size: 14px;}
 		}
 	}
 }

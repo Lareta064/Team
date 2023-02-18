@@ -37,9 +37,9 @@ body{
 		position: absolute;
 		top: 0;
 		right: 0;
-		object{width:1272; height:1022;}
+		object{width:1272px; height:1022px;}
 		@media (max-width: 767px) {
-			object{width:360px; height:393px;}
+			transform: translate(14%, -4%);
 		}
 	}
 	.element-2{
@@ -50,7 +50,7 @@ body{
 		object{width:1025px; height:1665px;}
 		@media (max-width: 767px) {
 			top:50vh;
-			object{width:360px; height:698px;}
+			transform: translate(-30%, -40%);
 		}
 		
 	}
