@@ -2,6 +2,13 @@ mixin header-menu(arg)
 	nav
 		each item in arg
 			if item.addClass
-				a(href=""+ item.link).active-item.t-upper #{item.title}
+				a(href=""+ item.link).active #{item.title}
 			else
-				a(href=""+ item.link).t-upper #{item.title}
+				a(href=""+ item.link) #{item.title}
+
+mixin header-title(title, subtitle)
+	.header-inner__title
+		.container
+			h1.h1 #{title}
+			if subtitle
+				.text-24 В данном разделе представлены книги, которые советуют наши эксперты.
