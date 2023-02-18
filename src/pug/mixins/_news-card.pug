@@ -1,0 +1,14 @@
+mixin newsCard(param1, imgSrc, title, text)
+	//============= одна карточка ================
+	a(href="news-single.html").news-card
+		.date-item.d-flex
+			.title-44 #{param1}
+			span /
+			.medi-18 12.2022
+		.news-card__info.d-flex
+			.news-img
+				img(src="./img/news"+  imgSrc +".png", width="260" alt="alt")
+			.news-text
+				.title-4 #{title}
+				.text-16
+					p !{text}
