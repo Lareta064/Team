@@ -119,34 +119,25 @@
 	color: $ac1;
 	line-height: 1.4;
 	display: inline;
-	position: relative;
+	
 	transition:.3s;
 	cursor:pointer;
-	&:after{
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		height: 1px;
-		background-color: $ac1;
-		width: 100%;
-	}	
+	background-repeat: no-repeat;
+	background-position: center bottom 1px;
+	background-size: 100% 1px;
+	background-image: linear-gradient(to right, #1578E0, #1578E0);
 }
 .link:hover{
 	color: $sec1;
-	&:after{
-		background-color:  $sec1;
-	}
+	background-image: linear-gradient(to right, #ADADAD, #ADADAD);
 }
 .link-white{
 	color: $sec1;
-	&:after{background-color: $sec1;}
+	background-image: linear-gradient(to right, #ADADAD, #ADADAD);
 }
 .link-white:hover{
 	color: $ac1;
-	&:after{
-		background-color:  $ac1;
-	}
+	background-image: linear-gradient(to right, #1578E0, #1578E0);
 }
 .medi-up,.medi-18{
 	font-weight: 500;
