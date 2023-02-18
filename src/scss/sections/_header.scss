@@ -16,34 +16,8 @@
 		height: 100vh;
 	}
 }
-.header:before{
-	content: '';
-	position: absolute;
-	top: 0;
-	right: 0;
-	background: url(../img/el1.svg);
-	width: 970px;
-	height: 1300px;
-	background-size: contain;
-	background-repeat: no-repeat;
-}
-.header:after{
-	content: '';
-	position: absolute;
-	bottom: -75%;
-	left: 0;
-	background: url(../img/el2.svg);
-	width: 1065px;
-	height: 1413px;
-	background-size: contain;
-	background-repeat: no-repeat;
-	@media (max-width: 991px) {
-		width: 406px;
-		height: 641px;
-		bottom: -35%;
-	}
-	
-}
+
+
 .header-banner{
 	padding-top: 100px;
 	@media(max-width:1539px){

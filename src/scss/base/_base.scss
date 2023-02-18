@@ -20,12 +20,37 @@ body {
 	
 }
 body{
-	display: flex;
-	flex-direction: column;
-	&>*{width: 100%;flex-shrink:0}
-	min-height: 100vh;
+	
 	
 	footer{margin-top: auto;}
+}
+.body-content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	&>header, main,footer{width: 100%;flex-shrink:0}
+	min-height: 100vh;
+	overflow: hidden;
+	.element-1{
+		position: absolute;
+		top: 0;
+		right: 0;
+		object{width:1272; height:1022;}
+		@media (max-width: 767px) {
+			object{width:360px; height:393px;}
+		}
+	}
+	.element-2{
+		position: absolute;
+		left: 0;
+		top: 0;
+		object{width:1025px; height:1665px;}
+		@media (max-width: 767px) {
+			top:50vh;
+			object{width:360px; height:698px;}
+		}
+		
+	}
 }
 .lock {
 	overflow: hidden;
