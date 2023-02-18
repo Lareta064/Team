@@ -2,6 +2,6 @@ mixin header-menu(arg)
 	nav
 		each item in arg
 			if item.addClass
-				a(href="").active-item #{item.title}
+				a(href=""+ item.link).active-item.t-upper #{item.title}
 			else
-				a(href="").t-upper #{item.title}
+				a(href=""+ item.link).t-upper #{item.title}

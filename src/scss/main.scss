@@ -11,13 +11,19 @@
 //blocks
 @import "blocks/_header-menu.scss";
 @import "blocks/_social.scss";
+@import "blocks/_news-link.scss";
 
 //sections
 @import "sections/_header.scss";
+@import "sections/_header-inner.scss";
 @import "sections/_header-top.scss";
 @import "sections/_about.scss";
 @import "sections/_benefits.scss";
 @import "sections/_partners.scss";
 @import "sections/_footer.scss";
-  //ui
+
+
+@import "pages/_news.scss";
+
+
 @import "ui/_ui-navigation";
