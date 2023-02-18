@@ -19,7 +19,14 @@ body {
 	position: relative;
 	
 }
-
+body{
+	display: flex;
+	flex-direction: column;
+	&>*{width: 100%;flex-shrink:0}
+	min-height: 100vh;
+	
+	footer{margin-top: auto;}
+}
 .lock {
 	overflow: hidden;
 	touch-action: none;
