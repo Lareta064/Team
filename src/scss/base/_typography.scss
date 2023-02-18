@@ -96,6 +96,17 @@
 	font-size: 20px;
 	}
 }
+.link-text{
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 600;
+	transition:.3s;
+	cursor:pointer;
+	color:  #fff;
+	&:hover{
+		color:$sec1;
+	}
+}
 .link,.link-white{
 	color: $ac1;
 	line-height: 1.4;
