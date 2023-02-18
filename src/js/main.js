@@ -24,10 +24,10 @@ document.addEventListener("DOMContentLoaded", function (){
 
         /*======== закрывать моб меню при ресайзе экрана ====== */
         window.addEventListener('resize', function () {
-          if(this.innerWidth >1023){
+          if(this.innerWidth >992){
             if(mobileMenu.classList.contains('active')){
               menuToggle.classList.remove('active');
-            //    mobileMenu.classList.remove('active');
+             mobileMenu.classList.remove('active');
           
               bodyEl.classList.remove('lock');
             }
