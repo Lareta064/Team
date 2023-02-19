@@ -92,6 +92,32 @@ document.addEventListener("DOMContentLoaded", function (){
 			}
 		});
 	}
-
+	/*=========== VIDEO========*/
+	const videoContent = document.querySelector('#video-frame');
+	if (videoContent) {
+		const videoBtn = videoContent.querySelector('.button-play');
+		
+		const videoClip = videoContent.querySelector('video');
+		videoContent.addEventListener('click', function () {
+			if (videoClip.paused) {
+				videoClip.play();
+				videoBtn.style.opacity = "0";
+				
+				this.classList.add("active");
+			} else {
+				videoClip.pause();
+				videoBtn.style.opacity = "1";
+				
+				this.classList.remove("active");
+			}
+			//videoClip.play();
+		});
+		videoClip.addEventListener("ended", function () {
+			videoClip.pause();
+			videoBtn.style.opacity = "1";
+			videoText.style.opacity = "1";
+			this.classList.remove("active");
+		});
+	}
 
 });
