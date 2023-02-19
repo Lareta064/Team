@@ -4,9 +4,7 @@
 	letter-spacing: 0.03em;
 	
 	text-transform: uppercase;
-	@media (max-width: 1199px) {
-		letter-spacing: 0;
-	}
+	
 }
 .h1{
 	font-size: 120px;
@@ -20,12 +18,13 @@
 		font-size: 90px;
 	}
 	@media(max-width:1199px){
-		font-size: 80px;
+		font-size: 80px;	letter-spacing: 0;
 	}
 	@media (max-width: 991px) {
 		font-size: 44px;
 		line-height: 1.4;
 	}
+	
 }
 .h2, .title-bg{
 	font-weight: 500;
@@ -178,14 +177,14 @@
    		font-size: 16px;
    }
 }
-.title-4,.text-18,.bold-18{
+.title-4,.text-18,.bold-18,.demi-18{
 	font-size: 18px;
 	
 }
 .bold-18{
 	font-weight: 700;
 }
-.title-4,.text-medium{
+.title-4,.text-medium,.demi-18{
 font-weight: 600;
 }
 .title-4{

@@ -1,0 +1,120 @@
+.our-docs{
+	padding-top: 180px;
+	padding-bottom: 180px;
+	position: relative;
+	
+	background-repeat: no-repeat;
+	background-size: cover;
+	// &:after{
+	// 	content:'';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	background: linear-gradient(180deg, #191D23 9.38%, rgba(25, 29, 35, 0.85) 34.9%, rgba(25, 29, 35, 0) 100%);
+		
+	// }
+}
+.register-docs{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 80px), 1fr));
+	column-gap:40px;
+	row-gap:40px;
+	color: $pr;
+	
+	@media (max-width: 991px) {
+		grid-template-columns: repeat(auto-fill, calc(50% - 20px));
+		column-gap:20px;
+	}
+	@media (max-width: 767px) {
+		grid-template-columns: 1fr;
+		row-gap:28px;
+	}
+
+}	
+.upper-18{
+	font-size: 18px;
+	font-weight: 500;
+	color: $sec;
+	padding-top: 10px;
+	text-transform: uppercase;
+	position: relative;
+	
+}
+.register-doc{
+	position: relative;	
+	
+	
+	min-height: 146px;
+	
+	
+	
+	transition: .3s;
+	.d-flex{
+		position: relative;
+		z-index: 1;
+		padding: 30px 40px;
+		background: #FFFFFF;
+		justify-content: space-between;
+		height: 100%;
+		border-radius: 20px;
+	column-gap:10px;border: 5px solid $ac1;
+
+	}
+	&:hover{
+		.demi-18{color: $ac1;}
+		.svg-dwload{
+			fill: $ac1;
+		}
+	}
+	
+}
+.register-doc:before{
+	content:'';
+	position: absolute;
+	left: 44px;
+	right: 44px;
+	height: 60px;
+	bottom:0;
+	border-radius: 20px;
+	background-color: $ac1;
+	transform: translateY(-10px);
+	transition:.3s;
+	z-index: 0;
+	@media (max-width: 1199px) {
+		transform: translateY(0);
+		bottom:-8px;
+	}
+}
+.register-doc:hover:before{
+	transform: translateY(20px);
+	@media (max-width: 1199px) {
+		transform: translateY(0);
+	}
+}
+.annual-report{
+	
+	.annual-report-icon{
+		position: relative;
+		z-index: 2;
+		background: rgba(21, 120, 224, 0.35);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		backdrop-filter: blur(2.5px);
+		border-radius: 16px;
+		height: 104px;
+		justify-content: center;
+		column-gap:16px;
+		margin-top: -23px;
+		.upper-18{color: #fff;}
+	}
+	.h5{
+		text-align: center;
+	}
+}
+.annual-reports{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, calc((100% - 80px)/3));
+	column-gap:40px;
+	row-gap:60px;
+}
