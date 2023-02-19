@@ -2,7 +2,7 @@
 	font-family: $u;
 	font-family: "Unbounded-Bold";
 	letter-spacing: 0.03em;
-	line-height: 1.4;
+	
 	text-transform: uppercase;
 	@media (max-width: 1199px) {
 		letter-spacing: 0;
@@ -50,7 +50,7 @@
 }
 .h3{
 	font-size: 64px;
-	line-height: 1.4;
+	
 	font-weight: 700;
 	letter-spacing: 0;
 	@media(max-width:1919px){
@@ -104,9 +104,10 @@
 	}
 
 }
+
 .link-text{
 	font-size: 18px;
-	line-height: 1.4;
+	
 	font-weight: 600;
 	transition:.3s;
 	cursor:pointer;
@@ -117,7 +118,7 @@
 }
 .link,.link-white{
 	color: $ac1;
-	line-height: 1.4;
+	
 	display: inline;
 	
 	transition:.3s;
@@ -142,7 +143,7 @@
 .medi-up,.medi-18{
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 1.4;
+	
 	letter-spacing: 0.84em;
 	text-transform: uppercase;
 	@media (max-width: 991px) {
@@ -169,7 +170,7 @@
 
 .text-24{
    font-size: 24px;
-   line-height: 1.4;
+   
     @media (max-width: 1439px) {
    		font-size: 20px;
    }
@@ -177,9 +178,12 @@
    		font-size: 16px;
    }
 }
-.title-4,.text-18{
+.title-4,.text-18,.bold-18{
 	font-size: 18px;
-	line-height: 1.4;
+	
+}
+.bold-18{
+	font-weight: 700;
 }
 .title-4,.text-medium{
 font-weight: 600;
@@ -191,7 +195,7 @@ font-weight: 600;
 }
 .text-16,.medi-16,.text-14{
 	font-size: 16px;
-	line-height: 1.4;
+	
 	@media (max-width: 767px) {
 		font-size: 12px;
 	}

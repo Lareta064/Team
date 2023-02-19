@@ -1,7 +1,7 @@
 .custom-text{
 	p{
 		font-size: 18px;
-		line-height: 1.4;
+		
 	}
 	&>*+*{margin-top: 40px;}
 	img{
@@ -11,9 +11,17 @@
 		object-fit: cover;
 	}
 }
-
+.border-left{
+	padding-left: 20px;
+	border-left:3px solid $ac1;
+}
 .single-news__body{
 	padding-top: 60px;
+	.bg-gradient{
+		padding: 30px;
+		border-radius: 20px;
+		.bold-18{padding-left: 10px;}
+	}
 }
 .single-news__title{
 	position: relative;
