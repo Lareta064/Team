@@ -1,0 +1,18 @@
+.about-us-content{
+	position: relative;
+	display: flex;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	column-gap: 9%;
+	.about-us-text{
+		max-width: 905px;
+		p+p{margin-top: 10px;}
+		.text-24:not(:last-child){
+			padding-bottom: 30px;
+		}
+		.text-24 + .text-24{padding-top: 30px; border-top:1px solid $ac1;}
+	}
+	.about-statistic .number-item + .number-item {
+   		margin-top: 60px;
+	}
+}

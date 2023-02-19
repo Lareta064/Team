@@ -7,8 +7,8 @@ header.header-inner
 					img(src="./img/logo.png", width="94" height="99" alt="logo")
 				.main-menu#header-menu
 					+header-menu([
-						{title: 'Новости', link:"news.html", addClass:'active'},
-						{title: 'Визитная карточка',link:"about-us.html"},
+						{title: 'Новости', link:"news.html"},
+						{title: 'Визитная карточка',link:"about-us.html", addClass:'active'},
 						{title: 'Проекты',link:"our-projects.html"},
 						{title: 'Навигатор',link:"our-nav.html"},
 						{title: 'Библиотека',link:"our-libs.html"},
@@ -19,4 +19,4 @@ header.header-inner
 						.ic-login
 					.menu-toggle#menu-toggle
 						span
-	+header-title('Новости')
+	+header-title('Об организации')
