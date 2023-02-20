@@ -1,0 +1,24 @@
+.form-item{
+	position: relative;
+	input{
+		width: 100%;
+		background-color: transparent;
+		height: 44px;
+		border-bottom: 1px solid $sec;
+		font-size: 16px;
+		color: rgba(117, 117, 117, .8);
+		&::placeholder{
+			font-size: 16px;
+			color: inherit; font-family: inherit;
+		}
+	}
+}
+.form-item.form-item__icon-right{
+	.form-item__icon{
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		
+	}
+}
