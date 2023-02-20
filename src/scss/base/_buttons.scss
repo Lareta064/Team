@@ -45,12 +45,12 @@
 .btn--mini{
 	padding-left: 18px;
 	padding-right: 18px;
-	height: 36px;
+	height: 36px!important;
 	white-space: nowrap;
 	min-width: unset;
 	font-size: 14px;
 	font-weight: 600;
-	line-height: 36px;
+	line-height: 36px!important;;
 	display: inline-flex;
 	align-items: center;
 	column-gap:8px;

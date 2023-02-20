@@ -3,22 +3,13 @@ mixin projCard(logo, text, img, addClass)
 		a(href="doc.pdf" target="_blank" class="project-card project-card--disabled" disabled)
 			.project-card__img
 				.project-card__logo
-					if img
-						img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
-				.project-card__picture
-					.picture-wrapper
-						img(src="./img/projects/project"+ img +".jpg", width="480" height="500" alt="alt")
-				.btn.btn--mini
-					svg.svg-folder
-						use(href="./img/svg-sprite.svg#folder-svg")
-					span Pdf, 46.06 кб
+			
 			p !{text}
 	else
 		a(href="doc.pdf" target="_blank" class="project-card" )
 			.project-card__img
 				.project-card__logo
-					if img
-						img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
+					img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
 				.project-card__picture
 					.picture-wrapper
 						img(src="./img/projects/project"+ img +".jpg", width="480" height="500" alt="alt")
@@ -26,7 +17,15 @@ mixin projCard(logo, text, img, addClass)
 					svg.svg-folder
 						use(href="./img/svg-sprite.svg#folder-svg")
 					span Pdf, 46.06 кб
+			
+			.project-card__title
+				img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
+				.btn.btn--mini
+					svg.svg-folder
+						use(href="./img/svg-sprite.svg#folder-svg")
+					span Pdf, 46.06 кб
 			p !{text}
+
 
 .our-projects
 	.container
@@ -40,4 +39,13 @@ mixin projCard(logo, text, img, addClass)
 			+projCard(7,'Конкурс «Атмосфера» 2022–2023 Всероссийский конкурс на лучшую работу по вопросам избирательного права и избирательного процесса', 3 )
 			+projCard(8,'Выборы «Звезды Артека» - деловая игра среди обучающихся в ФГБОУ «МДЦ „Артек“', 3 )
 			+projCard(9,'Новый проект уже в разработке', '', 'true' )
+		
+		//======== PAGINATION===========
+		.pagination-block
+			button.pag-btn.pag-prev
+			button.pag-btn.pag-current 1
+			button.pag-btn 2
+			button.pag-btn 3
+			button.pag-btn ...
+			button.pag-btn.pag-next
 			

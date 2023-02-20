@@ -8,6 +8,8 @@
 	&__title{
 		padding-top: 60px;
 		padding-bottom: 60px;
+		position: relative;
+			
 		.container >*{max-width:1000px}
 		@media (max-width: 1199px) {
 			padding-top: 40px;
