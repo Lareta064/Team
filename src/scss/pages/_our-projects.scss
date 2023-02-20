@@ -2,27 +2,75 @@
 	overflow: hidden;
 	max-width: 480px;
 	display: inline-block;
+	&__logo{
+     transition: .7s;
+	}
 	&__logo img{
 		width: 270px;
 		height: 193px;
 		object-fit: scale-down;
+		
 	}
-	&__picture img{
+	&__picture{
+		
+		img{
 		width: 100%;
-		height: 100%;
-		object-fit: scale-down;
-	}
+		height: 500px;
+		object-fit: cover;
+	   }
+	} 
+	
 	p{
 		padding-top: 30px;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 1.4;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
 	}
+}
+.picture-wrapper{
+	position: relative;
+	&:after{
+		content:'';
+		width: 0;
+		height: 0;
+		border: 40px solid #191D23;;
+		border-bottom: 0;
+		border-left: 50px solid transparent;
+		border-right: 50px solid transparent;
+		top: 0;
+		right: 107px;
+		position: absolute;
+		z-index: 2;
+		transform:translate(0, -100%);
+		transition: .7s;
+	}
+	&:before{
+		content:'';
+		width: 0;
+		height: 0;
+	    border: 40px solid #191D23;;
+		border-left: 0;
+		border-top: 182px solid transparent;
+		border-bottom: 50px solid transparent;
+		top: 107px;
+		right: 0;
+		position: absolute;
+		z-index: 2;
+		transform:translate(100%, 0);
+		transition: .7s;
+	}
+	
+	
 }
 .project-card__img{
 	position: relative;
 	border-radius: 20px;
 	overflow: hidden;
+	height: 500px;
 	
 }
 .project-card__logo{
@@ -30,7 +78,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	z-index: 2;
+	z-index: 3;
 }
 .project-card__img:before{
 	content:'';
@@ -39,6 +87,51 @@
 	border-radius: 20px;
 	top: 0;
 	bottom: 0;
-	left: 0;
-	right: 0;
+	width: 100%;
+	left:0;
+	transition: 1s;
+	z-index: 3;
+	
+	
+	// transform: rotate(0deg) scale(1);
+
+}
+.project-card:hover .project-card__img:before{
+		opacity: 0;
+		
+	
+		
+}
+.project-card:hover {
+	.project-card__logo{
+		transform: scale(0);
+		opacity: 0;
+	}
+	p{
+		color: $ac1;
+	}
+	.picture-wrapper{
+	// 	-webkit-clip-path: polygon(0% 99%, 0% 2%, 55% 1%, 66% 9%, 76% 1%, 100% 1%, 100% 22%, 90% 64%, 99% 76%, 100% 100%);
+    //    clip-path: polygon(0% 99%, 0% 2%, 55% 1%, 66% 9%, 76% 1%, 100% 1%, 100% 22%, 90% 64%, 99% 76%, 100% 100%);
+	&:after, &:before{
+		transform: translate(0, 0);
+	}
+	}
+}
+
+.project-card .btn--mini{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1;
+	svg{
+		width: 14px;
+		height: 14px;
+	}
+}
+.our-projects-cards{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 480px);
+	column-gap:40px;
+	row-gap: 60px;
 }
