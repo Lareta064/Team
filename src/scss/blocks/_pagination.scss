@@ -1,6 +1,8 @@
 .pagination-block{
 	display: flex;		
 	margin-top: 60px;
+	position: relative;
+	z-index: 2;
 	@media (max-width: 767px) {
 		margin-top: 40px;
 	}
