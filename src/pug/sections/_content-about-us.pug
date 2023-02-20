@@ -63,7 +63,7 @@
 			.our-docs__title
 				.h2 Годовые отчеты
 			// ============ карточки отчетов для дестоп версии ==============
-			.inner-content
+			.inner-content.visible-desktop
 				.annual-reports
 					a(href="./img/doc.pdf" target="_blank").annual-report
 						.h5 2022
@@ -102,43 +102,57 @@
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 
-			// ============ карточки отчетов для моб версии ==============
-			.inner-content
-				.annual-reports
-					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
-						.annual-report-icon.d-flex
-							svg.svg-folder
-								use(href="./img/svg-sprite.svg#folder-svg")
-							.upper-18 Pdf
-					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
-						.annual-report-icon.d-flex
-							svg.svg-folder
-								use(href="./img/svg-sprite.svg#folder-svg")
-							.upper-18 Pdf
-					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
-						.annual-report-icon.d-flex
-							svg.svg-folder
-								use(href="./img/svg-sprite.svg#folder-svg")
-							.upper-18 Pdf
-					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
-						.annual-report-icon.d-flex
-							svg.svg-folder
-								use(href="./img/svg-sprite.svg#folder-svg")
-							.upper-18 Pdf
-					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
-						.annual-report-icon.d-flex
-							svg.svg-folder
-								use(href="./img/svg-sprite.svg#folder-svg")
-							.upper-18 Pdf
-					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
-						.annual-report-icon.d-flex
-							svg.svg-folder
-								use(href="./img/svg-sprite.svg#folder-svg")
-							.upper-18 Pdf
-					
+
+			//====================== swiper slider =======================
+			.slider-swiper-block.hide-desktop
+				.annual-reports-swiper.swiper
+					.swiper-wrapper
+						.swiper-slide
+							a(href="./img/doc.pdf" target="_blank").annual-report
+								.h5 2022
+								.annual-report-icon.d-flex
+									svg.svg-folder
+										use(href="./img/svg-sprite.svg#folder-svg")
+									.upper-18 Pdf
+						.swiper-slide
+							a(href="./img/doc.pdf" target="_blank").annual-report
+								.h5 2021
+								.annual-report-icon.d-flex
+									svg.svg-folder
+										use(href="./img/svg-sprite.svg#folder-svg")
+									.upper-18 Pdf
+						.swiper-slide
+							a(href="./img/doc.pdf" target="_blank").annual-report
+								.h5 2020
+								.annual-report-icon.d-flex
+									svg.svg-folder
+										use(href="./img/svg-sprite.svg#folder-svg")
+									.upper-18 Pdf
+						.swiper-slide
+							a(href="./img/doc.pdf" target="_blank").annual-report
+								.h5 2019
+								.annual-report-icon.d-flex
+									svg.svg-folder
+										use(href="./img/svg-sprite.svg#folder-svg")
+									.upper-18 Pdf
+						.swiper-slide
+							a(href="./img/doc.pdf" target="_blank").annual-report
+								.h5 2018
+								.annual-report-icon.d-flex
+									svg.svg-folder
+										use(href="./img/svg-sprite.svg#folder-svg")
+									.upper-18 Pdf
+						.swiper-slide
+							a(href="./img/doc.pdf" target="_blank").annual-report
+								.h5 2017
+								.annual-report-icon.d-flex
+									svg.svg-folder
+										use(href="./img/svg-sprite.svg#folder-svg")
+									.upper-18 Pdf
+				
+				//========================== slider arrows =================
+				button.slider-swiper-next
+					.ic-arLeft
+				button.slider-swiper-prev
+					.ic-arRight
+							

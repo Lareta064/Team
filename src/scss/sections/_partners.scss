@@ -79,14 +79,14 @@
 		max-width: 320px;
 	}
 }
-.partners-swiper-block	{
+.slider-swiper-block	{
 	margin-top: 120px;
 	position: relative;
 	width: 1290px;
 	margin-left: auto;
 	margin-right: auto;
-	.partners-swiper-next,
-    .partners-swiper-prev{
+	.slider-swiper-next,
+    .slider-swiper-prev{
 		position: absolute;
 		top: 50%;
 		transform:translate(-124%, -50%);
@@ -96,7 +96,7 @@
 		}
 
 	}
-	.partners-swiper-prev{
+	.slider-swiper-prev{
 		left: auto;
 		right: 0;
 		transform:translate(124%, -50%);

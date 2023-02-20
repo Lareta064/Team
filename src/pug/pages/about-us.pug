@@ -1,9 +1,12 @@
 extends ../layouts/layout.pug
 
 block content
-	include ../sections/_header-about-us
-	include ../sections/_content-about-us
 	
+	include ../sections/_header-about-us
+	main
+		include ../sections/_content-about-us
+		include ../sections/_partners
+
 	include ../sections/_footer
 	
 

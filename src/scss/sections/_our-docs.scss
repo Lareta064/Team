@@ -1,5 +1,16 @@
 .page-aboutUs{
-	.element-2{z-index: 1;}
+	.body-content .element-2{
+		z-index: 1;
+		@media (max-width: 1199px) {
+		transform: translate(-15%, 54%);
+		}
+		@media (max-width: 767px) {
+			object{
+				width: 700px;
+				height: 700px;
+			}
+		}
+	}
 }
 .our-docs{
 	padding-top: 180px;
@@ -16,6 +27,9 @@
 		bottom: 0;
 		height: 135px;
 		background-color: #fff;
+		@media (max-width: 1199px) {
+		display: none;
+		}
 	}
 	&:before{
 		content:'';
@@ -29,6 +43,15 @@
 	.our-docs__title{
 		margin-bottom: 62px;
 	}
+	@media (max-width: 1199px) {
+	  background-image: none!important;
+	}
+	@media (max-width: 767px) {
+	   padding-top: 90px;
+	   .our-docs__title{
+			margin-bottom: 30px;
+		}
+	}	
 }
 .register-docs-wrapper{
 	position: relative;
@@ -59,9 +82,12 @@
 	font-size: 18px;
 	font-weight: 500;
 	color: $sec;
-	padding-top: 10px;
+	
 	text-transform: uppercase;
 	position: relative;
+	@media (max-width: 767px) {
+	  font-size: 14px;
+	}
 	
 }
 .register-doc{
@@ -76,14 +102,27 @@
 		justify-content: space-between;
 		height: 100%;
 		border-radius: 20px;
-	column-gap:10px;border: 5px solid $ac1;
+	    column-gap:10px;border: 5px solid $ac1;
 
+	}
+	.upper-18{
+		padding-top: 10px;
+		@media (max-width: 767px) {
+		  padding-top: 4px;
+		}
 	}
 	&:hover{
 		.demi-18{color: $ac1;}
 		.svg-dwload{
 			fill: $ac1;
 		}
+	}
+	@media (max-width: 767px) {
+		min-height: 100px;
+		.d-flex{
+			padding: 14px 20px;
+		}
+	  
 	}
 	
 }
@@ -127,6 +166,7 @@
 	}
 	.h5{
 		text-align: center;
+		font-size: 34px;
 	}
 }
 .annual-report:hover{
@@ -144,8 +184,32 @@
 	padding-top: 180px;
 		position: relative;
 	z-index: 2;
+	.slider-swiper-block{
+		width: 100%;
+
+	}
+	.slider-swiper-block .slider-swiper-prev, 	.slider-swiper-block .slider-swiper-next{
+		transform: translate(0, 0);
+		top: auto;
+		bottom:-45px;
+	}
+	@media (max-width: 767px) {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	
+	}
 	
 }
 .annual-docs-wrapper .inner-content{
 	padding: 90px;
+}
+.visible-desktop{
+	@media(max-width:1199px){
+		display: none!important;
+	}
+}
+.hide-desktop{
+	@media(min-width:1200px){
+		display: none!important;
+	}
 }

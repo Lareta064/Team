@@ -41,8 +41,8 @@ document.addEventListener("DOMContentLoaded", function (){
       loop:true,
       speed: 800,
       navigation: {
-        nextEl: ".partners-swiper-next",
-        prevEl: ".partners-swiper-prev",
+        nextEl: ".slider-swiper-next",
+        prevEl: ".slider-swiper-prev",
       },
       breakpoints: {      
       575: {
@@ -56,6 +56,31 @@ document.addEventListener("DOMContentLoaded", function (){
       }
     }
     });
+    
+	/* ================ годовые отчеты slider ==============*/
+    const swiperReports = new Swiper('.annual-reports-swiper', {
+      
+      slidesPerView: 1,
+      loop:true,
+      spaceBetween: 20,
+      speed: 800,
+      navigation: {
+        nextEl: ".slider-swiper-next",
+        prevEl: ".slider-swiper-prev",
+      },
+      breakpoints: {      
+      575: {
+      slidesPerView: 2,
+      },      
+      1024: {
+      slidesPerView: 3,
+      },
+      1536: {
+      slidesPerView: 4,
+      }
+    }
+    });
+
 	/**  анимация, когда секции в зоне видимости */
 	if(window.innerWidth > 1200){
       console.log('123');
