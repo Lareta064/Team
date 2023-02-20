@@ -57,13 +57,13 @@
 						svg.svg-dwload
 							use(href="./img/svg-sprite.svg#dwload")
 	
-	//==========  ГОДОВЫЕ ОТЧЕТЫ ======================
-	.annual-docs-wrapper
+	//==========  ГОДОВЫЕ ОТЧЕТЫ  DESKTOP VERSION ======================
+	.annual-docs-wrapper.visible-desktop
 		.container
 			.our-docs__title
 				.h2 Годовые отчеты
-			// ============ карточки отчетов для дестоп версии ==============
-			.inner-content.visible-desktop
+			
+			.inner-content
 				.annual-reports
 					a(href="./img/doc.pdf" target="_blank").annual-report
 						.h5 2022
@@ -72,39 +72,58 @@
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
+						.h5 2021
 						.annual-report-icon.d-flex
 							svg.svg-folder
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
+						.h5 2020
 						.annual-report-icon.d-flex
 							svg.svg-folder
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
+						.h5 2019
 						.annual-report-icon.d-flex
 							svg.svg-folder
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
+						.h5 2018
 						.annual-report-icon.d-flex
 							svg.svg-folder
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 					a(href="./img/doc.pdf" target="_blank").annual-report
-						.h5 2022
+						.h5 2017
+						.annual-report-icon.d-flex
+							svg.svg-folder
+								use(href="./img/svg-sprite.svg#folder-svg")
+							.upper-18 Pdf
+					a(href="./img/doc.pdf" target="_blank").annual-report
+						.h5 2016
+						.annual-report-icon.d-flex
+							svg.svg-folder
+								use(href="./img/svg-sprite.svg#folder-svg")
+							.upper-18 Pdf
+					a(href="./img/doc.pdf" target="_blank").annual-report
+						.h5 2015
 						.annual-report-icon.d-flex
 							svg.svg-folder
 								use(href="./img/svg-sprite.svg#folder-svg")
 							.upper-18 Pdf
 
-
+	
+	
+	//==========  ГОДОВЫЕ ОТЧЕТЫ  MOBILE VERSION======================
+	.annual-docs-wrapper.hide-desktop
+		.container
+			.our-docs__title
+				.h2 Годовые отчеты
+		.slider-swiper-block
 			//====================== swiper slider =======================
-			.slider-swiper-block.hide-desktop
+			.container
 				.annual-reports-swiper.swiper
 					.swiper-wrapper
 						.swiper-slide

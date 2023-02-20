@@ -2,9 +2,13 @@
 	.body-content .element-2{
 		z-index: 1;
 		@media (max-width: 1199px) {
-		transform: translate(-15%, 54%);
+			transform: translate(-15%, 0);
 		}
 		@media (max-width: 767px) {
+			// transform: translate(-15%,0);
+		}
+		@media (max-width: 767px) {
+			transform: translate(-15%, 54%);
 			object{
 				width: 700px;
 				height: 700px;
@@ -45,6 +49,7 @@
 	}
 	@media (max-width: 1199px) {
 	  background-image: none!important;
+	  padding-top: 120px;
 	}
 	@media (max-width: 767px) {
 	   padding-top: 90px;
@@ -58,7 +63,15 @@
 	z-index: 3;
 }
 .our-docs .element-4{
-	transform: translate(10%, -10%);
+	
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	object{
+		transform: translate(20%, 0);
+		width: 600px;
+		height: 600px;
+	}
 }
 .register-docs{
 	display: grid;
@@ -179,6 +192,17 @@
 	grid-template-columns: repeat(auto-fill, 290px);
 	column-gap:60px;
 	row-gap:60px;
+	@media(max-width:1919px){
+		grid-template-columns: repeat(auto-fill,340px);
+	}
+	@media(max-width:1535px){
+		grid-template-columns: repeat(auto-fill, 255px);
+	    column-gap:40px;	
+	}
+	@media(max-width:1439px){
+		grid-template-columns: repeat(auto-fill, 290px);
+	    column-gap:60px;	
+	}
 }
 .annual-docs-wrapper{
 	padding-top: 180px;
@@ -186,22 +210,43 @@
 	z-index: 2;
 	.slider-swiper-block{
 		width: 100%;
-
+		margin-top: 0;
+		padding-top: 60px;
+		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
+		padding-bottom: 90px;
 	}
+	
 	.slider-swiper-block .slider-swiper-prev, 	.slider-swiper-block .slider-swiper-next{
 		transform: translate(0, 0);
 		top: auto;
-		bottom:-45px;
+		bottom:45px;
+	}
+	.slider-swiper-block .slider-swiper-prev{
+			right: 40%;
+		@media (max-width: 767px) {
+			right: 20px;
+		}
+	}
+	.slider-swiper-block .slider-swiper-next{
+			left: 40%;
+		@media (max-width: 767px) {
+			left: 20px;
+		}
+	}
+    @media (max-width: 1199px) {
+		padding-top: 120px;
 	}
 	@media (max-width: 767px) {
-	padding-top: 90px;
-	padding-bottom: 90px;
-	
+		padding-top: 90px;
 	}
 	
 }
 .annual-docs-wrapper .inner-content{
 	padding: 90px;
+	@media(max-width:1439px){
+		padding-left: 75px;
+		padding-right: 75px;	
+	}
 }
 .visible-desktop{
 	@media(max-width:1199px){
