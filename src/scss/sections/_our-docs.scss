@@ -1,20 +1,41 @@
+.page-aboutUs{
+	.element-2{z-index: 1;}
+}
 .our-docs{
 	padding-top: 180px;
-	padding-bottom: 180px;
-	position: relative;
 	
+	position: relative;
+	background-position: center -40px;
 	background-repeat: no-repeat;
 	background-size: cover;
-	// &:after{
-	// 	content:'';
-	// 	position: absolute;
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	background: linear-gradient(180deg, #191D23 9.38%, rgba(25, 29, 35, 0.85) 34.9%, rgba(25, 29, 35, 0) 100%);
-		
-	// }
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 135px;
+		background-color: #fff;
+	}
+	&:before{
+		content:'';
+		background:linear-gradient(180deg, #191D23 9.38%, rgba(25, 29, 35, 0.85) 34.9%, rgba(25, 29, 35, 0) 100%);
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+	}
+	.our-docs__title{
+		margin-bottom: 62px;
+	}
+}
+.register-docs-wrapper{
+	position: relative;
+	z-index: 3;
+}
+.our-docs .element-4{
+	transform: translate(10%, -10%);
 }
 .register-docs{
 	display: grid;
@@ -22,6 +43,7 @@
 	column-gap:40px;
 	row-gap:40px;
 	color: $pr;
+	
 	
 	@media (max-width: 991px) {
 		grid-template-columns: repeat(auto-fill, calc(50% - 20px));
@@ -44,12 +66,7 @@
 }
 .register-doc{
 	position: relative;	
-	
-	
 	min-height: 146px;
-	
-	
-	
 	transition: .3s;
 	.d-flex{
 		position: relative;
@@ -94,7 +111,7 @@
 	}
 }
 .annual-report{
-	
+	transition: .3s;
 	.annual-report-icon{
 		position: relative;
 		z-index: 2;
@@ -112,9 +129,23 @@
 		text-align: center;
 	}
 }
+.annual-report:hover{
+	color: $ac1;
+	svg{fill: $ac1}
+	.upper-18{color: $ac1;}
+}
 .annual-reports{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, calc((100% - 80px)/3));
-	column-gap:40px;
+	grid-template-columns: repeat(auto-fill, 290px);
+	column-gap:60px;
 	row-gap:60px;
+}
+.annual-docs-wrapper{
+	padding-top: 180px;
+		position: relative;
+	z-index: 2;
+	
+}
+.annual-docs-wrapper .inner-content{
+	padding: 90px;
 }
