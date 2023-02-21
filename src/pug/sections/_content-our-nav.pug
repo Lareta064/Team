@@ -3,17 +3,14 @@ mixin eventCard(img, title, txt1, txt2)
 		.event-card__header
 			.event-card__label
 				svg.svg-folder
-					use(href="./img/svg-sprite.svg#folder-svg")
+					use(href="./img/svg-sprite.svg#fldr-svg")
 			img(src="./img/libs/"+ img +".jpg", width="480" height="328" alt="alt")
 		.event-card__body
 			.text-medium !{title}
-		.event-card__footer
+		.card-flex__footer
 			.text-14 !{txt1}
 			.text-14 !{txt2}
 .our-nav
-	.element-3
-		object(type="image/svg+xml" data="./img/el3.svg" )
-
 	.container
 		.our-nav-search
 			form.search-form()
@@ -39,6 +36,15 @@ mixin eventCard(img, title, txt1, txt2)
 				.event-card__header
 				.event-card__body
 					.text-medium Скоро тут будут еще материалы
-				.event-card__footer
+				.card-flex__footer
 					.text-14 Автор:
 					.text-14 Pdf, 0.0 кб
+
+		//======== PAGINATION===========
+		.pagination-block
+			button.pag-btn.pag-prev
+			button.pag-btn.pag-current 1
+			button.pag-btn 2
+			button.pag-btn 3
+			button.pag-btn ...
+			button.pag-btn.pag-next
