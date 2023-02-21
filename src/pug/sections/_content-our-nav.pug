@@ -1,5 +1,5 @@
 mixin eventCard(img, title, txt1, txt2)
-	a(href="../doc.pdf" target="_blank").event-card
+	a(href="./img/doc.pdf" target="_blank").event-card
 		.event-card__header
 			.event-card__label
 				svg.svg-folder
@@ -11,6 +11,9 @@ mixin eventCard(img, title, txt1, txt2)
 			.text-14 !{txt1}
 			.text-14 !{txt2}
 .our-nav
+	.element-3
+		object(type="image/svg+xml" data="./img/el3.svg" )
+
 	.container
 		.our-nav-search
 			form.search-form()
@@ -31,5 +34,11 @@ mixin eventCard(img, title, txt1, txt2)
 			+eventCard(6, 'Методически-организационные указания для&nbsp;преподавателей-организаторов&nbsp;ОБЖ', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
 			+eventCard(7, 'Иновационные подходы в&nbsp;преподавании службы и&nbsp;организации проведения учебных сборов', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
 			+eventCard(8, 'Защита детей от&nbsp;жестокого обращения', 'Автор: Родионова Е.Г.', 'Pdf, 46.06 кб')
-			+eventCard(9, 'Скоро тут будут еще материалы', 'Автор:', 'Pdf, 0.0 кб')
-			
+
+			a(href="#!" target="_blank" disabled).event-card.event-card--disabled
+				.event-card__header
+				.event-card__body
+					.text-medium Скоро тут будут еще материалы
+				.event-card__footer
+					.text-14 Автор:
+					.text-14 Pdf, 0.0 кб
