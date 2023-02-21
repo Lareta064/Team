@@ -1,3 +1,15 @@
+mixin eventCard(img, title, txt1, txt2)
+	a(href="../doc.pdf" target="_blank").event-card
+		.event-card__header
+			.event-card__label
+				svg.svg-folder
+					use(href="./img/svg-sprite.svg#folder-svg")
+			img(src="./img/libs/"+ img +".jpg", width="480" height="328" alt="alt")
+		.event-card__body
+			.text-medium !{title}
+		.event-card__footer
+			.text-14 !{txt1}
+			.text-14 !{txt2}
 .our-nav
 	.container
 		.our-nav-search
@@ -9,4 +21,15 @@
 						.ic-search
 					
 					input(type="text" placeholder="Описание поля")
+		
 		.our-nav-cards
+			+eventCard(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
+			+eventCard(2, 'Поколения современной России', 'Автор: Мирошкина М.Р.', 'Pdf, 46.06 кб')
+			+eventCard(3, 'Контактная база военно-патриотических клубов Российской Федерации', 'Автор: Иванов А.И.', 'Pdf, 46.06 кб')
+			+eventCard(4, 'Профилактика молодёжного экстремизма и&nbsp;терроризма в&nbsp;цифровой среде', 'Автор: Смирнова А.А.', 'Pdf, 46.06 кб')
+			+eventCard(5, 'Исследовательская работа «Индиго&nbsp;— вундеркинды современности»', 'Автор: Петров И.А.', 'Pdf, 46.06 кб')
+			+eventCard(6, 'Методически-организационные указания для&nbsp;преподавателей-организаторов&nbsp;ОБЖ', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
+			+eventCard(7, 'Иновационные подходы в&nbsp;преподавании службы и&nbsp;организации проведения учебных сборов', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
+			+eventCard(8, 'Защита детей от&nbsp;жестокого обращения', 'Автор: Родионова Е.Г.', 'Pdf, 46.06 кб')
+			+eventCard(9, 'Скоро тут будут еще материалы', 'Автор:', 'Pdf, 0.0 кб')
+			
