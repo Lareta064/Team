@@ -56,3 +56,19 @@
 	column-gap:8px;
 	
 }
+.btn-46{
+	height: 46px;
+	align-items: center;
+	line-height: 1;
+	display: inline-flex;
+	justify-content: center;
+	font-size: 14px;
+	font-weight: 600;
+	padding-left: 39px;
+	padding-right: 39px;
+	min-width: 172px;;
+	&>*+*{
+		margin-left: 10px;
+	}
+	
+}

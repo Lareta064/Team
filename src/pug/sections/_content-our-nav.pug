@@ -21,6 +21,15 @@ mixin eventCard(img, title, txt1, txt2)
 						.ic-search
 					
 					input(type="text" placeholder="Описание поля")
+			.search-results
+				.search-results__header
+					.title-24 Результаты поиска
+					button.btn.btn-46
+						svg.del-svg
+							use(href="./img/svg-sprite.svg#del-svg")
+						span Очистить
+				.search-results__empty  К сожалению по вашему запросу ничего не найдено. Попробуйте снова.
+
 		
 		.our-nav-cards
 			+eventCard(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')

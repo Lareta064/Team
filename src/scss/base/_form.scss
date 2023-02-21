@@ -22,3 +22,30 @@
 		
 	}
 }
+.search-results{
+	position: relative;
+	
+}
+.search-results__header{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ADADAD;
+	.btn.btn-46{
+		@media (max-width: 1199px) {
+			min-width: unset;
+			padding-left: 24px;
+			padding-right: 24px;
+			width: auto;
+			height: 36px;
+		   span{display: none;}
+		}
+	}
+}
+.search-results__empty {
+	padding-top: 20px;
+	font-size: 14px;
+	color: $sec3;
+}

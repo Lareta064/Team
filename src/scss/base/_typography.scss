@@ -167,7 +167,7 @@
 
 }
 
-.text-24{
+.text-24,.title-24{
    font-size: 24px;
    
     @media (max-width: 1439px) {
@@ -189,10 +189,10 @@
 .bold-18{
 	font-weight: 700;
 }
-.title-4,.text-medium,.demi-18{
+.title-24,.title-4,.text-medium,.demi-18{
 font-weight: 600;
 }
-.title-4{
+.title-4,.title-24{
 	@media (max-width: 1199px) {
 	 font-size: 16px;
 	}	
