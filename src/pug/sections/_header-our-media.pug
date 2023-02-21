@@ -1,0 +1,22 @@
+header.header-inner
+	//===================== HEADER MENU ===========================
+	.header-top
+		.container
+			.header-content
+				a(href="index.html").logo
+					img(src="./img/logo.png", width="94" height="99" alt="logo")
+				.main-menu#header-menu
+					+header-menu([
+						{title: 'Новости', link:"news.html"},
+						{title: 'Визитная карточка',link:"about-us.html"},
+						{title: 'Проекты',link:"our-projects.html"},
+						{title: 'Навигатор',link:"our-nav.html", addClass:'active'},
+						{title: 'Библиотека',link:"our-libs.html"},
+						{title: 'Медиацентр',link:"our-media.html"}
+					])
+				.header-column.d-flex
+					.login-button
+						.ic-login
+					.menu-toggle#menu-toggle
+						span
+	+header-title('Медиацентр')

@@ -1,6 +1,7 @@
 .event-card{
 	display: flex;
 	flex-direction: column;
+	max-width: 480px;
 	&>*{width: 100%;}
 	cursor:pointer;
 	&__header{
@@ -37,6 +38,10 @@
 		z-index: 2;
 		display: none;
 		transition: .3s;
+		svg{
+			width: 14px;
+			height: 14px;
+		}
 	}
 	&__body{
 		padding-top: 20px;
@@ -55,6 +60,7 @@
 		}
 	}
 	.card-flex__footer{border-top: 0.5px solid rgba(255, 255, 255, .5);}
+	
 
 }
 .card-flex__footer{
@@ -73,10 +79,7 @@
 .event-card:not([disabled]):hover{
 	.event-card__label{
 		display: flex;
-		svg{
-			width: 14px;
-			height: 14px;
-		}
+		
 	}
 	.event-card__body .text-medium, .card-flex__footer .text-14{color: $ac1;}
 }

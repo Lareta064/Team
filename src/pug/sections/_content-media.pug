@@ -1,0 +1,101 @@
+mixin eventCard(img, title, txt1, txt2)
+	//====== карточка для фото-контента =============
+	a(href="./img/doc.pdf" target="_blank").event-card.event-card--foto
+		.event-card__header
+			.event-card__label
+				svg.foto-svg
+					use(href="./img/svg-sprite.svg#foto-svg")
+			img(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
+		.event-card__body
+			.text-medium !{title}
+		.card-flex__footer
+			.text-14 !{txt1}
+			.text-14 !{txt2}
+mixin eventCardVideo(img, title, txt1, txt2)
+	//====== карточка для видео-контента =============
+	a(href="./img/doc.pdf" target="_blank").event-card.event-card--video
+		.event-card__header
+			//=====label=====
+			.event-card__label
+				svg.cam-svg
+					use(href="./img/svg-sprite.svg#cam-svg")
+			//===== icon-play =====
+			.button-play
+				.ic-play
+			
+			img(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
+		.event-card__body
+			.text-medium !{title}
+		.card-flex__footer
+			.text-14 !{txt1}
+			.text-14 !{txt2}
+mixin eventCardAudio(img, title, txt1, txt2)
+	//====== карточка для видео-контента =============
+	a(href="./img/doc.pdf" target="_blank").event-card.event-card--audio
+		.event-card__header
+			//=====label=====
+			.event-card__label
+				svg.mic-svg
+					use(href="./img/svg-sprite.svg#mic-svg")
+			//===== icon-play =====
+			.button-play
+				.ic-play
+			
+			img(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
+		.event-card__body
+			.text-medium !{title}
+		.card-flex__footer
+			.text-14 !{txt1}
+			.text-14 !{txt2}
+.our-media
+	.container
+		.media-search
+			form.search-form()
+
+				.form-item.form-item__icon-right
+					//====== кнопка лупа ========
+					button.form-item__icon(type="")
+						.ic-search
+					
+					input(type="text" placeholder="Описание поля")
+			.search-results
+				.search-results__header
+					.title-24 Результаты поиска
+					button.btn.btn-46
+						svg.del-svg
+							use(href="./img/svg-sprite.svg#del-svg")
+						span Очистить
+				.search-results__empty  К сожалению по вашему запросу ничего не найдено. Попробуйте снова.
+	.media-body
+		.container
+			.media-tabs
+				.tabs-toggle
+					button.tab-btn
+						svg.app-svg
+							use(href="./img/svg-sprite.svg#app-svg")
+						span Все материалы
+					button.tab-btn
+						svg.cam-svg
+							use(href="./img/svg-sprite.svg#cam-svg")
+						span Видеоматериалы
+					button.tab-btn
+						svg.foto-svg
+							use(href="./img/svg-sprite.svg#foto-svg")
+						span Фотографии
+					button.tab-btn
+						svg.mic-svg
+							use(href="./img/svg-sprite.svg#mic-svg")
+						span Вебинары
+
+				.media-cards
+					+eventCard(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
+					+eventCardVideo(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
+					+eventCardAudio(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
+				//======== PAGINATION===========
+				.pagination-block
+					button.pag-btn.pag-prev
+					button.pag-btn.pag-current 1
+					button.pag-btn 2
+					button.pag-btn 3
+					button.pag-btn ...
+					button.pag-btn.pag-next
