@@ -168,3 +168,18 @@
 		.btn, .btn-outline{min-width: 320px;}
 	}
 }
+.login-avatar{
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	border: 2px solid #1578E0;
+	overflow: hidden;
+	img{
+		width: 44px;
+		height: 44px;
+		object-fit: cover;
+	}
+}
+*.d-none{
+	display: none!important;
+}
