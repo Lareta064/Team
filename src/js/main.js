@@ -81,42 +81,7 @@ document.addEventListener("DOMContentLoaded", function (){
     }
     });
 
-	/**  анимация, когда секции в зоне видимости */
-	if(window.innerWidth > 1200){
-      console.log('123');
-		let targets = document.querySelectorAll(".anim-box")
 
-		function check_in_viewport(element){
-			let rect = element.getBoundingClientRect()
-			const VERTICAL_SETPOINT = 100;
-			let targetPosition = {
-				top: window.pageYOffset + rect.top + VERTICAL_SETPOINT,
-				bottom: window.pageYOffset + rect.bottom - VERTICAL_SETPOINT,
-			}
-			let windowPosition = {
-				top: window.pageYOffset,
-				bottom: window.pageYOffset + document.documentElement.clientHeight
-			}
-			return (
-				targetPosition.bottom > windowPosition.top &&
-				targetPosition.top < windowPosition.bottom
-			)
-		}
-
-		window.addEventListener('scroll', (e)=>{
-			for(let target of targets){
-				let is_in_viewport = check_in_viewport(target)
-				if (is_in_viewport == target.classList.contains('in-view'))
-					continue
-				if (is_in_viewport){
-					target.classList.add('in-view')
-				}else{
-					target.classList.remove('in-view')
-				}
-					
-			}
-		});
-	}
 	/*=========== VIDEO========*/
 	const videoContent = document.querySelector('#video-frame');
 	if (videoContent) {
