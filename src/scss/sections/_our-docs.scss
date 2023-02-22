@@ -18,7 +18,7 @@
 }
 .our-docs{
 	padding-top: 180px;
-	
+	overflow:hidden;
 	position: relative;
 	background-position: center -40px;
 	background-repeat: no-repeat;
@@ -63,16 +63,13 @@
 	z-index: 3;
 }
 .our-docs .element-4{
-	
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	object{
-		transform: translate(20%, 0);
-		width: 600px;
-		height: 600px;
+
+	bottom: -35%;
+	@media (max-width: 767px) {
+		bottom: 0;
+		right: -40%;
 	}
-}
+	}
 .register-docs{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 80px), 1fr));
