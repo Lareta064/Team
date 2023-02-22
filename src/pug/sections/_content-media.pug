@@ -30,7 +30,7 @@ mixin eventCardVideo(img, title, txt1, txt2)
 			.text-14 !{txt1}
 			.text-14 !{txt2}
 mixin eventCardAudio(img, title, txt1, txt2)
-	//====== карточка для видео-контента =============
+	//====== карточка для аудио-контента =============
 	a(href="./img/doc.pdf" target="_blank").event-card.event-card--audio
 		.event-card__header
 			//=====label=====
@@ -87,15 +87,38 @@ mixin eventCardAudio(img, title, txt1, txt2)
 							use(href="./img/svg-sprite.svg#mic-svg")
 						span Вебинары
 
-				.media-cards
-					+eventCard(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
-					+eventCardVideo(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
-					+eventCardAudio(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
-				//======== PAGINATION===========
-				.pagination-block
-					button.pag-btn.pag-prev
-					button.pag-btn.pag-current 1
-					button.pag-btn 2
-					button.pag-btn 3
-					button.pag-btn ...
-					button.pag-btn.pag-next
+			.media-cards.cards-grid
+				+eventCardVideo(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Mp4, 15.06 Мб')
+				
+				+eventCard(2, 'Детские спортивные сборы «КОМАНДА», 2&nbsp;смена, г.&nbsp;Москва', 'Автор: КОМАНДА','Jpeg, 20 шт')
+				
+				+eventCardAudio(3, 'PR и связи с общественностью', 'Автор: Чеберко-Рейжевская К.А', 'Mp4, 15.06 Мб')
+				+eventCard(4, 'Детские спортивные сборы «КОМАНДА», 1 смена 11.06-24.06.2022, г.&nbsp;Москва', 'Автор: КОМАНДА','Jpeg, 30 шт')
+
+				+eventCardAudio(5, 'Видеоуроки "Играть, чтобы знать!". Видеоурок "Имаджинариум"','Автор: Кудашов Г.Н.', 'Mp4, 15.06 Мб')
+
+				+eventCardAudio(6, 'Мы против террора', 'Автор: ВОД Наставники России', 'Mp4, 15.06 Мб')
+
+				+eventCardVideo(7, 'Спецназ - Парни из стали', 'Автор: ВОД Наставники России', 'Mp4, 15.06 Мб')
+				
+				+eventCardAudio(8, 'Применение игровых и&nbsp;цифровых технологий в&nbsp;патриотическом воспитании', 'Автор: Силин А.Г.','Mp4, 15.06 Мб')
+				
+				+eventCard(9, 'Детские спортивные сборы «КОМАНДА», летняя смена «Равнение на Героев», г&nbsp;Москва', 'Автор: КОМАНДА','Jpeg, 15 шт')
+			
+				//======== карточка - заглушка =========
+				a(href="#!" target="_blank" disabled).event-card.event-card--disabled
+					.event-card__header
+					.event-card__body
+						.text-medium Скоро тут будут еще материалы
+					.card-flex__footer
+						.text-14 Автор:
+						.text-14 Pdf, 0.0 кб
+				
+			//======== PAGINATION===========
+			.pagination-block
+				button.pag-btn.pag-prev
+				button.pag-btn.pag-current 1
+				button.pag-btn 2
+				button.pag-btn 3
+				button.pag-btn ...
+				button.pag-btn.pag-next
