@@ -119,3 +119,41 @@
 	cursor:default;
 	&>*{color: $sec1;}
 }
+
+.main-our-nav{
+	position: relative;
+	overflow: hidden;
+	.element-3{
+		top: 21%;
+		right: -38%;
+	}
+.element-5{
+	
+	bottom: -8%;
+	right: 10%;
+	@media (max-width: 767px) {
+	width: 700px;
+	height: 700px;
+	bottom: 12%;
+	right: 50%;
+	}
+	
+}
+}
+.element-5{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.element-3{
+	width: 1570px;
+	height: 1400px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	@media (max-width: 767px) {
+	width: 700px;
+	height: 700px;
+	
+	}
+}
