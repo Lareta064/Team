@@ -92,6 +92,7 @@
 	grid-template-columns: repeat(auto-fit, 350px);
 	column-gap: 55px;
 	row-gap:55px;
+	svg{fill: #fff;}
 	@media(max-width:1919px){
 		grid-template-columns: repeat(auto-fit, 320px);
 
@@ -114,6 +115,7 @@
 	.benefits-card{
 		display: flex;
 		align-items: center;
+		
 		&__icon{
 			flex-shrink: 0;
 			width: 55px;
