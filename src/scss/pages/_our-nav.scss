@@ -114,9 +114,8 @@
 		 grid-template-columns: repeat(auto-fill, minmax(320px, 30%));
 	}
 }
-.event-card.event-card--disabled{
+.event-card[disabled]{
 	img{display: none;}
 	cursor:default;
 	&>*{color: $sec1;}
-
 }

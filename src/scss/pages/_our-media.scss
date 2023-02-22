@@ -51,6 +51,11 @@
 		svg{
 			fill: #fff;
 		}
+		@media (max-width: 1199px) {
+			width: 35px;
+		     height: 30px;
+			 svg{width: 18px; height: 18px;}
+		}
 	}
 }
 .event-card.event-card--video, .event-card.event-card--audio{

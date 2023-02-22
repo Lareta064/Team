@@ -105,8 +105,8 @@ mixin eventCardAudio(img, title, txt1, txt2)
 				
 				+eventCard(9, 'Детские спортивные сборы «КОМАНДА», летняя смена «Равнение на Героев», г&nbsp;Москва', 'Автор: КОМАНДА','Jpeg, 15 шт')
 			
-				//======== карточка - заглушка =========
-				a(href="#!" target="_blank" disabled).event-card.event-card--disabled
+				//======== карточка - заглушка  получает атрибут DISABLED =========
+				div( disabled).event-card
 					.event-card__header
 					.event-card__body
 						.text-medium Скоро тут будут еще материалы

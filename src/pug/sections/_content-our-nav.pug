@@ -41,8 +41,8 @@ mixin eventCard(img, title, txt1, txt2)
 			+eventCard(7, 'Иновационные подходы в&nbsp;преподавании службы и&nbsp;организации проведения учебных сборов', 'Автор: Глазкова А.М.', 'Pdf, 46.06 кб')
 			+eventCard(8, 'Защита детей от&nbsp;жестокого обращения', 'Автор: Родионова Е.Г.', 'Pdf, 46.06 кб')
 			
-			//======== карточка - заглушка =========
-			a(href="#!" target="_blank" disabled).event-card.event-card--disabled
+			//======== карточка - заглушка  получает атрибут DISABLED=========
+			div(disabled).event-card
 				.event-card__header
 				.event-card__body
 					.text-medium Скоро тут будут еще материалы
