@@ -12,10 +12,14 @@ header.header-inner
 						{title: 'Проекты',link:"our-projects.html"},
 						{title: 'Навигатор',link:"our-nav.html"},
 						{title: 'Библиотека',link:"our-libs.html"},
-						{title: 'Медиацентр',link:"our-media.html", addClass:'active'}
+						{title: 'Медиацентр',link:"our-media.html"}
 					])
 				.header-column.d-flex
-					.login-button
-						.ic-login
+					a(href="#!").login-avatar
+						img(src="./img/avatar.jpg", width="44" height="44" alt="avatar")
 					.menu-toggle#menu-toggle
 						span
+	
+	.header-inner__title
+		.container
+			h1.h5 Личный кабинет
