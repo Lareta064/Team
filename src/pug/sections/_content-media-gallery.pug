@@ -1,0 +1,13 @@
+mixin galleryFoto(arg)
+	- var n=1
+	- var k=1
+	while n < arg && k < arg	
+		a(href="./img/gallery/photo"+ n++ +".jpg" data-lightbox="album-1")
+			img(src="./img/gallery/photo"+ k++ +".jpg", alt="")
+.media-inner-content
+	.container
+		a(href="news.html").back-link
+			span.ic-back
+			span.link Назад к новостям
+		.media-inner-gallery
+			+galleryFoto(32)
