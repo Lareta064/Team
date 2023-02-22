@@ -96,3 +96,19 @@
 	display: none;
 	opacity: 0;
 }
+.main-gallery{
+	position: relative;
+	overflow: hidden;
+	.element-5{
+		right: -20%;
+		bottom: 30%;
+		@media (max-width: 1199px) {
+		    left: -35%;
+           bottom: -30%;
+		   right: auto;
+		}
+	}
+}
+.element-5{
+	position: absolute;	
+}
