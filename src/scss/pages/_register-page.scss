@@ -14,14 +14,14 @@
 	bottom: 0;
 	background: rgba(25, 29, 35, 0.7);
     backdrop-filter: blur(35px);
+
 	.modal-frame{
 		padding: 80px 86px;
 		border-radius: 60px;
 		margin: auto;
 		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
-		
-		
 	}
+	.form-footer{padding-top: 20px;}
 	.h6{
 		margin-bottom: 30px;
 	}
@@ -29,6 +29,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 40px;
+		.form-item-group{height: 36px;}
 	}
 }
 .modal-frame-wrapper.width-1260{
@@ -44,4 +45,20 @@
 .form-item__border{
 	border-bottom: 1px solid $sec;
 	padding-bottom: 8px;
+}
+
+.toggle-pass .form-item__icon{
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+.form-footer__btn{
+	margin-top: 10px;
+	gap:30px;
+	.btn, .btn-outline{
+		width: 255px;
+	}
 }

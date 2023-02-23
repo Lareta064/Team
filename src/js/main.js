@@ -109,7 +109,23 @@ document.addEventListener("DOMContentLoaded", function (){
 			this.classList.remove("active");
 		});
 	}
+   /*====== PASSWORD VISIBLE/HIDE=============*/
+  document.querySelectorAll(".toggle-pass").forEach(el=>{
+    const tglBtn = el.querySelector(".form-item__icon");
+    const inputField = el.querySelector("input");
 
+    tglBtn.addEventListener("click", (e)=>{
+      const icon1 = tglBtn.querySelector(".ic-visible");
+      const icon2 = tglBtn.querySelector(".ic-hide");
+
+      if(inputField.type === "password")
+          inputField.type = "text"
+      else inputField.type = "password";
+
+      icon1.classList.toggle("d-none");
+      icon2.classList.toggle("d-none");
+    })
+})
   /* ========== плагин календаря ============ */
   if($('.datepicker').length > 0){
       

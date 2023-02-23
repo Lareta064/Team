@@ -9,32 +9,41 @@
 		.modal-frame__body
 			form(action="")
 				.form-wrapper
+					//========== колонка левая с полями===============
 					.form-wrapper__col
+						//========== одно поле ===============
 						.form-item
 							.input-label Фамилия
+								span *
 							input(type="text" name="" )
 							.form-item__icon
 								.ic-edit
-							
+						//========== одно поле ===============	
 						.form-item
 							.input-label Имя
+								span *
 							input(type="text" name="" )
 							.form-item__icon
 								.ic-edit
-							
+						//========== одно поле ===============	
 						.form-item
 							.input-label Отчество
+								span *
 							input(type="text" name="" )
 							.form-item__icon
 								.ic-edit
+						//========== одно поле ===============
 						.form-item
 							.input-label Дата рождения
+								span *
 							input#datepicker(type="text" class="datepicker" value="00.00.00")
 							.form-item__icon
 								.ic-edit
+						//========== одно поле ===============
 						.form-item.form-item__border
 							.form-item-group.d-flex
-								.form-label Пол:
+								.input-label Пол:
+									span *
 								label.form-radio.flex-10
 									input(type="radio" name="group1")
 									span.fake-radio
@@ -43,32 +52,72 @@
 									input(type="radio" name="group1")
 									span.fake-radio
 									.text-14 Женский
-						.form-item
+						
+						//========== одно поле ===============
+						.form-item.toggle-pass
 							.input-label Пароль
+								span *
 							input(type="password" name="" )
-							.form-item__icon#toggle-password-visible
+							.form-item__icon
 								.ic-visible
 								.ic-hide.d-none
+					
+					//========== колонка правая с полями ===============
 					.form-wrapper__col
+						//========== одно поле ===============
+						.form-item
+							.input-label Образование
+								span *
+							input(type="text" name="" )
+							.form-item__icon
+								.ic-edit
+						//========== одно поле ===============	
 						.form-item
 							.input-label Место работы/учебы
-							input(type="text" name="" value="ВОД «Наставники России»")
+								span *
+							input(type="text" name="" )
 							.form-item__icon
 								.ic-edit
-							.error Дополнительная текстовая инфа
+						//========== одно поле ===============	
 						.form-item
 							.input-label Должность
-							input(type="text" name="" value="Председатель координационного совета")
+								span *
+							input(type="text" name="")
 							.form-item__icon
 								.ic-edit
-							
+						//========== одно поле ===============	
 						.form-item
 							.input-label Место жительства
-							input(type="text" name="" value="г. Москва")
+								span *
+							input(type="text" name="" )
 							.form-item__icon
 								.ic-edit
+						//========== одно поле ===============
 						.form-item
 							.input-label Email
-							input(type="text" name="" value="info@nastavnikirossii.ru")
+								span *
+							input(type="text" name="" )
 							.form-item__icon
 								.ic-edit
+						
+						//========== одно поле ===============
+						.form-item.toggle-pass.tooltip-wrapper
+							.tooltip-box
+								.text-12 Пароль может содержать буквы латинского алфавита (a-z, A-Z), цифры (0-9) и символы !@#$%^&*()_-=+.,<>;:'"|`~{}[]
+								span *
+							input(type="password" name="" )
+							.form-item__icon
+								.ic-visible
+								.ic-hide.d-none
+				
+				//========== footer формы===============
+				.form-footer
+					label.form-item-group.d-flex.politic-confirm
+						.tooltip-box
+							.text-12 Для отзыва согласия на обработку персональных данных, обратитесь письменно к администрации сайта!
+						.form-checkbox
+							input(type="checkbox")
+						.text-14 Даю свое согласие на обработку персональных данных ы соответствии с #[a.link(href="#!") Политикой обработки персональных данных]
+					.form-footer__btn.d-flex
+						button.btn-46.btn(type="submit") Зарегистрироваться
+						button.btn-46.btn-outline(type="") Войти

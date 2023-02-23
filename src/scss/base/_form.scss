@@ -19,6 +19,17 @@
 		height: 27px;
 	}
 }
+.input-label {
+	position: relative;
+	width: fit-content;
+	padding-right: 8px;
+}
+.input-label span{
+	color: $er!important;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
 .input-label, .input-subtext{
 	color: $sec;
 	font-size: 12px;
@@ -124,7 +135,7 @@
 	z-index:  1;
 }
 .form-item-group{
-	.form-label{margin-right: 20px;}
+	.input-label{margin-right: 20px; font-size: 14px;}
 	.form-radio +.form-radio{margin-left: 12px;}
 	position: relative;
 	
@@ -148,14 +159,19 @@
 	background-repeat: no-repeat;
 	padding: 15px 20px;
 	z-index: 3;
+	display: none;
 }
 .politic-confirm{
 	.form-checkbox{margin-right: 6px;}
-	.tooltip-box{display: none;}
+	
 	&:hover{
 		.tooltip-box{display: block;}
 	}
 }
+.tooltip-wrapper:hover{
+		.tooltip-box{display: block;}
+	}
+
 .politic-confirm a{
 	padding-left: 5px;
 	padding-right: 5px;
