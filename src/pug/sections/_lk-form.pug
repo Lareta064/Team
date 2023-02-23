@@ -1,22 +1,48 @@
 .profile-content
 	.container
-		.form-item.form-item__icon-right
+		.form-item.form-item--icon-right
 			//====== кнопка лупа ========
 			.form-item__icon
 				.ic-edit
 				
 			input(type="text" placeholder="Описание поля")
 
-			label.form-radio
+		.form-item-group.d-flex
+			.form-label Пол:
+			label.form-radio.flex-10
 				input(type="radio" name="group1")
 				span.fake-radio
-				span Женский
+				.text-14 Женский
+			label.form-radio.flex
+				input(type="radio" name="group1")
+				span.fake-radio
+				.text-14 Женский
+		
+		label.form-item-group.d-flex.politic-confirm
+			.tooltip-box
+				.text-12 Для отзыва согласия на обработку персональных данных, обратитесь письменно к администрации сайта!
+			.form-checkbox
+				input(type="checkbox")
+			.text-14 Даю свое согласие на обработку персональных данных ы соответствии с #[a.link(href="#!") Политикой обработки персональных данных]
+		.btn-46.btn Сохранить изменения
+		.btn-46.btn
+			.ic-setting
+			span Изменить пароль
 
-			label.form-radio
-				input(type="radio" name="group1")
-				span.fake-radio
-			label.form-radio
-				input(type="radio" name="group1")
-				span.fake-radio
+		.form-item-group.file-select
+			.file-select
+				input#select-foto.inputfile(type='file' )
+				label(for='select-foto').link Изменить фотографию
+				.form-item__icon
+					.ic-edit-blue
 
+			.text-12 (Размер загружаемого изображения не&nbsp;более 30&nbsp;МБ&nbsp;и&nbsp;1080&nbsp;на&nbsp;1080&nbsp;пикселей, формат изображения.jpg или.png)
+		
 		.form-item
+			.input-label Фамилия
+			input(type="text" name="" )
+			.input-subtext Дополнительная текстовая инфа
+		.form-item
+			.input-label Фамилия
+			input(type="text" name="" )
+			.error Текст ошибки в меру краток

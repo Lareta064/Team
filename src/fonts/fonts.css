@@ -11,6 +11,7 @@
 		url('Montserrat-SemiBold.ttf') format('truetype');
 	font-weight: 600;
 	font-style: normal;
+	font-display: swap;
 }
 
 
@@ -23,6 +24,7 @@
 		url('Montserrat-Bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
+	font-display: swap;
 }
 
 
@@ -36,6 +38,7 @@
 		url('Montserrat-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+	font-display: swap;
 }
 
 @font-face {
@@ -47,18 +50,22 @@
 		url('Montserrat-Medium.ttf') format('truetype');
 	font-weight: 500;
 	font-style: normal;
+	font-display: swap;
 }
 
 
 @font-face { 
     font-family: "Unbounded-Regular";
     src:url(Unbounded-Regular.ttf) format("truetype"); /* все современные браузеры */
+	font-display: fallback;
 }
 @font-face { 
     font-family: "Unbounded-Medium";
     src:url(Unbounded-Medium.ttf) format("truetype"); /* все современные браузеры */
+	font-display: fallback;
 }
 @font-face { 
     font-family: "Unbounded-Bold";
     src:url(Unbounded-Bold.ttf) format("truetype"); /* все современные браузеры */
+	font-display: fallback;
 }
