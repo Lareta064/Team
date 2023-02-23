@@ -8,6 +8,7 @@
 		font-size: 16px;
 		color: white;
 		font-size: 16px;
+		font-family: $m;
 		&::placeholder{
 			font-size: 16px;
 			color: rgba(117, 117, 117, .8);
@@ -191,4 +192,4 @@
 		
 	}
 }
-.form-item + .form-item{margin-top: 30px;}
+.form-item + .form-item{margin-top: 32px;}
