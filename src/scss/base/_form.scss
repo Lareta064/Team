@@ -22,9 +22,12 @@
 .input-label, .input-subtext{
 	color: $sec;
 	font-size: 12px;
+	line-height: 1.5;
 }
 .error{
 	color: $er!important;
+	font-size: 12px;
+	line-height: 1.5;
 }
 .form-item{
 	.form-item__icon{
@@ -144,6 +147,7 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 	padding: 15px 20px;
+	z-index: 3;
 }
 .politic-confirm{
 	.form-checkbox{margin-right: 6px;}
