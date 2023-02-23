@@ -1,74 +1,79 @@
 .profile-content
-	.container.container--rel
-		form().profile-content__body.d-flex
-			.profile-content__foto
-				img(src="./img/avatar.jpg", width="350" height="350" alt="")
-				.form-item-group.d-flex
-					.form-label Пол:
-					label.form-radio.flex-10
-						input(type="radio" name="group1")
-						span.fake-radio
-						.text-14 Мужской
-					label.form-radio.flex
-						input(type="radio" name="group1")
-						span.fake-radio
-						.text-14 Женский
-			.profile-content__info
-				.form-select-group
-					.file-select
-						.file-select__input
-							input#select-foto.inputfile(type='file' )
-							label(for='select-foto').link Изменить фотографию
-							.form-item__icon
-								.ic-edit-blue
-						.text-12 (Размер загружаемого изображения не&nbsp;более 30&nbsp;МБ&nbsp;и&nbsp;1080&nbsp;на&nbsp;1080&nbsp;пикселей, формат изображения.jpg или.png)
-				.form-wrapper
-					.form-wrapper__col
-						.form-item
-							.input-label Фамилия
-							input(type="text" name="" value="Бархатов")
-							.form-item__icon
-								.ic-edit
-							//- .input-subtext Дополнительная текстовая инфа
-						.form-item
-							.input-label Имя
-							input(type="text" name="" value="Дмитрий")
-							.form-item__icon
-								.ic-edit
-							
-						.form-item
-							.input-label Отчество
-							input(type="text" name="" value="Анатольевич")
-							.form-item__icon
-								.ic-edit
-						.form-item
-							.input-label Дата рождения
-							input#datepicker(type="text" class="datepicker" value="24.09.1977")
-							.form-item__icon
-								.ic-edit
-					.form-wrapper__col
-						.form-item
-							.input-label Место работы/учебы
-							input(type="text" name="" value="ВОД «Наставники России»")
-							.form-item__icon
-								.ic-edit
-							//- .error Дополнительная текстовая инфа
-						.form-item
-							.input-label Должность
-							input(type="text" name="" value="Председатель координационного совета")
-							.form-item__icon
-								.ic-edit
-							
-						.form-item
-							.input-label Место жительства
-							input(type="text" name="" value="г. Москва")
-							.form-item__icon
-								.ic-edit
-						.form-item
-							.input-label Email
-							input(type="text" name="" value="info@nastavnikirossii.ru")
-							.form-item__icon
-								.ic-edit
+	form().profile-form
+		.container.container--rel
+			.profile-content__body.d-flex
+				.profile-content__foto
+					img(src="./img/avatar.jpg", width="350" height="350" alt="")
+					
+					//============== ИЗМЕНИТЬ ФОТО ==========================
+					.form-select-group
+						.file-select
+							.file-select__input
+								input#select-foto.inputfile(type='file' )
+								label(for='select-foto').link Изменить фотографию
+								.form-item__icon
+									.ic-edit-blue
+							.text-12 (Размер загружаемого изображения не&nbsp;более 30&nbsp;МБ&nbsp;и&nbsp;1080&nbsp;на&nbsp;1080&nbsp;пикселей, формат изображения.jpg или.png)
+					
+					//============== ВЫБРАТЬ ПОЛ ==========================
+					.form-item-group.d-flex
+						.form-label Пол:
+						label.form-radio.flex-10
+							input(type="radio" name="group1")
+							span.fake-radio
+							.text-14 Мужской
+						label.form-radio.flex
+							input(type="radio" name="group1")
+							span.fake-radio
+							.text-14 Женский
+				.profile-content__info
+					.form-wrapper
+						.form-wrapper__col
+							.form-item
+								.input-label Фамилия
+								input(type="text" name="" value="Бархатов")
+								.form-item__icon
+									.ic-edit
+								//- .input-subtext Дополнительная текстовая инфа
+							.form-item
+								.input-label Имя
+								input(type="text" name="" value="Дмитрий")
+								.form-item__icon
+									.ic-edit
+								
+							.form-item
+								.input-label Отчество
+								input(type="text" name="" value="Анатольевич")
+								.form-item__icon
+									.ic-edit
+							.form-item
+								.input-label Дата рождения
+								input#datepicker(type="text" class="datepicker" value="24.09.1977")
+								.form-item__icon
+									.ic-edit
+						.form-wrapper__col
+							.form-item
+								.input-label Место работы/учебы
+								input(type="text" name="" value="ВОД «Наставники России»")
+								.form-item__icon
+									.ic-edit
+								//- .error Дополнительная текстовая инфа
+							.form-item
+								.input-label Должность
+								input(type="text" name="" value="Председатель координационного совета")
+								.form-item__icon
+									.ic-edit
+								
+							.form-item
+								.input-label Место жительства
+								input(type="text" name="" value="г. Москва")
+								.form-item__icon
+									.ic-edit
+							.form-item
+								.input-label Email
+								input(type="text" name="" value="info@nastavnikirossii.ru")
+								.form-item__icon
+									.ic-edit
 		
 //- label.form-item-group.d-flex.politic-confirm
 //- 	.tooltip-box

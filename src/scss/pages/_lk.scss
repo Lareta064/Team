@@ -35,16 +35,20 @@
 	padding-bottom: 60px;
 	align-items: flex-start;
 	column-gap:40px;
+	.form-select-group{
+		position: absolute;
+		left: 390px;
+		top: -50px;
+		
+	}
 }
 .profile-content__info{
-	margin-top: -60px;
-	padding-top: 10px;
+	
+	padding-top: 20px;
 	flex-grow:2;
 	.form-wrapper{
 		padding-right: 60px;
-		padding-top:30px;
+		padding-top:15px;
 	}
-	.form-select-group{
-		margin-bottom: 20px;
-	}
+	
 }
