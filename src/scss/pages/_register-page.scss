@@ -14,12 +14,39 @@
 	bottom: 0;
 	background: rgba(25, 29, 35, 0.7);
     backdrop-filter: blur(35px);
-
+	overflow: hidden;
+	overflow-y: auto;
+  .icon-close{
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	transition: .3s;
+	&:hover{
+		opacity: .5;
+	}
+  }
 	.modal-frame{
 		padding: 80px 86px;
 		border-radius: 60px;
+		width: 75%;
 		margin: auto;
 		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
+		@media(max-width:1919px){
+			margin-top: 124px;
+		}
+		@media (max-width: 991px) {
+			padding: 40px;	
+			border-radius: 70px; 
+			
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+		  padding: 20px;
+		  max-width: 320px;
+		  
+		  border-radius: 20px;
+		}
+		
 	}
 	.form-footer{padding-top: 20px;}
 	.h6{
@@ -29,16 +56,35 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		column-gap: 40px;
-		.form-item-group{height: 36px;}
+		padding-left: 0;
+		.form-item-group{height: 36px;
+		@media (max-width: 1199px) {
+		height: 26px;
+		}}
+		@media (max-width: 1199px) {
+		  grid-template-columns: 1fr;
+		  row-gap: 24px;
+		}
 	}
 }
 .modal-frame-wrapper.width-1260{
 	
    .modal-frame{
 	max-width: 1260px;
-	width: 100%;
+	width: 75%;
 	padding-left: 130px;
 	padding-right: 130px;
+	@media (max-width: 1919px) {
+	  padding: 80px;	 
+	}
+	@media (max-width: 991px) {
+	  padding: 40px;	 
+	}
+	@media (max-width: 767px) {
+		width: 100%;
+		padding: 20px;
+		max-width: 320px;
+	}
    }
 
 }
@@ -56,9 +102,18 @@
 	align-items: center;	
 }
 .form-footer__btn{
-	margin-top: 10px;
+	margin-top: 14px;
 	gap:30px;
 	.btn, .btn-outline{
 		width: 255px;
+	}
+	@media (max-width: 767px) {
+	
+	 flex-direction: column;
+	 align-items: center;
+	 row-gap:14px;
+	 &>*{
+		width: 320px;
+	 }
 	}
 }

@@ -167,6 +167,10 @@
 	&:hover{
 		.tooltip-box{display: block;}
 	}
+	@media (max-width: 1199px) {
+	   width: 100%;
+	   align-items: flex-start;
+	}
 }
 .tooltip-wrapper:hover{
 		.tooltip-box{display: block;}
@@ -208,8 +212,11 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	column-gap:40px;
-	&__col{
-		
+	
+}
+.form-item + .form-item{
+	margin-top: 34px;
+	@media (max-width: 1199px) {
+	   margin-top: 24px;
 	}
 }
-.form-item + .form-item{margin-top: 34px;}

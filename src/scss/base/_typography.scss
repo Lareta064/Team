@@ -99,6 +99,10 @@
     line-height: 1.5;
     letter-spacing: normal;
 	font-family: "Unbounded-Regular";
+	@media (max-width: 991px) {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
 }
 .title-44{
 	font-size: 44px;
