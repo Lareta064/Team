@@ -1,0 +1,74 @@
+//===================================================================
+	ОКНО РЕГИСТРАЦИИ открывается по клику на элемент с атрибутом  frame-btn="register-modal"
+//===================================================================
+.modal-frame-wrapper.visible.width-1260(frame-modal="registr-modal")
+	.icon-close(frame-close)
+	.modal-frame
+		.h6 регистрация
+			
+		.modal-frame__body
+			form(action="")
+				.form-wrapper
+					.form-wrapper__col
+						.form-item
+							.input-label Фамилия
+							input(type="text" name="" )
+							.form-item__icon
+								.ic-edit
+							
+						.form-item
+							.input-label Имя
+							input(type="text" name="" )
+							.form-item__icon
+								.ic-edit
+							
+						.form-item
+							.input-label Отчество
+							input(type="text" name="" )
+							.form-item__icon
+								.ic-edit
+						.form-item
+							.input-label Дата рождения
+							input#datepicker(type="text" class="datepicker" value="00.00.00")
+							.form-item__icon
+								.ic-edit
+						.form-item.form-item__border
+							.form-item-group.d-flex
+								.form-label Пол:
+								label.form-radio.flex-10
+									input(type="radio" name="group1")
+									span.fake-radio
+									.text-14 Мужской
+								label.form-radio.flex
+									input(type="radio" name="group1")
+									span.fake-radio
+									.text-14 Женский
+						.form-item
+							.input-label Пароль
+							input(type="password" name="" )
+							.form-item__icon#toggle-password-visible
+								.ic-visible
+								.ic-hide.d-none
+					.form-wrapper__col
+						.form-item
+							.input-label Место работы/учебы
+							input(type="text" name="" value="ВОД «Наставники России»")
+							.form-item__icon
+								.ic-edit
+							.error Дополнительная текстовая инфа
+						.form-item
+							.input-label Должность
+							input(type="text" name="" value="Председатель координационного совета")
+							.form-item__icon
+								.ic-edit
+							
+						.form-item
+							.input-label Место жительства
+							input(type="text" name="" value="г. Москва")
+							.form-item__icon
+								.ic-edit
+						.form-item
+							.input-label Email
+							input(type="text" name="" value="info@nastavnikirossii.ru")
+							.form-item__icon
+								.ic-edit

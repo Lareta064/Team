@@ -1,0 +1,47 @@
+*[frame-modal]{
+	display: none;
+}
+
+*.visible[frame-modal]{
+	display: flex;
+	z-index: 10;
+}
+.modal-frame-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(25, 29, 35, 0.7);
+    backdrop-filter: blur(35px);
+	.modal-frame{
+		padding: 80px 86px;
+		border-radius: 60px;
+		margin: auto;
+		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
+		
+		
+	}
+	.h6{
+		margin-bottom: 30px;
+	}
+	.form-wrapper{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 40px;
+	}
+}
+.modal-frame-wrapper.width-1260{
+	
+   .modal-frame{
+	max-width: 1260px;
+	width: 100%;
+	padding-left: 130px;
+	padding-right: 130px;
+   }
+
+}
+.form-item__border{
+	border-bottom: 1px solid $sec;
+	padding-bottom: 8px;
+}
