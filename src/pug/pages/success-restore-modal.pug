@@ -1,0 +1,25 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_register-header
+	main
+		//===================================================================
+			окно Успешная смена пароля открывается по клику на элемент с атрибутом  frame-btn="restore-success"
+		//===================================================================
+		.modal-frame-wrapper.w-500.visible(frame-modal="restore-success")
+			.icon-close(frame-close)
+			.modal-frame
+				.h6 Успешно!
+				.text-14 Смена пароля прошла успешно, в&nbsp;течении нескольких секунд вы&nbsp;будете перемещены в&nbsp;личный кабинет!
+				
+				.form-footer.form-footer--center
+					.form-footer__btn.d-flex
+						button.btn-46.btn(type="button" frame-close) ок
+	
+	include ../sections/_footer
+	
+
+block variables
+
+
+	-var title="Успешная смена пароля"

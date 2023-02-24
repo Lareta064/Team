@@ -1,0 +1,35 @@
+//===================================================================
+	окно АВТОРИЗАЦИЯ открывается по клику на элемент с атрибутом  frame-btn="auth-modal"
+//===================================================================
+.modal-frame-wrapper.width-740(frame-modal="auth-modal")
+	.icon-close(frame-close)
+	.modal-frame
+		.h6 Авторизация
+		.modal-frame__body
+			form(action="")
+				
+				//========== одно поле ===============
+				.form-item
+					.input-label Email
+						span *
+					input(type="text" name="" )
+					.form-item__icon
+						.ic-edit
+				
+				//========== одно поле ===============
+				.form-item.toggle-pass.tooltip-wrapper
+					.input-label Пароль
+						span *
+					input(type="password" name="" )
+					.form-item__icon
+						.ic-visible
+						.ic-hide.d-none
+					
+				//========== footer формы===============
+				.form-footer
+					.form-footer__btn.d-flex
+						button.btn-46.btn.w-100(type="submit") Войти
+						button.btn-46.btn-outline.w-100(type="button" modal="reg-modal") Регистрация
+						a(href="#!").back-link.text-14
+							span.link Восстановить пароль
+							.ic-restore

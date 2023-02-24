@@ -1,0 +1,25 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_register-header
+	main
+		//===================================================================
+			окно Успешная Регистрация открывается по клику на элемент с атрибутом  frame-btn="reg-success"
+		//===================================================================
+		.modal-frame-wrapper.w-500.visible(frame-modal="reg-success")
+			.icon-close(frame-close)
+			.modal-frame
+				.h6 Успешно!
+				.text-14 Вы успешно зарегистрированы! Ваша учетная запись создана, но еще не активирована. На адрес «указанный e-mail адрес» было выслано письмо, содержащее ссылку для активации вашего профиля. Мы просим вас перейти по данной ссылке и активировать свой аккаунт.
+				
+				.form-footer.form-footer--center
+					.form-footer__btn.d-flex
+						button.btn-46.btn(type="button" frame-close) ок
+	
+	include ../sections/_footer
+	
+
+block variables
+
+
+	-var title="Успешная регистрация"

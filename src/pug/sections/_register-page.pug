@@ -1,7 +1,7 @@
 //===================================================================
 	ОКНО РЕГИСТРАЦИИ открывается по клику на элемент с атрибутом  frame-btn="register-modal"
 //===================================================================
-.modal-frame-wrapper.visible.width-1260(frame-modal="registr-modal")
+.modal-frame-wrapper.width-1260(frame-modal="reg-modal")
 	.icon-close(frame-close)
 		
 	.modal-frame
@@ -105,6 +105,7 @@
 						.form-item.toggle-pass.tooltip-wrapper
 							.tooltip-box
 								.text-12 Пароль может содержать буквы латинского алфавита (a-z, A-Z), цифры (0-9) и символы !@#$%^&*()_-=+.,<>;:'"|`~{}[]
+							.input-label Пароль
 								span *
 							input(type="password" name="" )
 							.form-item__icon

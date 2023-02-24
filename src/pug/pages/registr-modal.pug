@@ -1,0 +1,135 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_register-header
+	main
+		.modal-frame-wrapper.width-1260.visible(frame-modal="reg-modal")
+			.icon-close(frame-close)
+				
+			.modal-frame
+				.h6 регистрация
+					
+				.modal-frame__body
+					form(action="")
+						.form-wrapper
+							//========== колонка левая с полями===============
+							.form-wrapper__col
+								//========== одно поле ===============
+								.form-item
+									.input-label Фамилия
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============	
+								.form-item
+									.input-label Имя
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============	
+								.form-item
+									.input-label Отчество
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============
+								.form-item
+									.input-label Дата рождения
+										span *
+									input#datepicker(type="text" class="datepicker" value="00.00.00")
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============
+								.form-item.form-item__border
+									.form-item-group.d-flex
+										.input-label Пол:
+											span *
+										label.form-radio.flex-10
+											input(type="radio" name="group1")
+											span.fake-radio
+											.text-14 Мужской
+										label.form-radio.flex
+											input(type="radio" name="group1")
+											span.fake-radio
+											.text-14 Женский
+								
+								//========== одно поле ===============
+								.form-item.toggle-pass
+									.input-label Пароль
+										span *
+									input(type="password" name="" )
+									.form-item__icon
+										.ic-visible
+										.ic-hide.d-none
+							
+							//========== колонка правая с полями ===============
+							.form-wrapper__col
+								//========== одно поле ===============
+								.form-item
+									.input-label Образование
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============	
+								.form-item
+									.input-label Место работы/учебы
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============	
+								.form-item
+									.input-label Должность
+										span *
+									input(type="text" name="")
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============	
+								.form-item
+									.input-label Место жительства
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								//========== одно поле ===============
+								.form-item
+									.input-label Email
+										span *
+									input(type="text" name="" )
+									.form-item__icon
+										.ic-edit
+								
+								//========== одно поле ===============
+								.form-item.toggle-pass.tooltip-wrapper
+									.tooltip-box
+										.text-12 Пароль может содержать буквы латинского алфавита (a-z, A-Z), цифры (0-9) и символы !@#$%^&*()_-=+.,<>;:'"|`~{}[]
+									.input-label Повторить пароль
+										span *
+									input(type="password" name="" )
+									.form-item__icon
+										.ic-visible
+										.ic-hide.d-none
+						
+						//========== footer формы===============
+						.form-footer
+							label.form-item-group.d-flex.politic-confirm
+								.tooltip-box
+									.text-12 Для отзыва согласия на обработку персональных данных, обратитесь письменно к администрации сайта!
+								.form-checkbox
+									input(type="checkbox")
+								.text-14 Даю свое согласие на обработку персональных данных ы соответствии с #[a.link(href="#!") Политикой обработки персональных данных]
+							.form-footer__btn.d-flex
+								button.btn-46.btn(type="submit") Зарегистрироваться
+								button.btn-46.btn-outline(type="") Войти
+	
+	include ../sections/_footer
+	
+
+block variables
+
+
+	-var title="Регистрация"

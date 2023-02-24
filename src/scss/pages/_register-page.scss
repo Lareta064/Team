@@ -5,6 +5,10 @@
 *.visible[frame-modal]{
 	display: flex;
 	z-index: 10;
+	animation-name: opacity;
+	animation-duration: .3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
 }
 .modal-frame-wrapper{
 	position: fixed;
@@ -29,10 +33,12 @@
 		padding: 80px 86px;
 		border-radius: 60px;
 		width: 75%;
+		max-width: 740px;
 		margin: auto;
 		background: linear-gradient(109.23deg, #000E1B 6.61%, #032D53 94.35%);
 		@media(max-width:1919px){
 			margin-top: 124px;
+			padding: 60px;
 		}
 		@media (max-width: 991px) {
 			padding: 40px;	
@@ -43,12 +49,28 @@
 			width: 100%;
 		  padding: 20px;
 		  max-width: 320px;
-		  
 		  border-radius: 20px;
+
 		}
 		
 	}
-	.form-footer{padding-top: 20px;}
+	.form-footer{
+		padding-top: 20px;
+		&__btn{
+			@media (max-width: 767px) {
+	
+			flex-direction: column;
+			align-items: center;
+			row-gap:14px;
+			&>*{
+				width: 100%;
+			}
+			}
+			.back-link{justify-content: center;}
+		}
+		
+	}
+	.form-footer--center .form-footer__btn{justify-content: center;}
 	.h6{
 		margin-bottom: 30px;
 	}
@@ -68,7 +90,6 @@
 	}
 }
 .modal-frame-wrapper.width-1260{
-	
    .modal-frame{
 	max-width: 1260px;
 	width: 75%;
@@ -86,8 +107,73 @@
 		max-width: 320px;
 	}
    }
-
+   .form-footer__btn{
+	margin-top: 14px;
+	gap:30px;
+	.btn, .btn-outline{
+		width: 255px;
+	}
+	@media (max-width: 767px) {
+	
+	 row-gap:14px;
+	 
+	}
+  }
 }
+.modal-frame-wrapper.w-500{
+	.modal-frame{
+		max-width: 502px;
+		text-align: center;
+		.h6{margin-bottom: 10px;}
+		.modal-frame__body{padding-top: 33px;}
+		.form-footer__btn .btn.w-100{width: 100%;}
+		@media(min-width:768px){
+			padding: 80px 72px;
+		    border-radius: 60px;
+		}
+		@media (max-width: 767px) {
+		   max-width: 320px;
+		}
+	}
+}
+.modal-frame-wrapper.width-740{
+	.form-item + .form-item{
+		margin-top: 20px;
+	}
+   .modal-frame{
+		max-width: 740px;
+		width: 85%;
+		padding-left: 130px;
+		padding-right: 130px;
+		.form-footer__btn{
+			
+			gap:10px;
+			.btn, .btn-outline{
+				width: 140px;
+				min-width: 140px;
+				padding-left: 21px;
+				padding-right: 21px;
+				@media (max-width: 767px) {
+				  
+				  width: 100%;
+				}
+			}
+		}
+		@media (max-width: 1199px) {
+			padding: 80px;	 
+		}
+		@media (max-width: 991px) {
+			padding: 40px;	 
+		}
+		@media (max-width: 767px) {
+			width: 100%;
+			padding: 20px;
+			max-width: 320px;
+			
+		}
+   }
+}
+
 .form-item__border{
 	border-bottom: 1px solid $sec;
 	padding-bottom: 8px;
@@ -100,20 +186,4 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;	
-}
-.form-footer__btn{
-	margin-top: 14px;
-	gap:30px;
-	.btn, .btn-outline{
-		width: 255px;
-	}
-	@media (max-width: 767px) {
-	
-	 flex-direction: column;
-	 align-items: center;
-	 row-gap:14px;
-	 &>*{
-		width: 320px;
-	 }
-	}
 }

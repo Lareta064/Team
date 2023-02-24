@@ -1,0 +1,25 @@
+extends ../layouts/layout.pug
+
+block content
+	include ../sections/_register-header
+	main
+		//===================================================================
+			окно ВНИМАНИЕ! открывается по клику на элемент с атрибутом  frame-btn="info-modal"
+		//===================================================================
+		.modal-frame-wrapper.w-500.visible(frame-modal="info-modal")
+			.icon-close(frame-close)
+			.modal-frame
+				.h6 ВНИМАНИЕ!
+				.text-14 Просмотр данного контента доступен только зарегистрированным пользователям. Регистрация на сайте бесплатна.
+				
+				.form-footer.form-footer--center
+					.form-footer__btn.d-flex
+						button.btn-46.btn.w-100(type="button" ) Регистрация
+	
+	include ../sections/_footer
+	
+
+block variables
+
+
+	-var title="Авторизация"
