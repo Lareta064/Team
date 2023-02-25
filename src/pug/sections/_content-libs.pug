@@ -2,7 +2,7 @@ mixin libraryCard(img, title, text, txt1)
 	//======== карточка - библиотеки =========
 	a(href="./img/doc.pdf").library-card.d-flex
 		.library-card__img
-			img(src="./img/libs/libs"+ img +".png", width="194" height="273" alt="img")
+			img.lazy(src="./img/libs/libs"+ img +".png", width="194" height="273" alt="img")
 		.library-card__description
 			.library-card__text
 				.library-card__title.d-flex

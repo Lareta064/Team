@@ -9,17 +9,17 @@ mixin projCard(logo, text, img, addClass)
 		a(href="./img/doc.pdf" target="_blank" class="project-card" )
 			.project-card__img
 				.project-card__logo
-					img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
+					img.lazy(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
 				.project-card__picture
 					.picture-wrapper
-						img(src="./img/projects/project"+ img +".jpg", width="480" height="500" alt="alt")
+						img.lazy(src="./img/projects/project"+ img +".jpg", width="480" height="500" alt="alt")
 				.btn.btn--mini
 					svg.svg-folder
 						use(href="./img/svg-sprite.svg#fldr-svg")
 					span Pdf, 46.06 кб
 			
 			.project-card__title
-				img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
+				img.lazy(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
 				.btn.btn--mini
 					svg.svg-folder
 						use(href="./img/svg-sprite.svg#fldr-svg")

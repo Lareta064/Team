@@ -4,7 +4,7 @@ header.header
 		.container
 			.header-content
 				a(href="index.html").logo
-					img(src="./img/logo.png", width="94" height="99" alt="logo")
+					img.lazy(src="./img/logo.png", width="94" height="99" alt="logo")
 				
 				//======================  ГЛАВНОЕ МЕНЮ  ============================================
 				.main-menu#header-menu
@@ -27,7 +27,7 @@ header.header
 						аватар залогиненного пользователя  что бы скрыть иконку, надо к .login-avatar  добавить класс d-none 
 					//==================================================================================================
 					a(href="lk.html").login-avatar
-						img(src="./img/avatar.jpg", width="44" height="44" alt="avatar")
+						img.lazy(src="./img/avatar.jpg", width="44" height="44" alt="avatar")
 						
 					.menu-toggle#menu-toggle
 						span
@@ -43,6 +43,7 @@ header.header
 				.header-bg
 					video( muted="muted" autoplay="autoplay" loop  playsinline preload="yes")
 						source(src="video/video.mp4" type="video/mp4")
+						source(src="video/video.webm" type="video/webm")
 				.header-text
 					p.text-18 Данный проект направлен на формирование всесторонне гармонично развитой личности и реализуемый на&nbsp;территории России с 2015 года
 					.header-btn.d-flex

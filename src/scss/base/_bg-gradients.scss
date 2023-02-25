@@ -153,6 +153,8 @@
 		transform: translate(60%, 30%);
 	}
 }
+.anim-box{position: relative;
+}
   .in-view.anim-box{
 
 	animation-duration: 1.5s;
@@ -169,7 +171,7 @@
         top:0px;
     }
 	50% {
-		top:-30px;
+		top:-25px;
 	}
 	100% {
 		top:0;

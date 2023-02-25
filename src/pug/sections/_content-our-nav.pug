@@ -4,7 +4,7 @@ mixin eventCard(img, title, txt1, txt2)
 			.event-card__label
 				svg.svg-folder
 					use(href="./img/svg-sprite.svg#fldr-svg")
-			img(src="./img/libs/"+ img +".jpg", width="480" height="328" alt="alt")
+			img.lazy(src="./img/libs/"+ img +".jpg", width="480" height="328" alt="alt")
 		.event-card__body
 			.text-medium !{title}
 		.card-flex__footer
