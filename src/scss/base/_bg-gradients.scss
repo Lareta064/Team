@@ -75,6 +75,7 @@
 }
 /*==== градиенты на стр НОВОСТИ ======*/
 .news-page{
+	
 	main{
 		.gr2{
 			bottom: 0;
@@ -82,6 +83,38 @@
 			left:auto;
 			top:auto;
 			transform: translate(50%, 50%);
+			
 		}
+	}
+}
+.page-aboutUs{
+	.body-content> .gr2{
+		z-index: 1;
+		transform: translate(-50%, 30%);
+		@media(min-width: 1365px) and (max-width: 1439px) {
+			top:66vh;
+		}
+
+	}
+	
+}
+.our-docs>.gr2{
+	transform: translateX(50%);
+	@media(max-width:1199px){
+		transform: translate(21%, -21%);
+	}
+	@media (max-width: 767px) {
+   		 top: -18vh;
+		transform: translate(-50%, 0);
+	}
+	
+}
+.our-docs>.gr3{
+	display: none;
+	@media (max-width: 991px) {
+		width: 1200px;
+		height: 1200px;
+		display: block;
+	   transform: translate(50%, 20%);
 	}
 }

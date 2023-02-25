@@ -30,10 +30,11 @@
 	.our-docs__title{
 		margin-bottom: 62px;
 	}
-	@media (max-width: 1199px) {
+	@media (max-width: 1439px) {
 	  background-image: none!important;
 	  padding-top: 120px;
 	}
+	
 	@media (max-width: 767px) {
 	   padding-top: 90px;
 	   .our-docs__title{
@@ -173,8 +174,8 @@
 	    column-gap:40px;	
 	}
 	@media(max-width:1439px){
-		grid-template-columns: repeat(auto-fill, 290px);
-	    column-gap:60px;	
+		grid-template-columns: repeat(auto-fill, 225px);
+	    column-gap:30px;	
 	}
 }
 .annual-docs-wrapper{
