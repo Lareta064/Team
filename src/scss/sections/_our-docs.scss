@@ -1,21 +1,4 @@
-.page-aboutUs{
-	.body-content .element-2{
-		z-index: 1;
-		@media (max-width: 1199px) {
-			transform: translate(-15%, 0);
-		}
-		@media (max-width: 767px) {
-			// transform: translate(-15%,0);
-		}
-		@media (max-width: 767px) {
-			transform: translate(-15%, 54%);
-			object{
-				width: 700px;
-				height: 700px;
-			}
-		}
-	}
-}
+
 .our-docs{
 	padding-top: 180px;
 	overflow:hidden;
@@ -62,14 +45,7 @@
 	position: relative;
 	z-index: 3;
 }
-.our-docs .element-4{
 
-	bottom: -35%;
-	@media (max-width: 767px) {
-		bottom: 0;
-		right: -40%;
-	}
-	}
 .register-docs{
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(calc(33.33% - 80px), 1fr));

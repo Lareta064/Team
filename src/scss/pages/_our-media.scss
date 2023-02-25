@@ -78,13 +78,5 @@
 .main-media{
 	position: relative;
 	overflow: hidden;
-	.element-5{
-		position: absolute;
-    	  bottom: 12%;
-          left: 5%;
-	@media (max-width: 767px) {
-	    bottom: -22%;
-    	left: -10%;
-		}
-	}
+	
 }

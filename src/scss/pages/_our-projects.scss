@@ -1,30 +1,9 @@
 .our-projects{
-	// padding-bottom: 180px;
+	
 	overflow: hidden;
-	.element-3{
-		
-		top: 10%;
-		right: -43%;
-		@media (max-width: 767px) {
-			
-			right: 0%;
-			}
+	
 	}
-	.element-4{
-		width: 1200px;
-		height: 1400px;
-		position: absolute;
-		bottom: 0;
-		left:0;
-		transform: rotate(180deg);
-		@media (max-width: 767px) {
-			width: 700px;
-			height: 700px;
-			
-		}
-
-	}
-}
+	
 
 .project-card{
 	overflow: hidden;
