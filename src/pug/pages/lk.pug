@@ -7,46 +7,46 @@ block content
 	
 	include ../sections/_footer
 	
-		//===================================================================
-			окно СМЕНИТЬ ПАРОЛЬ открывается по клику на элемент с атрибутом  frame-btn="change-passw"
-		//===================================================================
-		.modal-frame-wrapper.w-500(frame-modal="change-passw")
-			.icon-close(frame-close)
-			.modal-frame
-				.h6 Смена пароля
-				.text-14 Укажите логин и новый пароль
-				.modal-frame__body
-					form(action="")
-						//========== одно поле ===============
-						.form-item
-							.input-label Email
-								span *
-							input(type="text" name="" )
-							.form-item__icon
-								.ic-edit
-						
-						//========== одно поле ===============
-						.form-item.toggle-pass
-							.input-label Пароль
-								span *
-							input(type="password" name="" )
-							.form-item__icon
-								.ic-visible
-								.ic-hide.d-none
-						//========== одно поле ===============
-						.form-item.toggle-pass.tooltip-wrapper
-							.tooltip-box
-								.text-12 Пароль может содержать буквы латинского алфавита (a-z, A-Z), цифры (0-9) и символы !@#$%^&*()_-=+.,<>;:'"|`~{}[]
-							.input-label Повторить пароль
-								span *
-							input(type="password" name="" )
-							.form-item__icon
-								.ic-visible
-								.ic-hide.d-none
-						//========== footer формы===============
-						.form-footer
-							.form-footer__btn.d-flex
-								button.btn-46.btn.w-100(type="submit") Сохранить
+	//===================================================================
+		окно СМЕНИТЬ ПАРОЛЬ открывается по клику на элемент с атрибутом  frame-btn="change-passw"
+	//===================================================================
+	.modal-frame-wrapper.w-500(frame-modal="change-passw")
+		.icon-close(frame-close)
+		.modal-frame
+			.h6 Смена пароля
+			.text-14 Укажите логин и новый пароль
+			.modal-frame__body
+				form(action="")
+					//========== одно поле ===============
+					.form-item
+						.input-label Email
+							span *
+						input(type="text" name="" )
+						.form-item__icon
+							.ic-edit
+					
+					//========== одно поле ===============
+					.form-item.toggle-pass
+						.input-label Пароль
+							span *
+						input(type="password" name="" )
+						.form-item__icon
+							.ic-visible
+							.ic-hide.d-none
+					//========== одно поле ===============
+					.form-item.toggle-pass.tooltip-wrapper
+						.tooltip-box
+							.text-12 Пароль может содержать буквы латинского алфавита (a-z, A-Z), цифры (0-9) и символы !@#$%^&*()_-=+.,<>;:'"|`~{}[]
+						.input-label Повторить пароль
+							span *
+						input(type="password" name="" )
+						.form-item__icon
+							.ic-visible
+							.ic-hide.d-none
+					//========== footer формы===============
+					.form-footer
+						.form-footer__btn.d-flex
+							button.btn-46.btn.w-100(type="submit") Сохранить
 block variables
 
 	-var bodyCl = 'body-user-profile'
