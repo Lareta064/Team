@@ -44,8 +44,8 @@ document.addEventListener("DOMContentLoaded", function (){
       loop:true,
       speed: 800,
       navigation: {
-        nextEl: ".slider-swiper-next",
-        prevEl: ".slider-swiper-prev",
+        nextEl: ".slider-swiper-prev",
+        prevEl: ".slider-swiper-next",
       },
       breakpoints: {      
       575: {
@@ -68,8 +68,8 @@ document.addEventListener("DOMContentLoaded", function (){
       spaceBetween: 20,
       speed: 800,
       navigation: {
-        nextEl: ".slider-swiper-next",
-        prevEl: ".slider-swiper-prev",
+        nextEl: ".slider-swiper-prev",
+        prevEl: ".slider-swiper-next",
       },
       breakpoints: {      
       575: {
