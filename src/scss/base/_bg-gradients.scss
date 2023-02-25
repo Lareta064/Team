@@ -11,10 +11,11 @@
 		height: 53.3vw;
 		right: 0;
 		top: 0;
-		transform:translate(38%, -42% );
+		transform:translate(50%, -50% );
 		@media (max-width: 1199px) {
 			width: 130vw;
 			height: 75vw;
+			transform:translate(38%, -42% );
 		}
 		@media (max-width: 767px) {
 			width: 514px;
@@ -41,12 +42,12 @@
 	position: relative;
 	overflow: hidden;
 }
-.gr1,.gr2, .gr3{
+.gr1,.gr2, .gr3, .gr4{
 	pointer-events: none;
 	position: absolute;
 	background: radial-gradient(50% 50% at 50% 50%, rgba(21, 120, 224, 0.38) 0%, rgba(25, 29, 35, 0.07) 100%);
 }
-.gr3{
+.gr3,.gr4{
 	width: 105vw;
 	height: 67.9vw;
 	bottom: 0;
@@ -58,7 +59,14 @@
 	@media (max-width: 767px) {
 		width: 684px;
 		height: 400px;
-		
+	}
+}
+.gr4{
+	right:auto;
+	left:0;
+	@media (max-width: 767px) {
+		width: 684px;
+		height: 580px;
 	}
 	
 }
@@ -87,6 +95,7 @@
 		}
 	}
 }
+/*==== градиенты на стр Визитная карточка ======*/
 .page-aboutUs{
 	.body-content> .gr2{
 		z-index: 1;
@@ -116,5 +125,30 @@
 		height: 1200px;
 		display: block;
 	   transform: translate(50%, 20%);
+	}
+}
+/*==== градиенты на стр Проекты ======*/
+.inner-page{
+	main{
+		.gr3{
+			transform: translate(-36%, 38%);
+			@media (max-width: 767px) {
+			  transform: translate(3%, 25%);
+			}
+		}
+		.gr4{
+			transform: translate(36%, -30%);
+			@media(max-width:1199px){
+				transform: translate(36%, -100%);
+			}
+		}
+	}
+}
+/*==== градиенты LK ======*/
+.body-user-profile{
+	.gr2{
+		left: auto;
+		right:auto;
+		transform: translate(60%, 30%);
 	}
 }

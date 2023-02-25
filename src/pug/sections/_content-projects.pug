@@ -1,12 +1,12 @@
 mixin projCard(logo, text, img, addClass)
 	if addClass == 'true'
-		a(href="doc.pdf" target="_blank" class="project-card project-card--disabled" disabled)
+		a(href="./img/doc.pdf" target="_blank" class="project-card project-card--disabled" disabled)
 			.project-card__img
 				.project-card__logo
 			
 			p !{text}
 	else
-		a(href="doc.pdf" target="_blank" class="project-card" )
+		a(href="./img/doc.pdf" target="_blank" class="project-card" )
 			.project-card__img
 				.project-card__logo
 					img(src="./img/projects/logo"+ logo +".png", width="270" height="193" alt="alt")
