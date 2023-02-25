@@ -19,7 +19,7 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		link(rel="stylesheet" href="./libs/ui-datapicker/ui-datapicker.css" )
-		
+
 		//=======================favicon==============================
 		link(rel='apple-touch-icon' sizes='180x180' href='./img/favicon/apple-touch-icon.png')
 		link(rel='icon' type='image/png' sizes='32x32' href='./img/favicon/favicon-32x32.png')
@@ -42,7 +42,7 @@ html(lang="ru")
 	body(class=(bodyCl !=="" ? bodyCl : ''))
 		.body-content
 			.gr1
-			.gr2
+			.gr2.box
 				
 			block content
 			
@@ -57,7 +57,16 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		script(src="./libs/ui-datapicker/ui-datapicker.js")
-				
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js")
+		script.
+			var tl = gsap.timeline();
+			var t2 = gsap.timeline();
+			
+			tl.from(".gr2", {x: '120%' , y: '-20%', duration: 1.5});
+			t2.from(".gr1", {x: '-50%' , y: '40%', duration: 1.5});
+			
+
+			
 		//=============== мои скрипты ===================
 		
 		script(src="./js/main.js")

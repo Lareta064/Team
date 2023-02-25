@@ -71,27 +71,7 @@
 	padding-top: 120px;
 	position: relative;
 	z-index: 2;
-	&:after{
-		content: '';
-		position: absolute;
-		top: 120px;
-		right: 40px;
-		background: url(../img/el3.svg);
-		width: 1031px;
-		height: 727px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		z-index: 2;
-		@media (max-width: 767px) {
-		  width: 497px;
-		  height: 621px;
-		  right:auto;
-		  left: 0;
-		  top:auto;
-		  bottom:0;
-		  transform:translate(-44%, 34%)
-		}
-	}
+
 	@media(max-width:1439px){
 		padding-top: 90px;
 	}
