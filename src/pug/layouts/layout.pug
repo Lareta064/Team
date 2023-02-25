@@ -59,11 +59,14 @@ html(lang="ru")
 		script(src="./libs/ui-datapicker/ui-datapicker.js")
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js")
 		script.
-			var tl = gsap.timeline();
-			var t2 = gsap.timeline();
+			if(window.innerWidth > 1200){
 			
-			tl.from(".gr2", {x: '120%' , y: '-20%', duration: 1.5});
-			t2.from(".gr1", {x: '-50%' , y: '40%', duration: 1.5});
+				var tl = gsap.timeline();
+				var t2 = gsap.timeline();
+				
+				tl.from(".gr2", {x: '120%' , y: '-20%', duration: 1.5});
+				t2.from(".gr1", {x: '-50%' , y: '0%', duration: 1.5});
+			}
 			
 
 			

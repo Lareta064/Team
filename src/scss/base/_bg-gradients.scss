@@ -153,3 +153,26 @@
 		transform: translate(60%, 30%);
 	}
 }
+  .in-view.anim-box{
+
+	animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+	
+	
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+  @keyframes fadeInUp {
+   0% {
+        top:0px;
+    }
+	50% {
+		top:-30px;
+	}
+	100% {
+		top:0;
+	}	
+   
+}

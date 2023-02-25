@@ -199,4 +199,67 @@ document.addEventListener("DOMContentLoaded", function (){
       }
 
     }
+
+  	/**  анимация, когда секции в зоне видимости */
+	if(window.innerWidth > 1200){
+		let targets = document.querySelectorAll(".anim-box")
+
+		function check_in_viewport(element){
+			let rect = element.getBoundingClientRect()
+			const VERTICAL_SETPOINT = 100;
+			let targetPosition = {
+				top: window.pageYOffset + rect.top + VERTICAL_SETPOINT,
+				bottom: window.pageYOffset + rect.bottom - VERTICAL_SETPOINT,
+			}
+			let windowPosition = {
+				top: window.pageYOffset,
+				bottom: window.pageYOffset + document.documentElement.clientHeight
+			}
+			return (
+				targetPosition.bottom > windowPosition.top &&
+				targetPosition.top < windowPosition.bottom
+			)
+		}
+
+		window.addEventListener('scroll', (e)=>{
+			for(let target of targets){
+				let is_in_viewport = check_in_viewport(target)
+				if (is_in_viewport == target.classList.contains('in-view'))
+					continue
+				if (is_in_viewport){
+					target.classList.add('in-view')
+				}else{
+					target.classList.remove('in-view')
+				}
+					
+			}
+		});
+	}
+		
+
+	// active class of menu items onscroll
+	window.addEventListener('scroll', () => {
+		let scrollDistance = window.scrollY;
+
+		if (window.innerWidth > 1023) {
+			document.querySelectorAll('.section').forEach((el, i) => {
+				if (el.offsetTop - document.querySelector('.header-top').clientHeight <= scrollDistance) {
+					document.querySelectorAll('#header-menu a').forEach((el) => {
+						if (el.classList.contains('active')) {
+							el.classList.remove('active');
+						}
+					});
+					const thisId = "#" + el.getAttribute('id');
+					
+
+					document.querySelectorAll('#header-menu a').forEach((elem, i) => {
+						const linkHref = elem.getAttribute('href');
+						if(thisId == linkHref ){
+							elem.classList.add('active');
+						}
+					});
+				}
+			});
+		}
+	});
 });
