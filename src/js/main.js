@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function (){
   const menuToggle = document.querySelector('#menu-toggle');
  
   const mobileMenu = document.querySelector('#header-menu');
-  const overlayBlock = document.querySelector('#overlay');
+  
   
   const bodyEl = document.body;
   if(menuToggle){
@@ -12,9 +12,9 @@ document.addEventListener("DOMContentLoaded", function (){
         
         if (this.classList.contains('active')) {
           
-          this.classList.remove('active');
-        mobileMenu.classList.remove('active');
-
+              this.classList.remove('active');
+              mobileMenu.classList.remove('active');
+              bodyEl.classList.remove('lock');
         } else {
             this.classList.add('active');
             mobileMenu.classList.add('active');
@@ -27,8 +27,7 @@ document.addEventListener("DOMContentLoaded", function (){
           if(this.innerWidth >992){
             if(mobileMenu.classList.contains('active')){
               menuToggle.classList.remove('active');
-             mobileMenu.classList.remove('active');
-          
+              mobileMenu.classList.remove('active');
               bodyEl.classList.remove('lock');
             }
           }      
