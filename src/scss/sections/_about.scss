@@ -102,14 +102,19 @@
 }
 .about-img{
 	width: 870px;
-	// height: 634px;
 	padding-right: 40px;
 	padding-bottom: 40px;
 	margin-right: 170px;
 	position: relative;
-	// border-radius: 60px;
+	
 	display: inline-flex;
 	z-index: 3;
+	.gr2{
+		left: 50%;
+		top: 50%;
+		transform:translate(-45%, -50%);
+		
+	}
 	img{
 		width: 100%;
 		height: auto;
