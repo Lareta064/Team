@@ -69,11 +69,22 @@
 	}
 	
 }
+#lightbox{
+	.lb-outerContainer{
+		background-color: transparent;
+	}
+	.lb-dataContainer{
+		position: absolute;
+        top: -40px;
+        right: 40px;
+		@media (max-width: 767px) {
+		top: 0;
+		right: 0;
+		}	
+	}
+}
 .lb-data .lb-close{
-	// position: absolute;
-	// top: 0;
-	// right: 10%;
-	// z-index: 5;
+	
 }
 
 .lb-data .lb-number{
