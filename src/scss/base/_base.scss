@@ -5,6 +5,7 @@
 
 html {
 	scroll-behavior: smooth;
+
 }
 
 html,
@@ -140,10 +141,10 @@ input[type="submit"] {
 	align-items: center;
 }
 .flex-10{
-	column-gap:10;
+	column-gap:10px;
 }
 .flex-20{
-	column-gap:20;
+	column-gap:20px;
 }
 section{
 	padding-top: 120px;

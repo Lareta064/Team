@@ -11,11 +11,18 @@
 		height: 53.3vw;
 		right: 0;
 		top: 0;
-		transform:translate(50%, -50% );
+		transform:translate3d(50%, -50%, 0 );
+
+		animation-name: cir2;
+		animation-duration:2.5s;
+		animation-fill-mode: forwards;
+		animation-delay: .5s;
+		animation-timing-function:linear;
 		@media (max-width: 1199px) {
+			animation-name: unset;
 			width: 130vw;
 			height: 75vw;
-			transform:translate(38%, -42% );
+			transform:translate3d(38%, -42%,0 );
 		}
 		@media (max-width: 767px) {
 			width: 514px;
@@ -27,8 +34,15 @@
 		height: 42.9vw;
 		left: 0;
 		top: 50vh;
-		transform: translateX(-35.6%);
+		transform: translate(-35.6%, 0%);
+
+		animation-name: cir1;
+		animation-duration:2.5s;
+		animation-fill-mode: forwards;
+		animation-delay: .5s;
+		animation-timing-function: ease-in-out;
 		@media (max-width: 1199px) {
+			animation-name: unset;
 			width: 130vw;
 			height: 75vw;
 		}
@@ -177,4 +191,41 @@
 		top:0;
 	}	
    
+}
+@keyframes cir1 {
+    0% { transform: translate3d(-35.6%, 0%, 0);}    
+    10% {transform: translate3d(-25%, -10%, 0);}			
+	15%{transform: translate3d(-15%, -15%, 0);}
+	20%{transform: translate3d(-5%, -25%, 0);}
+	25%{transform: translate3d(0%, -30%, 0);}
+	30%{transform: translate3d(5%, -30%, 0);}
+	35%{transform: translate3d(10%, -30%, 0);}
+	40%{transform: translate3d(15%, -30%, 0);}
+	45%{transform: translate3d(20%, -30%, 0);}
+	50%{transform: translate3d(25%, -30%, 0);}
+	55%{transform: translate3d(30%, -30%, 0);}
+	60%{transform: translate3d(25%, -30%, 0);}
+	65%{transform: translate3d(15%, -30%, 0);}
+	70%{transform: translate3d(10%, -30%, 0);}
+	75%{transform: translate3d(5%, -30%, 0);}
+	80%{transform: translate3d(-5%, -25%, 0);}
+	85%{transform: translate3d(-15%, -15%, 0);}
+	90%{transform: translate3d(-25%, -10%, 0);}
+	95%{transform: translate3d(-35.6%, -5%, 0);}
+	100%{transform: translate3d(-35.6%, 0%, 0);}
+    
+}
+
+@keyframes cir2 {
+    0% {transform:translate3d(50%, -50%, 0 );}
+    25% {transform: translate3d(26%, -18%, 0);}
+    50% {transform: translate3d(3%, 1%, 0);}
+    75% { transform: translate3d(26%, -18%, 0);}
+    100% { transform: translate3d(50%, -50%, 0);}
+}
+@keyframes circle {
+  to { transform: rotate(-1turn); }
+}
+@keyframes updown {
+  to { transform: translateX(200px); }
 }
