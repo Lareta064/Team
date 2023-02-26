@@ -30,61 +30,7 @@
 .main-menu nav{
 	display: flex;
 	align-items: center;
-	a{
-		// padding-left: 28px;
-		// padding-right: 28px;
-		// height: 36px;
-		// line-height: 36px;
-		// border-radius: 100px;
-		// background-color: transparent;
-		// transition: .3s;
-		// position: relative;
-		// white-space: nowrap;
-		// font-weight: 500;
-		// font-size: 14px;
-		// letter-spacing: 0.03em;
-		// text-transform: uppercase;
-		// @media (max-width: 1439px) {
-		// 	padding-left: 24px;
-		// 	padding-right: 24px;
-			
-		// }
-		// @media (max-width: 1199px) {
-		// 	font-size: 12px;
-		// 	padding-left: 20px;
-		// 	padding-right: 20px;
-		// 	&:before{
-		// 		left: 6px;
-		// 	}
-		// }
-		// @media (max-width: 991px) {
-		// 	font-size: 14px;
-		// 	padding-left: 30px;	
-		// 	padding-right: 30px;
-		// 	&:before{
-		// 		left: 12px;
-		// 	}
-		// 	&+a{
-		// 		margin-top: 28px;
-		// 	}	
-		// }
-		
-		// &:before{
-		// 	content:'';
-		// 	width: 6px;
-		// 	height: 6px;
-		// 	border-radius: 50%;
-		// 	background-color: #ffffff;
-		// 	position: absolute;
-		// 	left: 10px;
-		// 	top: 50%;
-		// 	transform: translateY(-50%);
-		// }	
-		// &:hover{
-		// 	background-color: $ac1;
-		// }
-		// &:hover:before{display: none;}
-	}
+	
 	@media (max-width: 991px){
 		flex-direction: column;
 		align-items: flex-start;
@@ -143,9 +89,9 @@
 			transform: translateY(-50%);
 		}	
 		&:hover{
-			background-color: $ac1;
+			color: $ac1;
 		}
-		&:hover:before{display: none;}
+		&:hover:before{background-color: $ac1;}
 }
 .main-menu a.active{
 	background-color:  $ac1;

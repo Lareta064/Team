@@ -83,7 +83,7 @@
 		transform: translateX(-50%);
 	}
 }
-.video-wrapper{
+.video-wrapper, .video-wrapper__iframe{
 	width: 100%;
 	height: 580px;	
 	border-radius: 40px;
@@ -117,14 +117,17 @@
 			opacity: .777;
 		}
 	}
-.video-wrapper__local{
-	
-}
+
 .video-wrapper__iframe{
 	border-radius: 40px;
 	overflow: hidden;
-	
 	position:relative;padding-bottom:56.25%;padding-top:25px;height:0;
     iframe {position:absolute;top:0;left:0;width:100%;height:100%; object-fit: cover;}
+	@media (max-width: 1199px) {
+		border-radius: 20px;
+	}
+	@media (max-width: 767px) {
+		border-radius: 10px;
+	}
 	
 }

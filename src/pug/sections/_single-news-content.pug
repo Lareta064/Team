@@ -18,6 +18,10 @@
 
 
 			p В ней принял участие Андрей Самотоин, исполнительный директор ВОД «Наставники России», а также руководители федеральных детских центров страны МДЦ «Артек», ВДЦ «Смена», «Орлёнок», «Океан». На дискуссии Андрей Николаевич выступил с докладом «Наставничество как основа патриотического воспитания». #[br] Организатор Совещания — #[a(href="#!").link Министерство просвещения Российской Федерации] при организационно-методическом сопровождении ФГБУК «Всероссийский центр развития художественного творчества и гуманитарных технологий» (ВЦХТ).
+			
+			//==================================================================
+				Блок ниже отображается для видео, загружаемого из корня проекта
+			//==================================================================
 			.video-wrapper#video-frame
 				button.button-play
 					span.ic-play
@@ -25,9 +29,12 @@
 				video( playsinline preload="yes" poster="./img/news/news-preloader.png" )
 					source(src='video/video.mp4' type="video/mp4")
 
-			.video-wrapper
-				.video-wrapper__iframe
-					iframe(src="https://www.youtube.com/embed/PZIcR7VHi-U" title="video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen rel="0")
+			//==================================================================
+				Блок ниже отображается для видео, загружаемого по ссылке с рутуб
+			//==================================================================
+			
+			.video-wrapper__iframe
+				iframe(src="https://rutube.ru/play/embed/7216ad8df9faa0a8de754c2dbc0640cb" frameBorder="0" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
 
 			a(href="news.html").back-link
 				span.ic-back
