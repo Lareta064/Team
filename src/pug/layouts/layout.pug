@@ -42,7 +42,7 @@ html(lang="ru")
 	body(class=(bodyCl !=="" ? bodyCl : ''))
 		.body-content
 			.gr1
-			.gr2.box
+			.gr2
 				
 			block content
 			
@@ -57,19 +57,8 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		script(src="./libs/ui-datapicker/ui-datapicker.js")
-		script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js")
-		//- script.
-		//- 	if(window.innerWidth > 1200){
-			
-		//- 		var tl = gsap.timeline();
-		//- 		var t2 = gsap.timeline();
-				
-		//- 		tl.from(".gr2", {x: '120%' , y: '-20%', duration: 1.5});
-		//- 		t2.from(".gr1", {x: '-50%' , y: '0%', duration: 1.5});
-		//- 	}
-			
-
-			
-		//=============== мои скрипты ===================
+		
+		//=============== lazy ===================
 		script(src="./libs/jquery.lazy.min.js")
+		//=============== мои скрипты ===================
 		script(src="./js/main.js")
