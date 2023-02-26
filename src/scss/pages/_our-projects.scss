@@ -172,7 +172,10 @@
 	grid-template-columns: repeat(auto-fill, 480px);
 	column-gap:40px;
 	row-gap: 60px;
-	@media(max-width:1535px){
+	@media(max-width:1919px){
+		grid-template-columns: repeat(auto-fill, 412px);
+	}
+	@media(max-width:1439px){
 		grid-template-columns: repeat(auto-fill, 353px);
 	}
 	@media(max-width:1199px){

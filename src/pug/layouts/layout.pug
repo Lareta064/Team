@@ -7,7 +7,7 @@ html(lang="ru")
 		meta(charset="UTF-8")
 		meta(name="viewport", content="width=device-width, initial-scale=1.0")
 		meta(http-equiv="X-UA-Compatible", content="ie=edge")
-		
+		meta(name="theme-color" content="#191D23")
 		//======= swipe =============
 		link(rel="stylesheet" href="libs/swiper/swiper.min.css" )
 		
@@ -19,7 +19,7 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		link(rel="stylesheet" href="./libs/ui-datapicker/ui-datapicker.css" )
-		
+
 		//=======================favicon==============================
 		link(rel='apple-touch-icon' sizes='180x180' href='./img/favicon/apple-touch-icon.png')
 		link(rel='icon' type='image/png' sizes='32x32' href='./img/favicon/favicon-32x32.png')
@@ -41,9 +41,8 @@ html(lang="ru")
 		
 	body(class=(bodyCl !=="" ? bodyCl : ''))
 		.body-content
-			.element-1
-				
-			.element-2
+			.gr1
+			.gr2
 				
 			block content
 			
@@ -58,7 +57,8 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		script(src="./libs/ui-datapicker/ui-datapicker.js")
-				
-		//=============== мои скрипты ===================
 		
+		//=============== lazy ===================
+		script(src="./libs/jquery.lazy.min.js")
+		//=============== мои скрипты ===================
 		script(src="./js/main.js")

@@ -35,6 +35,7 @@ footer.footer{
 	display: inline-flex;
 	flex-direction: column;
 	&>*+*{margin-top: 20px;}
+	.text-link{white-space: nowrap;}
 	.text-18{
 		font-size: 18px;
 	}
@@ -50,5 +51,10 @@ footer.footer{
 		flex-direction: column;
 		display: inline-flex;
 		row-gap:12px;
+	}
+}
+.link-tel{
+	@media(min-width:1200px){
+		pointer-events: none;
 	}
 }

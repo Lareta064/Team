@@ -5,7 +5,7 @@ mixin eventCard(img, title, txt1, txt2)
 			.event-card__label
 				svg.foto-svg
 					use(href="./img/svg-sprite.svg#foto-svg")
-			img(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
+			img.lazy(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
 		.event-card__body
 			.text-medium !{title}
 		.card-flex__footer
@@ -23,7 +23,7 @@ mixin eventCardVideo(img, title, txt1, txt2)
 			.button-play
 				.ic-play
 			
-			img(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
+			img.lazy(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
 		.event-card__body
 			.text-medium !{title}
 		.card-flex__footer
@@ -41,7 +41,7 @@ mixin eventCardAudio(img, title, txt1, txt2)
 			.button-play
 				.ic-play
 			
-			img(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
+			img.lazy(src="./img/media/media"+ img +".jpg", width="480" height="328" alt="alt")
 		.event-card__body
 			.text-medium !{title}
 		.card-flex__footer
@@ -55,7 +55,7 @@ mixin eventCardAudio(img, title, txt1, txt2)
 				.form-item.form-item--icon-right
 					//====== кнопка лупа ========
 					button.form-item__icon(type="")
-						.ic-search
+						span.ic-search
 					
 					input(type="text" placeholder="Описание поля")
 			.search-results

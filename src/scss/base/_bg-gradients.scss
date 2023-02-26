@@ -1,0 +1,231 @@
+.body-content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	&>header, main,footer{width: 100%;flex-shrink:0}
+	min-height: 100vh;
+	overflow: hidden;
+
+	.gr1{
+		width: 103.5vw;
+		height: 53.3vw;
+		right: 0;
+		top: 0;
+		transform:translate3d(50%, -50%, 0 );
+
+		animation-name: cir2;
+		animation-duration:2.5s;
+		animation-fill-mode: forwards;
+		animation-delay: .5s;
+		animation-timing-function:linear;
+		@media (max-width: 1199px) {
+			animation-name: unset;
+			width: 130vw;
+			height: 75vw;
+			transform:translate3d(38%, -42%,0 );
+		}
+		@media (max-width: 767px) {
+			width: 514px;
+			height: 480px;
+		}
+	}
+	.gr2{
+		width: 79.3vw;
+		height: 42.9vw;
+		left: 0;
+		top: 50vh;
+		transform: translate(-35.6%, 0%);
+
+		animation-name: cir1;
+		animation-duration:2.5s;
+		animation-fill-mode: forwards;
+		animation-delay: .5s;
+		animation-timing-function: ease-in-out;
+		@media (max-width: 1199px) {
+			animation-name: unset;
+			width: 130vw;
+			height: 75vw;
+		}
+		@media (max-width: 767px) {
+			width: 684px;
+			height: 400px;
+		}
+	}
+}
+.grad-bg{
+	position: relative;
+	overflow: hidden;
+}
+.gr1,.gr2, .gr3, .gr4{
+	pointer-events: none;
+	position: absolute;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(21, 120, 224, 0.38) 0%, rgba(25, 29, 35, 0.07) 100%);
+	// opacity: 0;
+}
+.gr3,.gr4{
+	width: 105vw;
+	height: 67.9vw;
+	bottom: 0;
+	right: 0;
+	@media (max-width: 1199px) {
+		width: 130vw;
+		height: 75vw;
+	}
+	@media (max-width: 767px) {
+		width: 684px;
+		height: 400px;
+	}
+}
+.gr4{
+	right:auto;
+	left:0;
+	@media (max-width: 767px) {
+		width: 684px;
+		height: 580px;
+	}
+	
+}
+/*==== градиенты на главной ======*/
+.about .gr3{
+	transform: translate(52.9%, 130px);
+	@media (max-width: 1535px) {
+		transform:translate(50%, -11%);
+	}
+		
+	@media (max-width: 991px) {
+		transform:translate(38%, -140%);
+	}
+}
+/*==== градиенты на стр НОВОСТИ ======*/
+.news-page{
+	
+	main{
+		.gr2{
+			bottom: 0;
+			right: 0;
+			left:auto;
+			top:auto;
+			transform: translate(50%, 50%);
+			
+		}
+	}
+}
+/*==== градиенты на стр Визитная карточка ======*/
+.page-aboutUs{
+	.body-content> .gr2{
+		z-index: 1;
+		transform: translate(-50%, 30%);
+		@media(min-width: 1365px) and (max-width: 1439px) {
+			top:66vh;
+		}
+
+	}
+	
+}
+.our-docs>.gr2{
+	transform: translateX(50%);
+	@media(max-width:1199px){
+		transform: translate(21%, -21%);
+	}
+	@media (max-width: 767px) {
+   		 top: -18vh;
+		transform: translate(-50%, 0);
+	}
+	
+}
+.our-docs>.gr3{
+	display: none;
+	@media (max-width: 991px) {
+		width: 1200px;
+		height: 1200px;
+		display: block;
+	   transform: translate(50%, 20%);
+	}
+}
+/*==== градиенты на стр Проекты ======*/
+.inner-page{
+	main{
+		.gr3{
+			transform: translate(-36%, 38%);
+			@media (max-width: 767px) {
+			  transform: translate(3%, 25%);
+			}
+		}
+		.gr4{
+			transform: translate(36%, -30%);
+			@media(max-width:1199px){
+				transform: translate(36%, -100%);
+			}
+		}
+	}
+}
+/*==== градиенты LK ======*/
+.body-user-profile{
+	.gr2{
+		left: auto;
+		right:auto;
+		transform: translate(60%, 30%);
+	}
+}
+.anim-box{position: relative;
+}
+  .in-view.anim-box{
+
+	animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+	
+	
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+  @keyframes fadeInUp {
+   0% {
+        top:0px;
+    }
+	50% {
+		top:-25px;
+	}
+	100% {
+		top:0;
+	}	
+   
+}
+@keyframes cir1 {
+    0% { transform: translate3d(-35.6%, 0%, 0);}    
+    10% {transform: translate3d(-25%, -10%, 0);}			
+	15%{transform: translate3d(-15%, -15%, 0);}
+	20%{transform: translate3d(-5%, -25%, 0);}
+	25%{transform: translate3d(0%, -30%, 0);}
+	30%{transform: translate3d(5%, -30%, 0);}
+	35%{transform: translate3d(10%, -30%, 0);}
+	40%{transform: translate3d(15%, -30%, 0);}
+	45%{transform: translate3d(20%, -30%, 0);}
+	50%{transform: translate3d(25%, -30%, 0);}
+	55%{transform: translate3d(30%, -30%, 0);}
+	60%{transform: translate3d(25%, -30%, 0);}
+	65%{transform: translate3d(15%, -30%, 0);}
+	70%{transform: translate3d(10%, -30%, 0);}
+	75%{transform: translate3d(5%, -30%, 0);}
+	80%{transform: translate3d(-5%, -25%, 0);}
+	85%{transform: translate3d(-15%, -15%, 0);}
+	90%{transform: translate3d(-25%, -10%, 0);}
+	95%{transform: translate3d(-35.6%, -5%, 0);}
+	100%{transform: translate3d(-35.6%, 0%, 0);}
+    
+}
+
+@keyframes cir2 {
+    0% {transform:translate3d(50%, -50%, 0 );}
+    25% {transform: translate3d(26%, -18%, 0);}
+    50% {transform: translate3d(3%, 1%, 0);}
+    75% { transform: translate3d(26%, -18%, 0);}
+    100% { transform: translate3d(50%, -50%, 0);}
+}
+@keyframes circle {
+  to { transform: rotate(-1turn); }
+}
+@keyframes updown {
+  to { transform: translateX(200px); }
+}

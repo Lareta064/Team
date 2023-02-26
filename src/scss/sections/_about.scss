@@ -71,27 +71,7 @@
 	padding-top: 120px;
 	position: relative;
 	z-index: 2;
-	&:after{
-		content: '';
-		position: absolute;
-		top: 120px;
-		right: 40px;
-		background: url(../img/el3.svg);
-		width: 1031px;
-		height: 727px;
-		background-size: contain;
-		background-repeat: no-repeat;
-		z-index: 2;
-		@media (max-width: 767px) {
-		  width: 497px;
-		  height: 621px;
-		  right:auto;
-		  left: 0;
-		  top:auto;
-		  bottom:0;
-		  transform:translate(-44%, 34%)
-		}
-	}
+
 	@media(max-width:1439px){
 		padding-top: 90px;
 	}
@@ -102,14 +82,19 @@
 }
 .about-img{
 	width: 870px;
-	// height: 634px;
 	padding-right: 40px;
 	padding-bottom: 40px;
 	margin-right: 170px;
 	position: relative;
-	// border-radius: 60px;
+	
 	display: inline-flex;
 	z-index: 3;
+	.gr2{
+		left: 50%;
+		top: 50%;
+		transform:translate(-45%, -50%);
+		
+	}
 	img{
 		width: 100%;
 		height: auto;

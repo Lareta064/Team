@@ -7,7 +7,7 @@ mixin newsCard(param1, imgSrc, title, text)
 			.medi-18 12.2022
 		.news-card__info.d-flex
 			.news-img
-				img(src="./img/news/news"+  imgSrc +".jpg", width="260" alt="alt")
+				img.lazy(src="./img/news/tb-news"+  imgSrc +".jpg", width="260" height="170" alt="alt")
 			.news-text
 				.title-4 #{title}
 				.text-16

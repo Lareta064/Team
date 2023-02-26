@@ -2,7 +2,8 @@ extends ../layouts/layout.pug
 
 block content
 	include ../sections/_header-news
-	main
+	main.grad-bg
+		.gr2
 		include ../sections/_news-content
 	
 	include ../sections/_footer
@@ -10,5 +11,5 @@ block content
 
 block variables
 
-
-	-var title="Новости"
+	- var bodyCl = 'news-page'
+	- var title="Новости"
