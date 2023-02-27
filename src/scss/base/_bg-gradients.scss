@@ -151,28 +151,28 @@
 /*==== градиенты на стр Проекты ======*/
 .inner-page{
 	main{
-		.gr3{
-			transform: translate(-36%, 38%);
+		.gr5{
+			bottom: -5%;
+			right:-5%;
 			@media (max-width: 767px) {
-			  transform: translate(3%, 25%);
+			  right:0%;
+			  bottom: -10px;
+			  width: 700px;
+			  height: 600px;
 			}
 		}
-		.gr4{
-			transform: translate(36%, -30%);
-			@media(max-width:1199px){
-				transform: translate(36%, -100%);
-			}
-		}
+		
 	}
 }
 /*==== градиенты LK ======*/
 .body-user-profile{
-	.gr2{
+	.gr5{
 		left: auto;
 		right:auto;
-		transform: translate(60%, 30%);
+		transform: translate(55%, 0%);
 		animation: none;
 	}
+	.gr2{top: 11vh;height: 50vw;width:80vw}
 }
 .anim-box{position: relative;
 }
