@@ -209,15 +209,17 @@
 	left: -8px;
 	top: -5px;
 	transform: translateY(-100%);
-	background: url(../img/tooltip.png);
+	background: url('../img/tooltip.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	padding: 15px 20px;
 	z-index: 3;
 	display: none;
+	color: $sec3;
 }
 .politic-confirm{
 	 align-items: flex-start;
+	 color: $sec;
 	.form-checkbox{margin-right: 6px;}
 	
 	&:hover{
@@ -225,7 +227,7 @@
 	}
 	@media (max-width: 1199px) {
 	   width: 100%;
-	//    align-items: flex-start;
+	
 	}
 }
 .tooltip-wrapper:hover{
