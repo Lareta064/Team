@@ -91,6 +91,9 @@
 			height: 20px;
 			transition:.3s;
 			fill: $sec1;
+			@media (max-width: 1199px) {
+			fill: $ac1;
+			}
 		}
 	}
 	&__preview{

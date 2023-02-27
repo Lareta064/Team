@@ -129,6 +129,61 @@
 	}
 	input:checked + .fake-radio:after{opacity: 1;}
 
+}
+/* checkbox*/
+.form-checkbox{
+	position: relative;
+	display: flex;
+	align-items: center;
+	column-gap:10px;
+	font-size: 14px;
+	color: $sec1;
+	input{
+		appearance: none;
+		width: 0.01em;
+		height: 0.01em;
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.fake-checkbox{
+		width: 16px;
+		height: 16px;
+		border-radius: 4px;
+		flex-shrink: 0;
+		display: block;
+		border:1px solid $sec1;
+		position: relative;
+		cursor:pointer;
+		overflow: hidden;
+		&:after{
+			content:'';
+			display: block;
+			width: 10px;
+			height: 7px;
+			position: absolute;
+			background-size: auto;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M8.5 1L3.5 6L1.5 4' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+			top: -50%;
+			left: 50%;
+			transform:translate(-50%, -50%);
+			z-index: 2;
+			
+			transition:.3s;
+		}
+
+	}
+
+
+	input:checked + .fake-checkbox{
+		border:1px solid $ac1;
+		background-color: $ac1;
+		
+	}
+	input:checked + .fake-checkbox:after{top:50%}
+
 }	
 .profile-content{
 	position: relative;
@@ -204,6 +259,8 @@
 		display: inline-flex;
 		column-gap:5px;
 		align-items:center;
+		.form-item__icon{ padding-left: 5px; align-items:center;}
+		@media(min-width:1920px){.text-12{line-height: 1;}}
 		&:hover .ic-edit-blue {
 			background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0.799026 15.8666C0.622324 15.8658 0.452944 15.7959 0.327026 15.6719C0.245486 15.5898 0.186653 15.4879 0.156273 15.3761C0.125892 15.2644 0.125003 15.1468 0.153693 15.0346L0.98036 11.8026C1.01008 11.6869 1.06988 11.5811 1.15369 11.4959L12.3217 0.327947C12.4475 0.203854 12.617 0.134277 12.7937 0.134277C12.9704 0.134277 13.1399 0.203854 13.2657 0.327947L15.6657 2.72795C15.7904 2.85336 15.8605 3.02306 15.8605 3.19995C15.8605 3.37683 15.7904 3.54653 15.6657 3.67195L4.50303 14.8453C4.41788 14.9291 4.31208 14.9889 4.19636 15.0186L0.96436 15.8453C0.910288 15.8589 0.854788 15.8661 0.799026 15.8666V15.8666ZM2.22569 12.3093L1.73236 14.2666L3.69769 13.7653L14.2657 3.20528L12.7937 1.73328L2.22569 12.3093Z' fill='%23ADADAD'/%3e%3cpath d='M13.1352 5.9359C12.9582 5.93253 12.7896 5.85974 12.6658 5.73323L10.2658 3.33323C10.2038 3.27125 10.1547 3.19766 10.1211 3.11668C10.0876 3.03569 10.0703 2.94889 10.0703 2.86123C10.0703 2.77358 10.0876 2.68678 10.1211 2.60579C10.1547 2.5248 10.2038 2.45122 10.2658 2.38923C10.3278 2.32725 10.4014 2.27808 10.4824 2.24454C10.5634 2.21099 10.6502 2.19373 10.7378 2.19373C10.8255 2.19373 10.9123 2.21099 10.9933 2.24454C11.0743 2.27808 11.1478 2.32725 11.2098 2.38923L13.6098 4.78923C13.7033 4.88247 13.767 5.00137 13.7928 5.13085C13.8186 5.26032 13.8054 5.39455 13.7549 5.51652C13.7043 5.63848 13.6187 5.74269 13.5088 5.81593C13.399 5.88917 13.2698 5.92814 13.1378 5.9279L13.1352 5.9359Z' fill='%23ADADAD'/%3e%3cpath d='M12.6345 15.8667H7.22917C7.05236 15.8667 6.88279 15.7964 6.75776 15.6714C6.63274 15.5464 6.5625 15.3768 6.5625 15.2C6.5625 15.0232 6.63274 14.8536 6.75776 14.7286C6.88279 14.6036 7.05236 14.5333 7.22917 14.5333H12.6345C12.8113 14.5333 12.9809 14.6036 13.1059 14.7286C13.2309 14.8536 13.3012 15.0232 13.3012 15.2C13.3012 15.3768 13.2309 15.5464 13.1059 15.6714C12.9809 15.7964 12.8113 15.8667 12.6345 15.8667Z' fill='%23ADADAD'/%3e%3c/svg%3e");
 		}
@@ -286,4 +343,18 @@
 }
 .ui-datepicker .ui-datepicker-prev {
     left: -25px;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: 1px solid $sec;
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #01203c inset;
+  transition: background-color 5000s ease-in-out 0s;
 }

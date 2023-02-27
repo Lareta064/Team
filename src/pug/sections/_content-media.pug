@@ -68,7 +68,7 @@ mixin eventCardAudio(img, title, txt1, txt2)
 				.search-results__empty  К сожалению по вашему запросу ничего не найдено. Попробуйте снова.
 	.media-body
 		.container
-			.media-tabs
+			.media-tabs.visible-desktop
 				.tabs-toggle
 					button.tab-btn
 						svg.app-svg
@@ -86,7 +86,7 @@ mixin eventCardAudio(img, title, txt1, txt2)
 						svg.mic-svg
 							use(href="./img/svg-sprite.svg#mic-svg")
 						span Вебинары
-
+			+custom-select-icon('Все материалы', ['Все материалы','Видеоматериалы', 'Фотографии', 'Вебинары'], 'mySelect--absolute hide-desktop')
 			.media-cards.cards-grid
 				+eventCardVideo(1, 'Социальное проектирование: как&nbsp;доработать проект до&nbsp;заявки на&nbsp;президентский грант', 'Автор: Глазкова А.М.', 'Mp4, 15.06 Мб')
 				

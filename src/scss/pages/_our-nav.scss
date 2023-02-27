@@ -119,5 +119,11 @@
 	cursor:default;
 	&>*{color: $sec1;}
 }
-
+.our-nav-cards{
+	.event-card__label{
+		@media (max-width: 1199px) {
+		  display: flex;
+		}	
+	}
+}
 

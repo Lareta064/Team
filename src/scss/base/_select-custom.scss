@@ -1,0 +1,90 @@
+.mySelect{
+	
+	&-input{
+		position: relative;
+		
+	}
+	.form-input, .selectValue{cursor:pointer;}
+}
+
+/*галочка в выпадашке*/
+.mySelect-input:after{
+	content:'';
+	width: 16px;
+	height: 16px;
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.646447 0.646447C0.841709 0.451184 1.15829 0.451184 1.35355 0.646447L7 6.29289L12.6464 0.646447C12.8417 0.451184 13.1583 0.451184 13.3536 0.646447C13.5488 0.841709 13.5488 1.15829 13.3536 1.35355L7.35355 7.35355C7.15829 7.54882 6.84171 7.54882 6.64645 7.35355L0.646447 1.35355C0.451184 1.15829 0.451184 0.841709 0.646447 0.646447Z' fill='%23ADADAD'/%3e%3c/svg%3e");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%) rotate(0deg);
+	right: 12px;
+	transition:.3s;
+}
+
+.mySelect-input.open:after{
+	transform: translateY(-50%) rotate(180deg);
+}
+.mySelect-drop{
+	display: flex;
+	
+	&>*{
+		padding-left: 38px;
+		padding-right: 16px;
+	}
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	background: #191D23;
+	box-shadow: 0px 4px 16px rgba(87, 141, 246, 0.2);
+	border-radius: 0 0 10px 10px;
+	display: none;
+	margin-top: 8px;
+	max-height: 220px;
+}
+.mySelect-options{
+	height: 46px;
+	font-size: 16px;
+	display: block;
+	width: 100%;
+	color: $sec2;
+	background: rgba(21, 120, 224, 0.35);
+	backdrop-filter: blur(2.5px);
+	cursor:pointer;
+	&:hover{
+		color: $ac1;
+	}
+	&+ .mySelect-options{
+		border-top: 1px solid rgba(255, 255, 255, 0.15);
+	}
+}
+
+.mySelect-drop.active{
+	display: block;
+}
+
+.mySelect-icon.active{
+	transform: rotate(-180deg);
+
+}
+.mySelect.mySelect--absolute{
+	position: relative;
+	.mySelect-drop.active{
+		display: block;
+		position: absolute;
+		left: 0;
+		min-width: 100%;
+		bottom: 0;
+		transform: translateY(100%);
+		white-space: nowrap;
+		z-index: 2;
+	}
+}
+
+.mySelect-input.mySelect-input--icon{
+	.selectValue{
+		padding-left: 38px;
+	}
+	
+}
