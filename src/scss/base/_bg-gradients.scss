@@ -1,85 +1,4 @@
-@keyframes move4 {
-	0%{transform: translate(-60%, -50%)}
-	25%{transform: translate(-75%, -40%) }
-	50%{transform: translate(-75%, -30%)}
-	75%{transform: translate(-65%, -50%)}
-	100%{transform:  translate(-60%, -50%)}
-    
-}
-@keyframes move3 {
-	0%{transform: translate(52.9%, 130px);}
-	50%{transform: translate(20.9%, 80px);}
-	100%{transform: translate(52.9%, 130px);}
-    
-}
-@keyframes move2 {
-    0% {
-        transform: translate(-35.6%, 0) scale(1);
-    }
-    
-    10% {
-        transform: translate(-14%, 0%) scale(.6);
-    }
-    
-    20% {
-        transform: translate(15%, -10%) scale(1);
-    }
-    
-    30% {
-        transform: translate(-14%, -0%) scale(1.2);
-    }
-    
-    40% {
-        transform: translate(-36%, 5%) scale(.9);
-    }
-    
-    50% {
-        transform: translate(-24%, -34%) scale(1);
-    }
-    
-    60% {
-        transform: translate(-2%, -58%) scale(1.1);
-    }
-    
-    70% {
-        transform: translate(-2%,-77%) scale(.9);
-    }
-    
-    80% {
-        transform: translate(-7%, -77%) scale(1);
-    }
-    
-    90% {
-        transform: translate(-46%, -40%) scale(1.2);
-    }
-    
-   100% {
-        transform: translate(-35.6%, 0%) scale(1);
-    }
-}
 
-
-.home-page .body-content>.gr2{
-    animation-name: move2;
-	animation-duration:30s;
-	animation-fill-mode:forwards;
-	animation-iteration-count: infinite;
-	animation-timing-function:linear;
-}
-.anim-move3{
-	animation-name: move3;
-	animation-duration:15s;
-	animation-iteration-count: infinite;
-	animation-timing-function:linear;
-	// animation-direction: alternate-reverse;
-}
-.anim-move4{
-	animation-name: move4;
-	animation-duration:10s;
-	animation-iteration-count: infinite;
-	animation-timing-function:linear;
-	// animation-direction: alternate-reverse;
-}
 .body-content{
 	position: relative;
 	display: flex;
@@ -89,16 +8,17 @@
 	overflow: hidden;
 
 	.gr1{
-		width: 103.5vw;
-		height: 53.3vw;
+		width: 100.5vw;
+		height: 98.3vw;
 		right: 0;
 		top: 0;
-		transform:translate(50%, -50% );
+		background-image: url('../img/gr1.svg');
+		transform:translate(22%, -46% );
 		@media (max-width: 1199px) {
 			animation-name: unset;
 			width: 130vw;
 			height: 75vw;
-			transform:translate(38%, -42% );
+			transform:translate(22%, -46% );
 		}
 		@media (max-width: 767px) {
 			width: 514px;
@@ -106,12 +26,12 @@
 		}
 	}
 	.gr2{
-		width: 79.3vw;
-		height: 42.9vw;
+		width: 81vw;
+		height: 97vw;
 		left: 0;
 		top: 50vh;
-		transform: translate(-35.6%, 0%);
-		
+		transform: translate(-30%, -15%);
+		background-image: url('../img/gr2.svg');
    
 		@media (max-width: 1199px) {
 			animation-name: unset;
@@ -132,8 +52,9 @@
 .gr1,.gr2, .gr3, .gr4{
 	pointer-events: none;
 	position: absolute;
-	background: radial-gradient(50% 50% at 50% 50%, rgba(21, 120, 224, 0.38) 0%, rgba(25, 29, 35, 0.07) 100%);
-   backdrop-filter: blur(5px);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 
 }
 
@@ -254,9 +175,9 @@
 }
   .in-view.anim-box{
 
-	animation-duration: 1.5s;
+	animation-duration: 2.5s;
     animation-fill-mode: both;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2.5s;
     -webkit-animation-fill-mode: both;
 	
 	
@@ -268,7 +189,7 @@
         top:0px;
     }
 	50% {
-		top:-25px;
+		top:-15px;
 	}
 	100% {
 		top:0;
