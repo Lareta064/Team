@@ -1,14 +1,15 @@
-@keyframes move41 {
-	0%{transform: translate(-45%, -50%) scale(1);}
-	25%{transform: translate(-35%, -50%) scale(.8);}
-	50%{transform: translate(-25%, -50%) scale(.6);}
-	75%{transform: translate(-35%, -50%) scale(.8);}
-	100%{transform:  translate(-45%, -50%)scale(1);}
+@keyframes move4 {
+	0%{transform: translate(-60%, -50%)}
+	25%{transform: translate(-75%, -40%) }
+	50%{transform: translate(-75%, -30%)}
+	75%{transform: translate(-65%, -50%)}
+	100%{transform:  translate(-60%, -50%)}
     
 }
 @keyframes move3 {
 	0%{transform: translate(52.9%, 130px);}
-	100%{transform: translate(32.9%, 80px);}
+	50%{transform: translate(20.9%, 80px);}
+	100%{transform: translate(52.9%, 130px);}
     
 }
 @keyframes move2 {
@@ -66,7 +67,7 @@
 }
 .anim-move3{
 	animation-name: move3;
-	animation-duration:5s;
+	animation-duration:15s;
 	animation-iteration-count: infinite;
 	animation-timing-function:linear;
 	// animation-direction: alternate-reverse;
@@ -169,6 +170,12 @@
 		transform:translate(38%, -140%);
 	}
 }
+.about .gr2{
+		left: 50%;
+		top: 50%;
+		transform:translate(-60%, -50%);
+		
+	}
 /*==== градиенты на стр НОВОСТИ ======*/
 
 .news-page{
@@ -267,28 +274,3 @@
 	}	
    
 }
-// @keyframes cir1 {
-//     0% { transform: translate3d(-35.6%, 0%, 0);}    
-//     10% {transform: translate3d(-25%, -10%, 0);}			
-// 	15%{transform: translate3d(-15%, -15%, 0);}
-// 	20%{transform: translate3d(-5%, -25%, 0);}
-// 	25%{transform: translate3d(0%, -30%, 0);}
-// 	30%{transform: translate3d(5%, -30%, 0);}
-// 	35%{transform: translate3d(10%, -30%, 0);}
-// 	40%{transform: translate3d(15%, -30%, 0);}
-// 	45%{transform: translate3d(20%, -30%, 0);}
-// 	50%{transform: translate3d(25%, -30%, 0);}
-// 	55%{transform: translate3d(30%, -30%, 0);}
-// 	60%{transform: translate3d(25%, -30%, 0);}
-// 	65%{transform: translate3d(15%, -30%, 0);}
-// 	70%{transform: translate3d(10%, -30%, 0);}
-// 	75%{transform: translate3d(5%, -30%, 0);}
-// 	80%{transform: translate3d(-5%, -25%, 0);}
-// 	85%{transform: translate3d(-15%, -15%, 0);}
-// 	90%{transform: translate3d(-25%, -10%, 0);}
-// 	95%{transform: translate3d(-35.6%, -5%, 0);}
-// 	100%{transform: translate3d(-35.6%, 0%, 0);}
-    
-// }
-
-
