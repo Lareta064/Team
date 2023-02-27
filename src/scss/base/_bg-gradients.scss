@@ -12,17 +12,15 @@
 		height: 98.3vw;
 		right: 0;
 		top: 0;
-		background-image: url('../img/gr1.svg');
+		
 		transform:translate(22%, -46% );
 		@media (max-width: 1199px) {
-			animation-name: unset;
-			width: 130vw;
-			height: 75vw;
-			transform:translate(22%, -46% );
+			
+			transform:translate(34%, -34% );
 		}
 		@media (max-width: 767px) {
-			width: 514px;
-			height: 480px;
+			width: 200vw;
+			height: 190vw;
 		}
 	}
 	.gr2{
@@ -31,16 +29,14 @@
 		left: 0;
 		top: 50vh;
 		transform: translate(-30%, -15%);
-		background-image: url('../img/gr2.svg');
-   
-		@media (max-width: 1199px) {
+
+		@media (max-width: 767px) {
 			animation-name: unset;
-			width: 130vw;
-			height: 75vw;
+			width: 200vw;
+			height: 210vw;
 		}
 		@media (max-width: 767px) {
-			width: 684px;
-			height: 400px;
+			
 		}
 	}
 }
@@ -49,7 +45,7 @@
 	position: relative;
 	overflow: hidden;
 }
-.gr1,.gr2, .gr3, .gr4{
+.gr1,.gr2, .gr3, .gr5{
 	pointer-events: none;
 	position: absolute;
 	background-position: center;
@@ -57,42 +53,30 @@
 	background-repeat: no-repeat;
 
 }
-
-.gr3,.gr4{
-	width: 105vw;
-	height: 67.9vw;
-	bottom: 0;
-	right: 0;
-	@media (max-width: 1199px) {
-		width: 130vw;
-		height: 75vw;
-	}
-	@media (max-width: 767px) {
-		width: 684px;
-		height: 400px;
-	}
+.gr1{background-image: url('../img/gr1.svg');}
+.gr2{background-image: url('../img/gr2.svg');}
+.gr3{
+	background-image: url('../img/gr3.svg');
+	width: 81vw;
+	height: 73vw;
 }
-.gr4{
-	right:auto;
-	left:0;
-	@media (max-width: 767px) {
-		width: 684px;
-		height: 580px;
-	}
-	
+.gr5{
+	background-image: url('../img/gr5.svg');
+	width: 105vw;
+	height: 73vw;
 }
 /*==== градиенты на главной ======*/
 .about .gr3{
-	transform: translate(52.9%, 130px);
+	transform: translate(-10%, 10%);
 	@media (max-width: 1535px) {
-		transform:translate(50%, -11%);
+		
 	}
 		
 	@media (max-width: 991px) {
-		transform:translate(38%, -140%);
+		
 	}
 }
-.about .gr2{
+.about .gr5{
 		left: 50%;
 		top: 50%;
 		transform:translate(-60%, -50%);

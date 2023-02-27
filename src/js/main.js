@@ -226,10 +226,10 @@ document.addEventListener("DOMContentLoaded", function (){
 		}
 
 		window.addEventListener('scroll', (e)=>{
-			for(let target of targets){
-				let is_in_viewport = check_in_viewport(target)
+      for(let target of targets){
+        let is_in_viewport = check_in_viewport(target)
 				if (is_in_viewport == target.classList.contains('in-view'))
-					continue
+        continue
 				if (is_in_viewport){
 					target.classList.add('in-view')
 				}else{
@@ -238,6 +238,7 @@ document.addEventListener("DOMContentLoaded", function (){
 					
 			}
 		});
+
 	}
 		
 
