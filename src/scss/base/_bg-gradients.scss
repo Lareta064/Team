@@ -77,9 +77,28 @@
 	}
 }
 .about .gr5{
-		left: 50%;
-		top: 50%;
-		transform:translate(-60%, -50%);
+    right: 0;
+    top: 0;
+    transform: translate(30%, 95%);
+	@media (max-width: 1535px) {
+		transform: translate(30%, 107%);
+	}
+	@media (max-width: 1199px) {
+	  width: 150vw;
+	  height: 140vw;
+	   transform: translate(30%, 52%);
+	}
+	@media (max-width: 991px) {
+		top: auto;
+		bottom:0;
+	   transform: translate(30%, -92%);
+	   width: 750px;
+	   height: 660px;
+	}
+	@media (max-width: 767px) {
+	   width: 565px;
+	   height: 520px;
+	}
 		
 	}
 /*==== градиенты на стр НОВОСТИ ======*/
