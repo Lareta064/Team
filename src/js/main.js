@@ -2,7 +2,9 @@ document.addEventListener("DOMContentLoaded", function (){
     $(function() {
         $('.lazy').Lazy();
     });
-
+    AOS.init({
+      once: true,
+    });
 /*============= open/close mob menu ===============*/
   const menuToggle = document.querySelector('#menu-toggle');
  

@@ -10,7 +10,7 @@
 		height: 100%;
 		width: 194px;
 		border-radius: 14px;
-			background-image: url('../img/libs/placeholder3.jpg');
+			// background-image: url('../img/libs/placeholder3.jpg');
 			background-size:cover;
 			background-repeat:no-repeat;
 		img{
@@ -141,4 +141,5 @@
 }
 .library-card[disabled]{
 	color: #ADADAD!important;
+	.library-card__img{background-image: url('../img/libs/placeholder3.jpg');}
 }

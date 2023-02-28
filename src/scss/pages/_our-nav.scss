@@ -9,7 +9,7 @@
 		border-radius: 20px;
 		overflow: hidden;
 		position: relative;
-		background-image: url('../img/libs/placeholder2.jpg');
+		// background-image: url('../img/libs/placeholder2.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		@media (max-width: 1919px){height: 280px;}
@@ -118,6 +118,9 @@
 	img{display: none;}
 	cursor:default;
 	&>*{color: $sec1;}
+	.event-card__header{
+		background-image: url('../img/libs/placeholder2.jpg');
+	}
 	@media (max-width: 991px) {
 	  display: none!important;
 	}
