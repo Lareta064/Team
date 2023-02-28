@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", function (){
       for(let frame of modalFrames){
         frame.addEventListener('click', function(e){
           if(e.target === e.currentTarget){
-            this.classList.remove(`visible`)
+            this.classList.remove(`visible`);
             bodyEl.classList.remove('lock');
           }
         });
@@ -262,6 +262,4 @@ document.addEventListener("DOMContentLoaded", function (){
 		}
 		
 	});
-
-
 });

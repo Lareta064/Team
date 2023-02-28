@@ -48,7 +48,7 @@
 }
 .h3{
 	font-size: 64px;
-	
+	font-family: "Unbounded-Bold";
 	font-weight: 700;
 	letter-spacing: 0;
 	@media(max-width:1919px){
@@ -116,7 +116,7 @@
 .link-text{
 	font-size: 18px;
 	
-	font-weight: 600;
+	font-family: $ms;
 	transition:.3s;
 	cursor:pointer;
 	color:  #ffffff;
@@ -151,7 +151,7 @@
 .medi-up,.medi-18{
 	font-weight: 500;
 	font-size: 20px;
-	
+	font-family: $mm;
 	letter-spacing: 0.84em;
 	text-transform: uppercase;
 	@media (max-width: 991px) {
@@ -196,10 +196,11 @@
 	}
 }
 .bold-18{
-	font-weight: 700;
+	font-family: $mb;
 }
 .title-24,.title-4,.text-medium,.demi-18{
 font-weight: 600;
+font-family: $ms;
 }
 .title-4,.title-24{
 	@media (max-width: 1199px) {
@@ -215,6 +216,7 @@ font-weight: 600;
 }
 .medi-16{
 	font-weight: 500;
+	font-family: $mm;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
