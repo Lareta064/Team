@@ -3,7 +3,7 @@ mixin galleryFoto(arg)
 	- var k=1
 	while n < arg && k < arg	
 		a(href="./img/gallery/photo"+ n++ +".jpg" data-lightbox="album-1")
-			img.lazy(src="./img/gallery/photo"+ k++ +".jpg", alt="")
+			img(src="./img/gallery/photo"+ k++ +".jpg", alt="")
 .media-inner-content
 	.container
 		a(href="our-media.html").back-link

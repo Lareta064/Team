@@ -77,9 +77,11 @@
 		position: absolute;
         top: -40px;
         right: 40px;
-		@media (max-width: 767px) {
-		top: 0;
-		right: 0;
+		@media (max-width: 991px) {
+		position: relative;
+		
+		top: auto;
+		right: auto;
 		}	
 	}
 	.lb-next, .lb-prev{

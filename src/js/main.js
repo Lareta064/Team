@@ -166,8 +166,6 @@ document.addEventListener("DOMContentLoaded", function (){
             item.classList.remove('visible');
             
             bodyEl.classList.remove('lock');
-			
-			
           }
           e.preventDefault();
           const itemAttr = item.getAttribute('frame-btn');
@@ -182,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function (){
           }
         });
       }
-      /*=============== закрыть модалки с атрибутом frame-modal по клику на крестик===============*/
+      /*==  закрыть модалки  frame-modal по клику на крестик ======*/
       for(let item of modalFramesClose){
         item.addEventListener('click', function(e){
           e.preventDefault();
@@ -201,71 +199,7 @@ document.addEventListener("DOMContentLoaded", function (){
           }
         });
       }
-
     }
-
-  	/**  анимация, когда секции в зоне видимости */
-	if(window.innerWidth > 1200){
-		let targets = document.querySelectorAll(".anim-box")
-
-		function check_in_viewport(element){
-			let rect = element.getBoundingClientRect()
-			const VERTICAL_SETPOINT = 100;
-			let targetPosition = {
-				top: window.pageYOffset + rect.top + VERTICAL_SETPOINT,
-				bottom: window.pageYOffset + rect.bottom - VERTICAL_SETPOINT,
-			}
-			let windowPosition = {
-				top: window.pageYOffset,
-				bottom: window.pageYOffset + document.documentElement.clientHeight
-			}
-			return (
-				targetPosition.bottom > windowPosition.top &&
-				targetPosition.top < windowPosition.bottom
-			)
-		}
-
-		window.addEventListener('scroll', (e)=>{
-			for(let target of targets){
-				let is_in_viewport = check_in_viewport(target)
-				if (is_in_viewport == target.classList.contains('in-view'))
-					continue
-				if (is_in_viewport){
-					target.classList.add('in-view')
-				}else{
-					target.classList.remove('in-view')
-				}
-					
-			}
-		});
-	}
-		
-
-	// active class of menu items onscroll
-	window.addEventListener('scroll', () => {
-		let scrollDistance = window.scrollY;
-
-		if (window.innerWidth > 1023) {
-			document.querySelectorAll('.section').forEach((el, i) => {
-				if (el.offsetTop - document.querySelector('.header-top').clientHeight <= scrollDistance) {
-					document.querySelectorAll('#header-menu a').forEach((el) => {
-						if (el.classList.contains('active')) {
-							el.classList.remove('active');
-						}
-					});
-					const thisId = "#" + el.getAttribute('id');
-					
-
-					document.querySelectorAll('#header-menu a').forEach((elem, i) => {
-						const linkHref = elem.getAttribute('href');
-						if(thisId == linkHref ){
-							elem.classList.add('active');
-						}
-					});
-				}
-			});
-		}
-	});
 
 	/** =============== custom select ===============*/
 	const mySelectBlocks = Array.from(document.getElementsByClassName('mySelect'));

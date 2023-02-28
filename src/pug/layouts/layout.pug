@@ -19,7 +19,8 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		link(rel="stylesheet" href="./libs/ui-datapicker/ui-datapicker.css" )
-
+		//======= AOS animation =============
+		link(href='https://unpkg.com/aos@2.3.1/dist/aos.css' rel='stylesheet')
 		//=======================favicon==============================
 		link(rel='apple-touch-icon' sizes='180x180' href='./img/favicon/apple-touch-icon.png')
 		link(rel='icon' type='image/png' sizes='32x32' href='./img/favicon/favicon-32x32.png')
@@ -119,7 +120,12 @@ html(lang="ru")
 		
 		//======= кастомный плагин выбра даты в инпуте =============
 		script(src="./libs/ui-datapicker/ui-datapicker.js")
-		
+		//======= AOS animation =============
+		script(src='https://unpkg.com/aos@2.3.1/dist/aos.js')
+		script.
+			AOS.init({
+				once: true,
+			});
 		//=============== lazy ===================
 		script(src="./libs/jquery.lazy.min.js")
 		//=============== мои скрипты ===================
