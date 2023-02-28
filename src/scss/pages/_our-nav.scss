@@ -118,6 +118,14 @@
 	img{display: none;}
 	cursor:default;
 	&>*{color: $sec1;}
+	@media (max-width: 991px) {
+	  display: none!important;
+	}
+}
+.card-placeholder{
+	@media (max-width: 991px) {
+	  display: none!important;
+	}
 }
 .our-nav-cards{
 	.event-card__label{

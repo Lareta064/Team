@@ -47,7 +47,7 @@
 .project-card__logo{
 	width: 270px;
 	height: 193px;
-	background-image: url('../img/projects/placeholder.png');
+	
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -192,9 +192,12 @@
 	}
 }
 
-.project-card.project-card--disabled{
+.project-card[disabled]{
 	cursor:default;
 	p{color: $sec;}
+	.project-card__logo{
+		background-image: url('../img/projects/placeholder.png');
+	}
 	@media (max-width: 1199px) {
 		
 	 .project-card__logo{
